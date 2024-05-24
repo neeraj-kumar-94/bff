@@ -8,7 +8,8 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Link css file -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/nav.css">
 </head>
@@ -22,12 +23,19 @@
         <span class="logo-sm">As food should be</span>
       </div>
       <div class="nav-links">
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Bowl Plans</a> </li>
-          <li><a href="#">Give it a Go</a></li>
-          <li><a href="#">Read</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav-inner-links">
+          <li class="nav-link-item"><a href="#">About us</a></li>
+          <li class="nav-link-item"><a href="#">Bowl Plans</a> </li>
+          <li class="nav-link-item"><a href="#">Give it a Go</a></li>
+          <li class="nav-dw-btn nav-link-item">
+            <a href="#">Read <img src="./bff-images/nav-dropdown-menu-icon.png" alt=""></a>
+            <ul class="nav-dropdown-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Policies</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </li>
+          <li class="nav-link-item"><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="nav-login-btn">
@@ -40,7 +48,22 @@
       </div>
     </nav>
   </div>
-  <!-- How it works ?  section-->
+  <!-- mobile navbar -->
+  <div class="mobile-nav-container">
+    <div class="mobile-nav-inner-sec">
+      <div class="mobile-humburger">
+        <img src="./bff-images/humburger.png" alt="">
+      </div>
+      <div class="mobile-nav-logo">
+        <p class="mob-nav-logo-big-size Small-800-b">BRUNSWICK FUR FOOD</p>
+        <p class="mob-nav-logo-small-size">As food should be</p>
+      </div>
+      <div class="nav-cart-img">
+        <img src="./bff-images/mobile-cart-img.png" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- header section ?  section-->
   <div class="home-header-section main-container">
     <div class="home-h-inner-sec xl-width">
       <div class="home-header-sec-material">
@@ -51,21 +74,26 @@
             give your pets the nourishment they deserve.
           </p>
         </div>
-        <div class="ho-h-try-o-s-btn xl-button">
-          <a href="#">Try our Starter Pack</a>
+        <div class="home-header-mobile-image">
+          <img src="./bff-images/header-mobile-image.png" alt="">
         </div>
-        <div class="h-header-icon-text-container">
-          <div class="h-header-icon-text">
-            <img src="./bff-images/h-sm-c1.png" alt="">
-            <p class="h-icon-t lg-icon-text">Human Grade Ingredients</p>
+        <div class="header-icon-text-button">
+          <div class="ho-h-try-o-s-btn xl-button">
+            <a href="#">Try our Starter Pack</a>
           </div>
-          <div class="h-header-icon-text">
-            <img src="./bff-images/h-sm-c2.png" alt="">
-            <p class="h-icon-t lg-icon-text">No added Preservatives</p>
-          </div>
-          <div class="h-header-icon-text">
-            <img src="./bff-images/h-sm-c3.png" alt="">
-            <p class="h-icon-t lg-icon-text">Nutritionally Balanced</p>
+          <div class="h-header-icon-text-container">
+            <div class="h-header-icon-text">
+              <img src="./bff-images/h-sm-c1.png" alt="">
+              <p class="h-icon-t lg-icon-text">Human Grade Ingredients</p>
+            </div>
+            <div class="h-header-icon-text">
+              <img src="./bff-images/h-sm-c2.png" alt="">
+              <p class="h-icon-t lg-icon-text">No added Preservatives</p>
+            </div>
+            <div class="h-header-icon-text">
+              <img src="./bff-images/h-sm-c3.png" alt="">
+              <p class="h-icon-t lg-icon-text">Nutritionally Balanced</p>
+            </div>
           </div>
         </div>
       </div>
@@ -81,79 +109,178 @@
         <h2 class="all-headings">How it works ?</h2>
       </div>
       <div class="how-it-works-cards-cnt">
-        <div class="h-it-w-card">
-          <div class="h-w-c-img">
-            <img src="./bff-images/home-cards-image.png" alt="">
+        <div class="how-it-works-simple-card-sec">
+          <div class="h-it-w-card">
+            <div class="h-w-c-img">
+              <img src="./bff-images/home-cards-image.png" alt="">
+            </div>
+            <div class="h-it-w-card-details">
+              <div class="h-w-c-num">
+                <img src="./bff-images/Group114.png" alt="" srcset="">
+              </div>
+              <div class="h-w-c-title">
+                <p class="h-w-c-title-text">Choose Meal Bowl</p>
+              </div>
+              <div class="h-w-c-paragraph">
+                <p class="h-w-c-inner-para medium-400">Browse through our selection of nutritious and delicious pet
+                  meals.
+                  Once you've made your
+                  selection, simply add to cart and proceed to continue. </p>
+                <p class="medium-400">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time
+                  only.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="h-it-w-card-details">
-            <div class="h-w-c-num">
-              <img src="./bff-images/Group114.png" alt="" srcset="">
+          <div class="h-it-w-card">
+            <div class="h-w-c-img">
+              <img src="./bff-images/home-cards-image.png" alt="">
             </div>
-            <div class="h-w-c-title">
-              <p class="h-w-c-title-text">Choose Meal Bowl</p>
+            <div class="h-it-w-card-details">
+              <div class="h-w-c-num">
+                <img src="./bff-images/Group115.png" alt="" srcset="">
+              </div>
+              <div class="h-w-c-title">
+                <p class="h-w-c-title-text">Frequency</p>
+              </div>
+              <div class="h-w-c-paragraph">
+                <p class="h-w-c-inner-para medium-400">You can choose either: One time Delivery or Setting up a
+                  Subscription</p>
+                <p class="medium-400">Subscription can be fortnightly or monthly depending upon your furry baby's
+                  requirements.</p>
+              </div>
             </div>
-            <div class="h-w-c-paragraph">
-              <p class="h-w-c-inner-para medium-400">Browse through our selection of nutritious and delicious pet meals.
-                Once you've made your
-                selection, simply add to cart and proceed to continue. </p>
-              <p class="medium-400">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time only.
-              </p>
+          </div>
+          <div class="h-it-w-card">
+            <div class="h-w-c-img">
+              <img src="./bff-images/home-cards-image.png" alt="">
+            </div>
+            <div class="h-it-w-card-details">
+              <div class="h-w-c-num">
+                <img src="./bff-images/Group116.png" alt="" srcset="">
+              </div>
+              <div class="h-w-c-title">
+                <p class="h-w-c-title-text">Pause & Cancellation</p>
+              </div>
+              <div class="h-w-c-paragraph">
+                <p class="h-w-c-inner-para medium-400">You can pause , resume or cancel subscription any time as per
+                  your
+                  convenience from the link shared in your email confirmation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="h-it-w-card">
+            <div class="h-w-c-img">
+              <img src="./bff-images/home-cards-image.png" alt="">
+            </div>
+            <div class="h-it-w-card-details">
+              <div class="h-w-c-num">
+                <img src="./bff-images/Group117.png" alt="" srcset="">
+              </div>
+              <div class="h-w-c-title">
+                <p class="h-w-c-title-text">Home Delivery</p>
+              </div>
+              <div class="h-w-c-paragraph">
+                <p class="h-w-c-inner-para medium-400">We deliver at your door step every second and fourth Sunday of
+                  the
+                  month.</p>
+                <p class="medium-400">Also, you can choose the payment frequency for subscription. </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="h-it-w-card">
-          <div class="h-w-c-img">
-            <img src="./bff-images/home-cards-image.png" alt="">
+        <div class="swiper how-it-works-card-slider">
+          <div class="swiper-wrapper how-it-works-card-container">
+            <div class="swiper-slide how-it-works-card-box">
+              <div class="h-it-w-card">
+                <div class="h-w-c-img">
+                  <img src="./bff-images/home-cards-image.png" alt="">
+                </div>
+                <div class="h-it-w-card-details">
+                  <div class="h-w-c-num">
+                    <img src="./bff-images/Group114.png" alt="" srcset="">
+                  </div>
+                  <div class="h-w-c-title">
+                    <p class="h-w-c-title-text">Choose Meal Bowl</p>
+                  </div>
+                  <div class="h-w-c-paragraph">
+                    <p class="h-w-c-inner-para medium-400">Browse through our selection of nutritious and delicious pet
+                      meals.
+                      Once you've made your
+                      selection, simply add to cart and proceed to continue. </p>
+                    <p class="medium-400">Don't forget to enter the promo code "BFF10" to get 10% off for a limited time
+                      only.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide how-it-works-card-box">
+              <div class="h-it-w-card">
+                <div class="h-w-c-img">
+                  <img src="./bff-images/home-cards-image.png" alt="">
+                </div>
+                <div class="h-it-w-card-details">
+                  <div class="h-w-c-num">
+                    <img src="./bff-images/Group115.png" alt="" srcset="">
+                  </div>
+                  <div class="h-w-c-title">
+                    <p class="h-w-c-title-text">Frequency</p>
+                  </div>
+                  <div class="h-w-c-paragraph">
+                    <p class="h-w-c-inner-para medium-400">You can choose either: One time Delivery or Setting up a
+                      Subscription</p>
+                    <p class="medium-400">Subscription can be fortnightly or monthly depending upon your furry baby's
+                      requirements.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide how-it-works-card-box">
+              <div class="h-it-w-card">
+                <div class="h-w-c-img">
+                  <img src="./bff-images/home-cards-image.png" alt="">
+                </div>
+                <div class="h-it-w-card-details">
+                  <div class="h-w-c-num">
+                    <img src="./bff-images/Group116.png" alt="" srcset="">
+                  </div>
+                  <div class="h-w-c-title">
+                    <p class="h-w-c-title-text">Pause & Cancellation</p>
+                  </div>
+                  <div class="h-w-c-paragraph">
+                    <p class="h-w-c-inner-para medium-400">You can pause , resume or cancel subscription any time as per
+                      your
+                      convenience from the link shared in your email confirmation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide how-it-works-card-box">
+              <div class="h-it-w-card">
+                <div class="h-w-c-img">
+                  <img src="./bff-images/home-cards-image.png" alt="">
+                </div>
+                <div class="h-it-w-card-details">
+                  <div class="h-w-c-num">
+                    <img src="./bff-images/Group117.png" alt="" srcset="">
+                  </div>
+                  <div class="h-w-c-title">
+                    <p class="h-w-c-title-text">Home Delivery</p>
+                  </div>
+                  <div class="h-w-c-paragraph">
+                    <p class="h-w-c-inner-para medium-400">We deliver at your door step every second and fourth Sunday
+                      of the
+                      month.</p>
+                    <p class="medium-400">Also, you can choose the payment frequency for subscription. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="h-it-w-card-details">
-            <div class="h-w-c-num">
-              <img src="./bff-images/Group115.png" alt="" srcset="">
-            </div>
-            <div class="h-w-c-title">
-              <p class="h-w-c-title-text">Frequency</p>
-            </div>
-            <div class="h-w-c-paragraph">
-              <p class="h-w-c-inner-para medium-400">You can choose either: One time Delivery or Setting up a
-                Subscription</p>
-              <p class="medium-400">Subscription can be fortnightly or monthly depending upon your furry baby's
-                requirements.</p>
-            </div>
-          </div>
-        </div>
-        <div class="h-it-w-card">
-          <div class="h-w-c-img">
-            <img src="./bff-images/home-cards-image.png" alt="">
-          </div>
-          <div class="h-it-w-card-details">
-            <div class="h-w-c-num">
-              <img src="./bff-images/Group116.png" alt="" srcset="">
-            </div>
-            <div class="h-w-c-title">
-              <p class="h-w-c-title-text">Pause & Cancellation</p>
-            </div>
-            <div class="h-w-c-paragraph">
-              <p class="h-w-c-inner-para medium-400">You can pause , resume or cancel subscription any time as per your
-                convenience from the link shared in your email confirmation.</p>
-            </div>
-          </div>
-        </div>
-        <div class="h-it-w-card">
-          <div class="h-w-c-img">
-            <img src="./bff-images/home-cards-image.png" alt="">
-          </div>
-          <div class="h-it-w-card-details">
-            <div class="h-w-c-num">
-              <img src="./bff-images/Group117.png" alt="" srcset="">
-            </div>
-            <div class="h-w-c-title">
-              <p class="h-w-c-title-text">Home Delivery</p>
-            </div>
-            <div class="h-w-c-paragraph">
-              <p class="h-w-c-inner-para medium-400">We deliver at your door step every second and fourth Sunday of the
-                month.</p>
-              <p class="medium-400">Also, you can choose the payment frequency for subscription. </p>
-            </div>
-          </div>
+          <div class="swiper-button-next h-it-w-sl-next-arrow"><img src="./bff-images/right-arrow.png" alt=""></div>
+          <div class="swiper-button-prev h-it-w-sl-prev-arrow"><img src="./bff-images/prev-icon.png" alt=""></div>
+          <div class="swiper-pagination h-it-w-sl-pagination"></div>
         </div>
       </div>
     </div>
@@ -164,7 +291,7 @@
       <div class="our-customer-love-heading">
         <h3 class="all-headings">Our Customers love us !</h3>
       </div>
-      <div class="image-box">
+      <div class="google-star-image-box">
         <img class="image" src="./bff-images/Group-181.png" alt="">
       </div>
       <div class="our-cus-love-p-sec">
@@ -174,19 +301,19 @@
       </div>
       <div class="our-cus-three-icon-text">
         <div class="our-cus-icon-text">
-          <div>
+          <div class="our-customer-loves-use-icon">
             <img src="./bff-images/Icons01.png" alt="" srcset="">
           </div>
           <p class="our-c-icon-short-desc XXLarge-600">Fornightly Delivery</p>
         </div>
         <div class="our-cus-icon-text">
-          <div>
+          <div class="our-customer-loves-use-icon">
             <img src="./bff-images/Icons02.png" alt="" srcset="">
           </div>
           <p class="our-c-icon-short-desc XXLarge-600">Subscription Based</p>
         </div>
         <div class="our-cus-icon-text">
-          <div>
+          <div class="our-customer-loves-use-icon">
             <img src="./bff-images/Icons03.png" alt="" srcset="">
           </div>
           <p class="our-c-icon-short-desc XXLarge-600">Locally Produced</p>
@@ -241,6 +368,57 @@
           </div>
         </div>
       </div>
+      <div class="tail-wa-three-cards tail-wagingly-slider-section">
+        <div class="swiper tail-wagingly-slider-cont">
+          <div class="swiper-wrapper tail-wagingly-slider-inner-sec">
+            <div class="swiper-slide">
+              <div class="tail-wagingly-card">
+                <div class="tail-w-ca-img">
+                  <img src="./bff-images/beef.png" alt="">
+                </div>
+                <div class="tail-w-ca-title">
+                  <p class="medium-heading-fs">Beef</p>
+                </div>
+                <div class="tail-w-ca-det">
+                  <p class="tail-w-c-det-text medium-400">Our recipes use only the highest Australian quality grass fed beef
+                    meat, blended with nutritious vitamin and mineral-rich offal from Australian beef. </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tail-wagingly-card">
+                <div class="tail-w-ca-img">
+                  <img src="./bff-images/chicken.png" alt="">
+                </div>
+                <div class="tail-w-ca-title">
+                  <p class="medium-heading-fs">Chicken</p>
+                </div>
+                <div class="tail-w-ca-det">
+                  <p class="tail-w-c-det-text medium-400">Our recipes use only the highest Australian quality chicken meat,
+                    blended with nutritious vitamin and mineral-rich offal from Australian chicken.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tail-wagingly-card">
+                <div class="tail-w-ca-img">
+                  <img src="./bff-images/lamb.png" alt="">
+                </div>
+                <div class="tail-w-ca-title">
+                  <p class="medium-heading-fs">Lamb</p>
+                </div>
+                <div class="tail-w-ca-det">
+                  <p class="tail-w-c-det-text medium-400">Our recipes use only the highest Australian quality Lamb meat,
+                    blended with nutritious vitamin and mineral-rich offal from Australian Lamb.</p>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="swiper-button-next tail-wagingly-slide-next-arr"><img src="./bff-images/right-arrow.png" alt=""></div>
+          <div class="swiper-button-prev tail-wagingly-slide-pre-arr"><img src="./bff-images/prev-icon.png" alt=""></div>
+          <div class="swiper-pagination tail-wagingly-slide-pagination"></div>
+        </div>
+      </div>
       <div class="tail-wa-sec-btn xl-button">
         <a href="#" class="button">Explore our Meals</a>
       </div>
@@ -261,13 +439,15 @@
       <div class="starter-pack-product-chart-sec">
         <div class="starter-pack-product">
           <div class="starter-pack-img">
-            <img src="./bff-images/product-img0251.png" alt="">
+            <img src="./bff-images/R3E04996.png" alt="">
           </div>
-          <div class="starter-pack-p-title">
-            <p class="medium-heading-fs">BFF Weekly Starter Pack </p>
-          </div>
-          <div class="starter-pack-p-sm-d large-400-p">
-            <p>$ 3/day (40% off )</p>
+          <div class="starter-pack-product-inner-sec">
+            <div class="starter-pack-p-title">
+              <p class="medium-heading-fs">BFF Weekly Starter Pack </p>
+            </div>
+            <div class="starter-pack-p-sm-d large-400-p">
+              <p>$ 3/day (40% off )</p>
+            </div>
           </div>
         </div>
         <div class="starter-pack-chart">
@@ -311,7 +491,7 @@
             <img src="./bff-images/Subscribe.png" alt="">
           </div>
           <div class="wh-ch-icon-text">
-            <p class="XXLarge-600">Subscribe and get 5% off</p>
+            <p class="why-choose-icon-para XXLarge-600">Subscribe and get 5% off</p>
           </div>
         </div>
         <div class="wh-ch-icont-text">
@@ -319,7 +499,7 @@
             <img src="./bff-images/Flexible-meal.png" alt="">
           </div>
           <div class="wh-ch-icon-text">
-            <p class="XXLarge-600">Flexible Meal Plans </p>
+            <p class="why-choose-icon-para XXLarge-600">Flexible Meal Plans </p>
           </div>
         </div>
         <div class="wh-ch-icont-text">
@@ -327,7 +507,7 @@
             <img src="./bff-images/Door-to-door.png" alt="">
           </div>
           <div class="wh-ch-icon-text">
-            <p class="XXLarge-600">Door-to-door delivery</p>
+            <p class="why-choose-icon-para XXLarge-600">Door-to-door delivery</p>
           </div>
         </div>
         <div class="wh-ch-icont-text">
@@ -335,7 +515,7 @@
             <img src="./bff-images/Your-pet.png" alt="">
           </div>
           <div class="wh-ch-icon-text">
-            <p class="XXLarge-600">Your pet never goes hungry again</p>
+            <p class="why-choose-icon-para XXLarge-600">Your pet never goes hungry again</p>
           </div>
         </div>
       </div>
@@ -474,7 +654,7 @@
                   </div>
                   <div class="te-author-name-time">
                     <p class="te-author-name XXLarge-600">Alicia Thomas</p>
-                    <p class="Small-600-regular">1 month ago</p>
+                    <p class="testimonia-time-val Small-600-regular">1 month ago</p>
                   </div>
                 </div>
               </div>
@@ -490,7 +670,9 @@
                   </div>
                 </div>
                 <div class="te-car-para">
-                  <p class="Small-600-regular">Our two dachshunds loved their meals from Brunswick Fur Food and we will definitely be ordering more! Our eldest dog has just some teeth removed so BFF has been easy to chew and gentle on his gums. Our dogs licked their bowls clean so 5 stars from Hector & Hugo!</p>
+                  <p class="Small-600-regular">Our two dachshunds loved their meals from Brunswick Fur Food and we will
+                    definitely be ordering more! Our eldest dog has just some teeth removed so BFF has been easy to chew
+                    and gentle on his gums. Our dogs licked their bowls clean so 5 stars from Hector & Hugo!</p>
                 </div>
                 <div class="te-author-image-author-name">
                   <div class="tes-author-logo">
@@ -514,7 +696,9 @@
                   </div>
                 </div>
                 <div class="te-car-para">
-                  <p class="Small-600-regular">My picky 8 month old Rottweiler absolutely loves all of Brunswick Fur Food. He can't get enough!!The customer service is outstanding. if you want to give your dog the best food and you want to support a local business please give it try.</p>
+                  <p class="Small-600-regular">My picky 8 month old Rottweiler absolutely loves all of Brunswick Fur
+                    Food. He can't get enough!!The customer service is outstanding. if you want to give your dog the
+                    best food and you want to support a local business please give it try.</p>
                 </div>
                 <div class="te-author-image-author-name">
                   <div class="tes-author-logo">
@@ -526,7 +710,7 @@
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
             <div class="swiper-slide testimonial-det-inner-sec">
               <div class="testimonial-card">
                 <div class="te-ratin-and-right-sig">
@@ -538,7 +722,9 @@
                   </div>
                 </div>
                 <div class="te-car-para">
-                  <p class="Small-600-regular">This is simply unbelievable! Pet shop did exactly what you said It does. I'm good to sgo. Pet shop is great. One dog's horrid breath... gone! One dog from a bit too round" to almost perfect weight</p>
+                  <p class="Small-600-regular">This is simply unbelievable! Pet shop did exactly what you said It does.
+                    I'm good to sgo. Pet shop is great. One dog's horrid breath... gone! One dog from a bit too round"
+                    to almost perfect weight</p>
                 </div>
                 <div class="te-author-image-author-name">
                   <div class="tes-author-logo">
@@ -573,7 +759,8 @@
         <form class="subscribe-email-form" action="">
           <div class="subs-email-inp">
             <label for="email"></label>
-            <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email" required autocomplete="off">
+            <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email" required
+              autocomplete="off">
           </div>
           <div class="subs-email-btn">
             <button class="subscribe-button Large-button ">Subscribe</button>
@@ -590,14 +777,14 @@
         <h5 class="all-headings">Pet Meal FAQ</h5>
       </div>
       <div class="pet-meal-faq-det">
-        <p class="medium-400">3 types of  Meal bowls</p>
+        <p class="medium-400">3 types of Meal bowls</p>
       </div>
       <div class="pet-meal-faq-accordion">
         <div class="inner-accordion-section">
           <div class="accordion">
             <div class="acc-box">
               <div class="headin-op-cl-icon">
-                <p class="medium-400">3 types of  Meal bowls</p>
+                <p class="medium-400">3 types of Meal bowls</p>
                 <div class="iconOpen">
                   <img src="./bff-images/closeicon.png" alt="">
                 </div>
@@ -607,7 +794,8 @@
               </div>
               <!-- Hide-box -->
               <div class="hidden-box">
-                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support Meal Bowls.</p>
+                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support
+                  Meal Bowls.</p>
               </div>
             </div>
             <div class="acc-box">
@@ -622,7 +810,8 @@
               </div>
               <!-- Hide-box -->
               <div class="hidden-box">
-                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support Meal Bowls.</p>
+                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support
+                  Meal Bowls.</p>
               </div>
             </div>
             <div class="acc-box">
@@ -637,7 +826,8 @@
               </div>
               <!-- Hide-box -->
               <div class="hidden-box">
-                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support Meal Bowls.</p>
+                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support
+                  Meal Bowls.</p>
               </div>
             </div>
             <div class="acc-box">
@@ -652,7 +842,8 @@
               </div>
               <!-- Hide-box -->
               <div class="hidden-box">
-                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support Meal Bowls.</p>
+                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support
+                  Meal Bowls.</p>
               </div>
             </div>
             <div class="acc-box">
@@ -667,7 +858,8 @@
               </div>
               <!-- Hide-box -->
               <div class="hidden-box">
-                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support Meal Bowls.</p>
+                <p class="medium-400">We offer 3 types of meal bowls: Single Protein, Multi Protein and Allergy Support
+                  Meal Bowls.</p>
               </div>
             </div>
           </div>
@@ -707,28 +899,40 @@
               <p class="Small-800-b">Join us & save $15 on Starter Pack!</p>
             </div>
           </div>
-          <div class="footer-useful-links-sec">
-            <div class="f-main-link">
-              <p class="XLarge-800">COMPANY</p>
-            </div>
-            <div class="f-link-item">
-              <a class="f-main-link-item small-400" href="#">About Us</a>
-              <a class="f-main-link-item small-400" href="#">Policies</a>
-              <a class="f-main-link-item small-400" href="#">Contact Us</a>
-              <a class="f-main-link-item small-400" href="#">Login</a>
-              <a class="f-main-link-item small-400" href="#">Sign Up</a>
+          <div class="loging-and-signup-button">
+            <div class="footer-loging-singup-inner-sec">
+              <div class="footer-signup-btn">
+                <a href="#" class="Large-button">Sign Up</a>
+              </div>
+              <div class="footer-loging-btn">
+                <a href="#" class="Large-button">Log In</a>
+              </div>
             </div>
           </div>
-          <div class="footer-useful-links-sec">
-            <div class="f-main-link">
-              <p class="XLarge-800">USEFUL LINKS</p>
+          <div class="footer-links-two-section">
+            <div class="footer-useful-links-sec">
+              <div class="f-main-link">
+                <p class="XLarge-800">COMPANY</p>
+              </div>
+              <div class="f-link-item">
+                <a class="f-main-link-item small-400" href="#">About Us</a>
+                <a class="f-main-link-item small-400" href="#">Policies</a>
+                <a class="f-main-link-item small-400" href="#">Contact Us</a>
+                <a class="f-main-link-item small-400" href="#">Login</a>
+                <a class="f-main-link-item small-400" href="#">Sign Up</a>
+              </div>
             </div>
-            <div class="f-link-item">
-              <a class="f-main-link-item small-400" href="#">Starter Pack</a>
-              <a class="f-main-link-item small-400" href="#">Bowl Plans</a>
-              <a class="f-main-link-item small-400" href="#">FAQ</a>
-              <a class="f-main-link-item small-400" href="#">Blog</a>
-              <a class="f-main-link-item small-400" href="#">Newsletter</a>
+            <div class="footer-useful-links-sec">
+              <div class="f-main-link">
+                <p class="XLarge-800">USEFUL LINKS</p>
+              </div>
+              <div class="f-link-item">
+                <a class="f-main-link-item small-400" href="#">Starter Pack</a>
+                <a class="f-main-link-item small-400" href="#">Bowl Plans</a>
+                <a class="f-main-link-item small-400" href="#">FAQ</a>
+                <a class="f-main-link-item small-400" href="#">Blog</a>
+                <a class="f-main-link-item small-400" href="#">Newsletter</a>
+              </div>
             </div>
           </div>
         </div>
@@ -759,6 +963,7 @@
       </footer>
     </div>
   </div>
+
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

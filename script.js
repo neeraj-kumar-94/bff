@@ -1,3 +1,35 @@
+
+// how it works section card slider
+var swiper = new Swiper(".how-it-works-card-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+// tail wagingly section
+
+var swiper = new Swiper(".tail-wagingly-slider-cont", {
+  spaceBetween: 30,
+      hashNavigation: {
+        watchState: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
 // Anchor button
 document.querySelectorAll(".button").forEach((button) => {
   button.addEventListener("click", function (event) {
@@ -16,13 +48,13 @@ var swiper = new Swiper(".testimonial-slide-inner-sec", {
     clickable: true,
   },
   breakpoints: {
-    640: {
+    400: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
+    400: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 2.5,
