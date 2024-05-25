@@ -417,15 +417,18 @@
 
 .wh-ch-four-icont-text {
   width: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  grid-template-rows: auto;
   row-gap: 48px;
 }
 
 .wh-ch-icont-text {
-  width: 35%;
+  /* width: 35%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -856,7 +859,7 @@
 /* footer login and signup button view mobile screen */
 .loging-and-signup-button {
   display: none;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .footer-loging-singup-inner-sec {

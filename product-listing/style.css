@@ -1,0 +1,62 @@
+@import url(../css/theme.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 80px 40px;
+}
+
+.main-container .xl-width{
+    width: 1280px;
+}
+
+/* Our Bowl Plans section */
+.our-bowl-plan-sec{
+    background-color: var(--cont-bg-sec-color);
+}
+.our-bowl-plan-inner-sec{
+    display: flex;
+}
+
+.our-bowl-details-sec {
+    row-gap: 100px;
+}
+
+.product{
+    background-color: var(--cont-bg-sec-color);
+    width: 303px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px 13.66px;
+}
+
+.product-quantity span{
+   color: var(--Grey400);
+}
+
+.product-icon-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.product-learn-more-btn{
+    padding: auto;
+}
+
+.product-learn-more-btn a{
+    padding: 13px 0;
+}

@@ -34,11 +34,11 @@
     flex-direction: column;
   }
 
-  .h-h-para-head .header-heading{
+  .h-h-para-head .header-heading {
     width: 70%;
   }
 
-  .home-header-melborn{
+  .home-header-melborn {
     display: inline;
   }
 
@@ -57,7 +57,7 @@
     width: 100%;
   }
 
-  .h-header-icon-text .h-icon-t{
+  .h-header-icon-text .h-icon-t {
     font-size: var(--xlarge-reg-fs);
     line-height: var(--xlarge-reg-lh);
   }
@@ -98,8 +98,8 @@
   }
 }
 
-@media (max-width: 420px){
-  .h-h-para-head .header-heading{
+@media (max-width: 420px) {
+  .h-h-para-head .header-heading {
     width: 90%;
   }
 }
@@ -334,7 +334,6 @@
     row-gap: 24px;
   }
 
-  /* card section */
 }
 
 /* Our Customers love us ! */
@@ -432,6 +431,27 @@
   }
 }
 
+@media(max-width:1300px){
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 80px 40px;
+  }
+
+  .main-container .xl-width {
+    width: 100%;
+  }
+
+  .why-choose-icon-para {
+    font-size: var(--Large-400-fs);
+  line-height: var(--Large-400-lh);
+  letter-spacing: var(--Large-400-ls);
+  font-weight: var(--regular);
+  }
+}
+
 /* Why Choose us ? section */
 @media (max-width: 576px) {
   .w-choose-us-sec .w-ch-inner-sec {
@@ -506,7 +526,6 @@
 }
 
 /* Footer section */
-
 @media (max-width: 576px) {
   .footer-inner-sec {
     justify-content: center;
@@ -622,8 +641,7 @@
   /* login and signup button */
   .loging-and-signup-button {
     display: block;
-    height: 70px;
-    /* padding: 21px 0 20px 0; */
+    padding: 10px 0 16px 0;
   }
 
 }
@@ -673,7 +691,7 @@
   }
 
   .headin-op-cl-icon p {
-    padding: 17px 17px 17px 17px;
+    padding: 17px 48px 17px 17px;
   }
 
   /* accordion section end */
@@ -690,11 +708,11 @@
   }
 
   .tail-wagingly-card {
-    width: 100%; 
+    width: 100%;
     height: 320px;
     display: flex;
     justify-content: space-between;
-    position: relative; 
+    position: relative;
   }
 
   .tail-w-ca-img {
@@ -711,14 +729,10 @@
 
   .tail-w-ca-title {
     position: absolute;
-    top: 150px; 
+    top: 150px;
   }
 
-  .tail-w-ca-det{
+  .tail-w-ca-det {
     margin-top: -60px;
-  } 
-
-
-  /* Subscribe to our Email section 
-  ==================================*/
+  }
 }
