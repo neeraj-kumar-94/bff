@@ -53,7 +53,7 @@ var swiper = new Swiper(".testimonial-slide-inner-sec", {
       spaceBetween: 20,
     },
     400: {
-      slidesPerView: 1.3,
+      slidesPerView: 1.2,
       spaceBetween: 20,
     },
     1024: {

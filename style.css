@@ -22,6 +22,10 @@
   width: 80%;
 }
 
+.home-header-melborn{
+  display: block;
+}
+
 .h-h-para-head .header-heading {
   margin-bottom: 24px;
 }
@@ -265,9 +269,7 @@
 .tail-wagingly-slider-section {
   padding: 0 40px;
   display: none;
-  text-align: center;
-  /* height: 313px; */
-  /* border: 1px solid blue; */
+  text-align: center; 
 }
 
 .tail-wagingly-slider-cont {
@@ -288,6 +290,7 @@
   padding: 5px;
   color: white;
   z-index: 2;
+  margin-top: 10px;
 }
 
 .tail-wagingly-slide-next-arr img {
@@ -306,6 +309,9 @@
   padding: 5px;
   color: white;
   z-index: 2;
+  right: unset;
+  bottom: 40px;
+  margin-top: 10px;
 }
 
 .tail-wagingly-slide-pre-arr img {
@@ -320,8 +326,11 @@
   position: absolute;
   bottom: 0px;
   display: block;
-  /* border: 1px solid red; */
-  margin-bottom: 160px;
+  margin-bottom: 100px;
+}
+
+.tail-wagingly-slide-pagination .swiper-pagination-bullet{
+  background-color: var(--Sec_brown);
 }
 
 /* Give our Starter Pack a go ! section  */
@@ -817,6 +826,11 @@
 
 .policy-etc-link ul li:last-child {
   border-right: none;
+}
+
+/* mobile view paragraph */
+.footer-mobile-text-para{
+  display: none;
 }
 
 /* copy right sec */

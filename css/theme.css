@@ -195,10 +195,10 @@ html{
 /* Font size 16px color #7D5C4E */
 .Small-600{
   font-size: var(--lg-icon-text-fs);
-  font-weight: var(--semi-bold);
   letter-spacing: var(--lg-icon-text-ls);
-  color: var(--Sec_brown);
   line-height: var(--lg-icon-text-lh);
+  color: var(--Sec_brown);
+  font-weight: var(--semi-bold);
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
 } 
