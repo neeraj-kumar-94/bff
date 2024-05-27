@@ -412,7 +412,7 @@
 
 .w-choose-us-sec {
   background-color: var(--cont-bg-sec-color);
-  background-image: url(../bff-images/h-bg-image.png);
+  background-image: url(./bff-images/h-bg-image.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -650,7 +650,7 @@
   padding-top: 80px;
 
   /* bg image  */
-  background-image: url(../bff-images/active-campaign-bg-image.png);
+  background-image: url(./bff-images/active-campaign-bg-image.png);
   background-position: center;
   background-repeat: no-repeat;
 }
