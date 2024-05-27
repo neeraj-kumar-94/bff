@@ -264,6 +264,11 @@
   font-family: "Source Serif 4", serif;
 }
 
+/* xl-image */
+.tail-w-ca-img .beef-image-lg{
+  display: none;
+}
+
 /* card display none 
   cards slider css code */
 .tail-wagingly-slider-section {
@@ -396,6 +401,11 @@
 
 .st-p-ch-details .st-p-ch-det-text {
   text-align: center;
+}
+
+/* web image */ 
+.starter-pack-img .starter-pack-lg-img{
+    display: none;
 }
 
 /* Why Choose us ? section */

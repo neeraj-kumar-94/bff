@@ -259,6 +259,15 @@
   }
 }
 
+@media(max-width:1100px) {
+  .our-p-title p {
+    font-size: var(--Large-400-fs);
+    line-height: var(--Large-400-lh);
+    letter-spacing: var(--Large-400-ls);
+    font-weight: var(--bold);
+  }
+}
+
 @media(max-width: 576px) {
   .our-b-plan-inner-sec {
     row-gap: 24px;
@@ -383,6 +392,25 @@
 }
 
 /* Give our Starter Pack a go ! section */
+@media(max-width:1400px){
+  .starter-pack-img .starter-pack-xl-img{
+    display: none;
+  }
+  
+  .starter-pack-img .starter-pack-lg-img{
+      display: block;
+  }
+}
+
+@media(max-width:1100px){
+  .starter-pack-product-chart-sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+  }
+}
+
 @media(max-width: 576px) {
   .starter-pack-inner-sec {
     row-gap: 24px;
@@ -431,24 +459,12 @@
   }
 }
 
-@media(max-width:1300px){
-  .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 80px 40px;
-  }
-
-  .main-container .xl-width {
-    width: 100%;
-  }
-
+@media(max-width:1300px) {
   .why-choose-icon-para {
     font-size: var(--Large-400-fs);
-  line-height: var(--Large-400-lh);
-  letter-spacing: var(--Large-400-ls);
-  font-weight: var(--regular);
+    line-height: var(--Large-400-lh);
+    letter-spacing: var(--Large-400-ls);
+    font-weight: var(--regular);
   }
 }
 
@@ -460,7 +476,7 @@
   }
 
   .wh-ch-four-icont-text {
-    width: 240px;
+    width: 247px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -647,6 +663,16 @@
 }
 
 /* Tail-waggingly delicious: Our dog food recipe */
+@media(max-width:1410px){
+  .tail-w-ca-img .beef-image-xl{
+      display: none;
+  }
+
+  .tail-w-ca-img .beef-image-lg{
+    display: block;
+  }
+}
+
 @media(max-width:1300px) {
   .tail-wagingly-card {
     width: 33.33%;
