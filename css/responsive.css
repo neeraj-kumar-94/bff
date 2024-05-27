@@ -168,7 +168,7 @@
   }
 
   .testimonial-sec {
-    padding: 32px 0px 32px 0px;
+    padding: 32px 0px 40px 0px;
   }
 
   .testimonial-det-inner-sec {
@@ -177,9 +177,9 @@
     padding: 21px 16px;
   }
 
-  .testimonial-slides-sec {
+  /* .testimonial-slides-sec {
     padding-left: 80px;
-  }
+  } */
 
   .te-car-para p {
     font-size: var(--xlarge-reg-fs);

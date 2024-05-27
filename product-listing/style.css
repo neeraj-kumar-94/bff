@@ -5,30 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
-.main-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 80px 40px;
+
+/* Breadcrumb section */
+.breadcrumb-sec{
+    padding: 0;
 }
 
-.main-container .xl-width{
-    width: 1280px;
+.breadcrumb-inner-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--cont-bg-sec-color);
+    padding: 15px 16px;
 }
 
 /* Our Bowl Plans section */
-.our-bowl-plan-sec{
-    background-color: var(--cont-bg-sec-color);
-}
+
 .our-bowl-plan-inner-sec{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-bowl-details-sec {
-    row-gap: 100px;
+    padding-right: 43px;
+}
+
+.our-bowl-detail-paragraph p:first-child{
+    padding: 24px 0;
+}
+
+/* Our Bowl Plans section */
+.product-section{
+    padding-top: 0;
+}
+
+.four-product{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    column-gap: 22px;
 }
 
 .product{
@@ -40,7 +56,14 @@
     align-items: center;
     flex-direction: column;
     padding: 12px 13.66px;
+    border: .5px solid rgba(0, 0, 0, 0.22);
+    border-radius: 8px;
 }
+
+.product-details{
+    width: 100%;
+    padding: 0px 13px; 
+} 
 
 .product-quantity span{
    color: var(--Grey400);
@@ -51,6 +74,32 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 4px;
+}
+
+.product-price-text{
+    padding: 12px 0;
+    color: var(--brown);
+}
+
+.product-price-text .from-word{
+    font-size: var(--XSmall-400-fs);
+    line-height: var(--XSmall-400-lh);
+    font-weight: var(--regular);
+    color: var(--brown);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.product-quantity-and-title{
+    padding: 10px 12px 10px 10px;
+    border: 1px solid var(--LightGreen);
+    margin: 12px 0;
+    border-radius: 4px;
+}
+
+.product-quantity{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
 }
 
 .product-learn-more-btn{

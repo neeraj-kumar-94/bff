@@ -134,7 +134,7 @@
   top: var(--swiper-pagination-top, auto);
   left: 50%;
   transform: translateX(-50%);
-  width: 30%;
+  width: 38%;
 }
 
 .h-it-w-sl-pagination .swiper-pagination-bullet {
@@ -535,7 +535,7 @@
 
 .testimonial-sec {
   background-color: var(--cont-bg-sec-color);
-  padding: 80px 0px 60px 0px;
+  /* padding: 80px 0px 60px 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,9 +553,9 @@
   margin-bottom: 59px;
 }
 
-.testimonial-slides-sec {
+/* .testimonial-slides-sec {
   padding-left: 324px;
-}
+} */
 
 .testimonial-slide-inner-sec {
   width: 100%;
