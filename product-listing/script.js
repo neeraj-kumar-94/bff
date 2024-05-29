@@ -1,4 +1,5 @@
 // navbar
+// navbar
 document.addEventListener('DOMContentLoaded', function () {
   const menuIcon = document.getElementById('humburger-icon');
   const closeIcon = document.getElementById('close-icon');
@@ -17,75 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// how it works section card slider
-var swiper = new Swiper(".how-it-works-card-slider", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-// tail wagingly section
-
-var swiper = new Swiper(".tail-wagingly-slider-cont", {
-  spaceBetween: 30,
-      hashNavigation: {
-        watchState: true,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-// Anchor button
-document.querySelectorAll(".button").forEach((button) => {
-  button.addEventListener("click", function (event) {
-    event.preventDefault();
-    // Your custom code here
-    console.log("Button clicked");
-  });
-});
-
-// testimonial section
-var swiper = new Swiper(".testimonial-slide-inner-sec", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    450: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    450: {
-      slidesPerView: 1.5,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 30,
-    },
-    1570: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
-});
-
-// accordion
+// accordion section
 const ourItemDiv = document.getElementsByClassName("acc-box");
 const openIcon = document.getElementsByClassName("iconOpen");
 const closeIcon = document.getElementsByClassName("iconClose");
@@ -119,4 +52,3 @@ for (let i = 0; i < ourItemDiv.length; i++) {
     }
   });
 }
-

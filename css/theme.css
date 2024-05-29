@@ -132,7 +132,7 @@ html {
   font-family: 'Source Serif Pro', serif;
 }
 
-/* paragraph 24px 700 color: 7D5C4E*/
+/* paragraph 24px 700 color: #7D5C4E*/
 .XLarge-800 {
   font-size: var(--XLarge-400-fs);
   font-weight: var(--bold);
@@ -143,7 +143,7 @@ html {
 }
 
 
-/* paragraph 24px 400 XLarge-400*/
+/* paragraph 24px 400 XLarge-400 color:#7D5C4E*/
 .xlarge-p {
   font-size: var(--XLarge-400-fs);
   font-weight: var(--regular);
@@ -206,7 +206,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Font size 16px color #7D5C4E */
+/* Font size 16px color #7D5C4E (semi-bold)*/
 .Small-600 {
   font-size: var(--lg-icon-text-fs);
   letter-spacing: var(--lg-icon-text-ls);
@@ -217,7 +217,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* Font size 16px color #7D5C4E */
+/* Font size 16px color #7D5C4E (regular)*/
 .Small-600-regular {
   font-size: var(--lg-icon-text-fs);
   font-weight: var(--regular);
@@ -308,6 +308,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
 /* Larger icon text 16px */
 .lg-icon-text {
   font-size: var(--lg-icon-text-fs);
@@ -315,6 +316,30 @@ html {
   font-weight: var(--semi-bold);
   letter-spacing: var(--lg-icon-text-ls);
   color: var(--Grey600);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* breadcrumb classes */
+.link-breadcrumb{
+  font-size: var(--lg-icon-text-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--lg-icon-text-ls);
+  color: var(--Grey600);
+  line-height: var(--lg-icon-text-lh);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.current-page-name{
+  font-size: var(--lg-icon-text-fs);
+  font-weight: var(--regular);
+  letter-spacing: var(--lg-icon-text-ls);
+  color: var(--Sec_brown);
+  line-height: var(--lg-icon-text-lh);
+  text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -394,21 +419,7 @@ html {
   }
 }
 
-
-@media (max-width:1250px) {
-  .main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 80px;
-  }
-
-  .main-container .xl-width {
-    width: 100%;
-  }
-}
-
+ 
 @media (max-width: 576px) {
   .main-container {
     padding: 32px 24px;

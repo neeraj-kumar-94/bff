@@ -262,12 +262,7 @@
   line-height: var(--all-headings-line-height);
   color: var(--heading-color);
   font-family: "Source Serif 4", serif;
-}
-
-/* xl-image */
-.tail-w-ca-img .beef-image-lg{
-  display: none;
-}
+} 
 
 /* card display none 
   cards slider css code */
@@ -404,9 +399,9 @@
 }
 
 /* web image */ 
-.starter-pack-img .starter-pack-lg-img{
+/* .starter-pack-img .starter-pack-lg-img{
     display: none;
-}
+} */
 
 /* Why Choose us ? section */
 
@@ -518,6 +513,7 @@
   color: transparent;
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 
 .gradient-text::after {
@@ -760,128 +756,4 @@
 
 .active .hidden-box {
   display: block;
-}
-
-
-/* Footer section 
-  ===================*/
-.footer-section {
-  background-color: var(--Grey100);
-}
-
-.footer-inner-sec {
-  padding: 0 40px;
-}
-
-.footer-det-three-sec {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  padding: 0 56px 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, .26);
-}
-
-.footer-links-two-section {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-icon-text-two-sec {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 44px;
-}
-
-.footer-icon-text-first-sec {
-  text-align: center;
-}
-
-.footer-logo-det-sec {
-  text-align: center;
-  gap: 100px;
-}
-
-.f-logo-sm-lg {
-  margin-bottom: 67px;
-}
-
-.footer-useful-links-sec {
-  padding-top: 14px;
-}
-
-.f-main-link {
-  margin-bottom: 60px;
-}
-
-.f-link-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.f-main-link-item {
-  padding-bottom: 16px;
-}
-
-.policy-etc-link ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.policy-etc-link ul li {
-  border-right: 1px solid var(--Grey800);
-  padding: 0 10px;
-  white-space: nowrap;
-}
-
-.policy-etc-link ul li:last-child {
-  border-right: none;
-}
-
-/* mobile view paragraph */
-.footer-mobile-text-para{
-  display: none;
-}
-
-/* copy right sec */
-.footer-copy-right-sec {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 128px 5px 35px;
-}
-
-.footer-facebook-insta-logo {
-  width: 66px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-ins-logo {
-  text-decoration: none;
-}
-
-/* footer login and signup button view mobile screen */
-.loging-and-signup-button {
-  display: none;
-  /* padding: 20px; */
-}
-
-.footer-loging-singup-inner-sec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  column-gap: 20px;
-}
-
-.footer-signup-btn a,
-.footer-loging-btn a {
-  padding: 13px 42px;
-  white-space: nowrap;
 }

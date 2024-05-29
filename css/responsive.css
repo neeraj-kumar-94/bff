@@ -389,18 +389,7 @@
     width: 100%;
     height: 100%;
   }
-}
-
-/* Give our Starter Pack a go ! section */
-@media(max-width:1400px){
-  .starter-pack-img .starter-pack-xl-img{
-    display: none;
-  }
-  
-  .starter-pack-img .starter-pack-lg-img{
-      display: block;
-  }
-}
+} 
 
 @media(max-width:1100px){
   .starter-pack-product-chart-sec {
@@ -541,138 +530,8 @@
   }
 }
 
-/* Footer section */
-@media (max-width: 576px) {
-  .footer-inner-sec {
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 312px;
-  }
-
-  .footer-det-three-sec {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0px 18px;
-  }
-
-  .f-logo-sm-lg .f-logo-lg {
-    font-size: var(--lg-icon-text-fs);
-    line-height: var(--lg-icon-text-lh);
-    letter-spacing: var(--lg-icon-text-ls);
-    font-weight: var(--bold);
-  }
-
-  .footer-useful-links-sec {
-    padding-top: 0;
-  }
-
-  .footer-logo-det-sec {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0px;
-  }
-
-  .login-signup-mobile-link {
-    display: none;
-  }
-
-  .mobile-newsletter-btn {
-    display: block;
-  }
-
-  .f-logo-sm-lg .f-logo-sm {
-    font-size: var(--xlarge-reg-fs);
-    font-weight: var(--regular);
-  }
-
-  .footer-links-two-section {
-    width: 263px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-  .f-main-link {
-    margin-bottom: 14px;
-  }
-
-  .footer-copy-right-sec {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 24px 0 0;
-  }
-
-  .f-copy-right-text {
-    order: 1;
-    padding-top: 16px;
-    padding-bottom: 4px;
-  }
-
-  .policy-etc-link {
-    order: 1;
-  }
-
-  .f-logo-sm-lg {
-    margin-bottom: 24px;
-  }
-
-  .f-main-link-item {
-    padding-bottom: 4px;
-    font-size: var(--xlarge-reg-fs);
-    line-height: var(--xlarge-reg-lh);
-  }
-
-  .copy-right-txt {
-    font-size: var(--xlarge-reg-fs);
-    line-height: var(--xlarge-reg-lh);
-  }
-
-  .footer-links-top-h {
-    font-size: var(--lg-icon-text-fs);
-    letter-spacing: var(--lg-icon-text-ls);
-    line-height: var(--lg-icon-text-lh);
-  }
-
-  .footer-icon-text-two-sec {
-    margin-bottom: 24px;
-    width: 286px;
-  }
-
-  .footer-mobile-text-para {
-    font-size: var(--xlarge-reg-fs);
-    line-height: var(--xlarge-reg-lh);
-    display: block;
-    padding: 24px 0 10px 0;
-  }
-
-  /* login and signup button */
-  .loging-and-signup-button {
-    display: block;
-    padding: 10px 0 16px 0;
-  }
-
-}
 
 /* Tail-waggingly delicious: Our dog food recipe */
-@media(max-width:1410px){
-  .tail-w-ca-img .beef-image-xl{
-      display: none;
-  }
-
-  .tail-w-ca-img .beef-image-lg{
-    display: block;
-  }
-}
-
 @media(max-width:1300px) {
   .tail-wagingly-card {
     width: 33.33%;

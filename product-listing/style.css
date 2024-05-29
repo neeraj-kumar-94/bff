@@ -1,27 +1,34 @@
 @import url(../css/theme.css);
+@import url(../css/nav.css);
+@import url(../css/footer.css);
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* navbar section start  */
+
+/* navbar section end  */
+
 /* Breadcrumb section */
-.breadcrumb-sec{
+.breadcrumb-sec {
     padding: 0;
 }
 
-.breadcrumb-inner-sec{
+.breadcrumb-inner-sec {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: var(--cont-bg-sec-color);
     padding: 15px 16px;
+    column-gap: 16px;
 }
 
 /* Our Bowl Plans section */
-
-.our-bowl-plan-inner-sec{
+.our-bowl-plan-inner-sec {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,25 +38,25 @@
     padding-right: 43px;
 }
 
-.our-bowl-detail-paragraph p:first-child{
+.our-bowl-detail-paragraph p:first-child {
     padding: 24px 0;
 }
 
 /* Our Bowl Plans section */
-.product-section{
+.product-section {
     padding-top: 0;
 }
 
-.four-product{
+.four-product {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     column-gap: 22px;
 }
 
-.product{
+.product {
     background-color: var(--cont-bg-sec-color);
-    width: 303px;
+    /* width: 303px; */
     height: auto;
     display: flex;
     justify-content: center;
@@ -60,28 +67,28 @@
     border-radius: 8px;
 }
 
-.product-details{
+.product-details {
     width: 100%;
-    padding: 0px 13px; 
-} 
-
-.product-quantity span{
-   color: var(--Grey400);
+    padding: 0px 13px;
 }
 
-.product-icon-text{
+.product-quantity span {
+    color: var(--Grey400);
+}
+
+.product-icon-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 4px;
 }
 
-.product-price-text{
+.product-price-text {
     padding: 12px 0;
     color: var(--brown);
 }
 
-.product-price-text .from-word{
+.product-price-text .from-word {
     font-size: var(--XSmall-400-fs);
     line-height: var(--XSmall-400-lh);
     font-weight: var(--regular);
@@ -89,23 +96,228 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.product-quantity-and-title{
+.product-quantity-and-title {
     padding: 10px 12px 10px 10px;
     border: 1px solid var(--LightGreen);
     margin: 12px 0;
     border-radius: 4px;
 }
 
-.product-quantity{
+.product-quantity {
     display: flex;
     justify-content: space-between;
     padding-top: 8px;
 }
 
-.product-learn-more-btn{
+.product-learn-more-btn {
     padding: auto;
 }
 
-.product-learn-more-btn a{
+.product-learn-more-btn a {
     padding: 13px 0;
 }
+
+/* bowl-details-section */
+.bowl-details-section {
+    background-color: var(--cont-bg-sec-color);
+}
+
+.bowl-detail-inner-sec {
+    background-image: url(./images/middle-section.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bowl-details-three-sec {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.bowl-detail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.b-image-and-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bowl-img-and-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bowl-heading p {
+    color: var(--brown);
+}
+
+/* Subscribe to our Email section start 
+========================================*/
+.subscribe-email-sec {
+    padding: 0;
+}
+
+.subs-email-inner-sec {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 48px;
+    height: 570px;
+    padding-top: 80px;
+    background-image: url(./images/active-campaign-bg-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe-email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.subs-email-inp .email-input {
+    color: var(--Grey400);
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--Light_Rose_Fog);
+    outline: none;
+    width: 388px;
+    box-sizing: border-box;
+}
+
+.subs-email-inp .email-input:focus {
+    border: 1px solid var(--Light_Rose_Fog);
+}
+
+.subs-email-btn .subscribe-button {
+    border: none;
+    outline: none;
+    padding: 15px 51px;
+    margin-left: -4px;
+}
+
+/* Subscribe to our Email section */
+@media(max-width:576px) {
+    .subscribe-email-sec {
+      padding: 0 24px;
+      text-align: center;
+    }
+  
+    .subs-email-inner-sec {
+      row-gap: 24px;
+      height: auto;
+      padding-top: 32px;
+      padding-bottom: 130px;
+      background-size: contain;
+      background-position: bottom;
+    }
+  
+    .subs-email-inp .email-input {
+      padding: 9px 10px;
+      width: 220px;
+    }
+  
+    .subs-email-btn .subscribe-button {
+      padding: 13px 13px;
+      margin-left: -4px;
+    }
+  
+    .subs-email-btn .subscribe-button button {
+      font-size: var(--lg-icon-text-fs);
+    }
+  }
+
+/* Subscribe to our Email section end */ 
+
+/* accordion section start */
+/* Pet Meal FAQ */
+.pet-meal-faq-sec {
+    background-color: var(--cont-bg-sec-color);
+  }
+  
+  .pet-meal-faq-inner-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  
+  .pet-meal-faq-det {
+    margin-bottom: 24px;
+  }
+  
+  /* ------- */
+  .pet-meal-faq-accordion {
+    width: 83%;
+  }
+  
+  .inner-accordion-section {
+    width: 100%;
+    background-color: #FDF8F7;
+  }
+  
+  .acc-box {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    position: relative;
+    background-color: var(--NeroWhite);
+  }
+  
+  .accordion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .headin-op-cl-icon {
+    position: relative;
+  }
+  
+  .headin-op-cl-icon p {
+    position: relative;
+    padding: 17px;
+  }
+  
+  .iconOpen {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .iconClose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .hidden-box {
+    display: none;
+    padding: 0px 40px 16px 16px;
+  }
+  
+  .hidden-box p {
+    color: var(--heading-color);
+  }
+  
+  .active .hidden-box {
+    display: block;
+  }
+
+  
