@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Catalogue</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link css file -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -69,7 +71,8 @@
             <div class="sidebar-links-sec">
                 <ul class="slider-links-inner-sec">
                     <li><a href="./index.html" class="sidebar-link">Home</a></li>
-                    <li><a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html" class="sidebar-link">Our Meals</a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html"
+                            class="sidebar-link">Our Meals</a></li>
                     <li><a href="#" class="sidebar-link">Give it a Go</a></li>
                     <li><a href="#" class="sidebar-link">Order History</a></li>
                     <li><a href="#" class="sidebar-link">Subscription Policy </a></li>
@@ -90,271 +93,140 @@
             <div class="breadcrumb-image">
                 <img src="./images/breadcrub-icon.png" alt="">
             </div>
+            <div class="home-link">
+                <a href="#" class="link-breadcrumb">Product Catalogue</a>
+            </div>
+            <div class="breadcrumb-image">
+                <img src="./images/breadcrub-icon.png" alt="">
+            </div>
             <div class="product-cat">
                 <p class="current-page-name">Product Catalogue</p>
             </div>
         </div>
     </div>
-    <!-- Our Bowl Plans section -->
-    <div class="our-bowl-plan-sec main-container">
-        <div class="our-bowl-plan-inner-sec xl-width">
-            <div class="our-bowl-details-sec">
-                <div class="our-bowl-heading">
-                    <h1 class="h1-heading">Our Bowl Plans</h1>
+    <!-- product tab buttons -->
+    <div class="prodcut-tab-buttons-section main-container">
+        <div class="product-tab-buttons-inner-section xl-width">
+            <div class="product-tab-buttons">
+                <div class="tab-btn" data-tabs="beef">
+                    <button>Beef</button>
+                    <span class="button-underline"></span>
                 </div>
-                <div class="our-bowl-detail-paragraph">
-                    <p class="xlarge-p">
-                        Select a single meat protein source if your pet is has certain known allergies. You'll be able
-                        to simplify diet and provides consistency to your otherwise fussy pet.
-                    </p>
-                    <p class="xlarge-p">
-                        Select a multiple meat protein source if your doggo enjoys variety. At BFF we create several
-                        recipes and we recommend alternating between a variety of food sources to improve your pup's gut
-                        biodiversity.
-                    </p>
+                <div class="tab-btn" data-tabs="chicken">
+                    <button>Chicken</button>
+                    <span class="button-underline"></span>
                 </div>
-            </div>
-            <div class="our-bowl-dog-image">
-                <img src="./images/product-listing-page-header-img.png" alt="">
+                <div class="tab-btn" data-tabs="lamb">
+                    <button>Lamb</button>
+                    <span class="button-underline"></span>
+                </div>
+                <div class="tab-btn" data-tabs="variety">
+                    <button>Variety</button>
+                    <span class="button-underline"></span>
+                </div>
             </div>
         </div>
     </div>
+    <!-- product information section -->
+    <div class="tab-container" id="beef">
+        <div class="slider-and-details">
+            <div class="slider-and-details-inner-sec">
+                <div class="image-slider-sec">
+                    <div class="swiper product-image-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-slide">
+                                    <img src="./images/product-image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slide">
+                                    <img src="./images/product-image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonia-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="product-detail-by-btn">
+                    <div class="product-title-icon">
+                        <div class="product-title">
+                            <h2 class="all-headings">BEEF Bowl</h2>
+                        </div>
+                        <div class="product-icon">
+                            <img src="./images/beef-Icons.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-para">
+                        <p class="large-400-p">
+                            Our recipes use only the highest Australian quality grass fed beef meat, blended with nutritious vitamin and mineral-rich offal from Australian beef.In addition, goodness of free range eggs provides the most balanced source or protein for your fur baby.  
+                        </p>
+                    </div>
+                    <div class="proceed-to-by-btn">
+                        <a href="#" class="Large-button">Proceed to Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-container" id="chicken">
+        <div class="slider-and-details">
+            <div class="slider-and-details-inner-sec">
+                <div class="image-slider-sec">
+                    <div class="swiper product-image-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-slide">
+                                    <img src="./images/product-image.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slide">
+                                    <img src="./images/product-image.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonia-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="product-detail-by-btn">
+                    <div class="product-title-icon">
+                        <div class="product-title">
+                            <h2 class="all-headings">BEEF Chicken</h2>
+                        </div>
+                        <div class="product-icon">
+                            <img src="./images/beef-Icons.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-para">
+                        <p class="large-400-p">
+                            Our recipes use only the highest Australian quality grass fed beef meat, blended with nutritious vitamin and mineral-rich offal from Australian beef.In addition, goodness of free range eggs provides the most balanced source or protein for your fur baby.  
+                        </p>
+                    </div>
+                    <div class="proceed-to-by-btn">
+                        <a href="#" class="Large-button">Proceed to Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="tab-container" id="chicken">
+            <ul class="footer-tab-links">
+                <li class="footer-country-name">
+                    <a href="#">
+                        <span>apple</span>
+                        <span>Pet-friendly rentals</span>
+                    </a>
+                </li>
+                <li class="footer-country-name">
+                    <a href="#">
+                        <span>banana</span>
+                        <span>Holiday rentals</span>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
 
-    <!-- Product section -->
-    <div class="product-section main-container">
-        <div class="product-inner-section xl-width">
-            <div class="our-bowl-heading-product-sec">
-                <h1 class="h1-heading">Our Bowl Plans</h1>
-            </div>
-            <div class="four-product">
-                <div class="product">
-                    <div class="product-image">
-                        <img src="./images/beef-image.png" alt="">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-name-and-price">
-                            <p class="large-400-p-brown">BFF Beef Bowl</p>
-                            <p class="product-price-text Small-800-b"><span class="from-word">From</span> $37.5/week
-                            </p>
-                        </div>
-                        <div class="product-icon-text">
-                            <img src="./images/fortnighlyIcons.png" alt="">
-                            <p class="XSmall-400-grey400">fortnightly delivery</p>
-                        </div>
-                        <div class="product-quantity-and-title">
-                            <div class="product-qua-t">
-                                <p class="XSmall-400-grey400">available sizes (gram per day)</p>
-                            </div>
-                            <div class="product-quantity">
-                                <span class="small-400">225g</span>
-                                <span class="small-400">450g</span>
-                                <span class="small-400">650g</span>
-                                <span class="small-400">900g</span>
-                            </div>
-                        </div>
-                        <div class="product-learn-more-btn">
-                            <a class="Large-button" href="#">Learn More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <img src="./images/chicken-image.png" alt="">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-name-and-price">
-                            <p class="large-400-p-brown">BFF Chicken Bowl</p>
-                            <p class="product-price-text Small-800-b"><span class="from-word">From</span> $37.5/week
-                            </p>
-                        </div>
-                        <div class="product-icon-text">
-                            <img src="./images/fortnighlyIcons.png" alt="">
-                            <p class="XSmall-400-grey400">fortnightly delivery</p>
-                        </div>
-                        <div class="product-quantity-and-title">
-                            <div class="product-qua-t">
-                                <p class="XSmall-400-grey400">available sizes (gram per day)</p>
-                            </div>
-                            <div class="product-quantity">
-                                <span class="small-400">225g</span>
-                                <span class="small-400">450g</span>
-                                <span class="small-400">650g</span>
-                                <span class="small-400">900g</span>
-                            </div>
-                        </div>
-                        <div class="product-learn-more-btn">
-                            <a class="Large-button" href="#">Learn More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <img src="./images/lamb-image.png" alt="">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-name-and-price">
-                            <p class="large-400-p-brown">BFF Lamb Bowl</p>
-                            <p class="product-price-text Small-800-b"><span class="from-word">From</span> $37.5/week
-                            </p>
-                        </div>
-                        <div class="product-icon-text">
-                            <img src="./images/fortnighlyIcons.png" alt="">
-                            <p class="XSmall-400-grey400">fortnightly delivery</p>
-                        </div>
-                        <div class="product-quantity-and-title">
-                            <div class="product-qua-t">
-                                <p class="XSmall-400-grey400">available sizes (gram per day)</p>
-                            </div>
-                            <div class="product-quantity">
-                                <span class="small-400">225g</span>
-                                <span class="small-400">450g</span>
-                                <span class="small-400">650g</span>
-                                <span class="small-400">900g</span>
-                            </div>
-                        </div>
-                        <div class="product-learn-more-btn">
-                            <a class="Large-button" href="#">Learn More </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-image">
-                        <img src="./images/variety-bowl-image.png" alt="">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-name-and-price">
-                            <p class="large-400-p-brown">BFF Beef Bowl</p>
-                            <p class="product-price-text Small-800-b"><span class="from-word">From</span> $37.5/week
-                            </p>
-                        </div>
-                        <div class="product-icon-text">
-                            <img src="./images/fortnighlyIcons.png" alt="">
-                            <p class="XSmall-400-grey400">fortnightly delivery</p>
-                        </div>
-                        <div class="product-quantity-and-title">
-                            <div class="product-qua-t">
-                                <p class="XSmall-400-grey400">available sizes (gram per day)</p>
-                            </div>
-                            <div class="product-quantity">
-                                <span class="small-400">225g</span>
-                                <span class="small-400">450g</span>
-                                <span class="small-400">650g</span>
-                                <span class="small-400">900g</span>
-                            </div>
-                        </div>
-                        <div class="product-learn-more-btn">
-                            <a class="Large-button" href="#">Learn More </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- bowl-details-section -->
-    <div class="bowl-details-section main-container">
-        <div class="bowl-detail-inner-sec xl-width">
-            <div class="bowl-details-three-sec">
-                <div class="bowl-detail">
-                    <div class="b-image-and-title">
-                        <div class="b-image">
-                            <img src="./images/bulbIcons.png" alt="">
-                        </div>
-                        <div class="bowl-heading">
-                            <p class="XXLarge-600">What are Single Protein Bowls ?</p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">A single protein source meal is a diet where your pet only
-                                consumes one type of protein source, such as beef, or chicken, at any given meal time.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">In some cases, dogs' immune systems can react to a specific
-                                ingredient or protein in their food, leading to digestive, or other issues. These meals
-                                help you identify those sources through an elimination process.</p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">At Brunswick Fur Food, we make all our meals from single
-                                protein sources, making it easier for your pup to digest them.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bowl-detail">
-                    <div class="b-image-and-title">
-                        <div class="b-image">
-                            <img src="./images/bulbIcons.png" alt="">
-                        </div>
-                        <div class="bowl-heading">
-                            <p class="XXLarge-600">Benefits of Single Protein Bowls</p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">Single source protein foods are much easier to digest than
-                                mixed, so Brunswick Fur Food is perfect for dogs with sensitive digestion, and can be
-                                used as an elimination diet to help diagnose potential food allergies.
-                                Let's face it, just like us humans, our fur friends have preferences too.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bowl-detail">
-                    <div class="b-image-and-title">
-                        <div class="b-image">
-                            <img src="./images/bulbIcons.png" alt="">
-                        </div>
-                        <div class="bowl-heading">
-                            <p class="XXLarge-600"> Use of Multiple Protein Bowls</p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">3-4 different meat protein sources provided in rotation for
-                                robust gut microbiology.</p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">Perfect for dogs without allergies or specific requirements.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bowl-img-and-para">
-                        <div class="bowl-img">
-                            <img src="./images/dog's-paws.png" alt="">
-                        </div>
-                        <div class="bowl-paragraph">
-                            <p class="Small-600-regular">Typical weekly supply consists of our beef, chicken and lamb
-                                bowls.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Subscribe to our Email section start  -->
     <div class="subscribe-email-sec main-container">
@@ -591,6 +463,9 @@
             </footer>
         </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- link javascript file -->
     <script src="script.js"></script>

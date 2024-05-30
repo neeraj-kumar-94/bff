@@ -112,6 +112,8 @@ html {
 
   --xlarge-reg-fs: 12px;
   --xlarge-reg-lh: 18px;
+  --xlarge-reg-ls: .24px;
+
 }
 
 
@@ -188,9 +190,9 @@ html {
 /* paragraph 18px color:#000000 */
 .medium-400 {
   font-size: var(--Medium-400-fs);
-  font-weight: var(--regular);
   line-height: var(--Medium-400-lh);
   letter-spacing: var(--Medium-400-ls);
+  font-weight: var(--regular);
   color: var(--Sec_brown);
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -332,7 +334,6 @@ html {
   cursor: pointer;
   text-decoration: underline;
 }
-
 .current-page-name{
   font-size: var(--lg-icon-text-fs);
   font-weight: var(--regular);
@@ -341,8 +342,22 @@ html {
   line-height: var(--lg-icon-text-lh);
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
-}
+} 
 
+/* breadcrumb media query */
+@media(max-width:576px){
+  
+  .link-breadcrumb{
+    font-size: var(--xlarge-reg-fs);
+    letter-spacing: var(--xlarge-reg-ls);
+    line-height: var(--xlarge-reg-lh);
+  }
+  .current-page-name{
+    font-size: var(--xlarge-reg-fs);
+    letter-spacing: var(--xlarge-reg-ls);
+    line-height: var(--xlarge-reg-lh);
+  }
+} 
 
 /* GLOBAL CSS END
 ===================*/
