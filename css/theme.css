@@ -65,6 +65,7 @@ html {
   /* heading font class and color */
   --h1-font-size: 56px;
   --h1-line-height: 70px;
+
   --all-headings-font-size: 48px;
   --all-headings-line-height: 60px;
   --heading-color: #352B26;
@@ -117,7 +118,7 @@ html {
 }
 
 
-/* headings */
+/* headings 56px*/
 .h1-heading {
   font-size: var(--h1-font-size);
   font-weight: var(--bold);
@@ -132,6 +133,24 @@ html {
   line-height: var(--all-headings-line-height);
   color: var(--heading-color);
   font-family: 'Source Serif Pro', serif;
+}
+
+/* heading 36px font-family:serif-pro*/
+.lg-heading {
+  font-size: var(--medium-heading-fs);
+  line-height: var(--medium-heading-lh);
+  font-weight: var(--bold);
+  color: var(--heading-color);
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* heading 36px font-family:serif-*/
+.lg-heading-serif-4 {
+  font-size: var(--medium-heading-fs);
+  line-height: var(--medium-heading-lh);
+  font-weight: var(--bold);
+  color: var(--heading-color);
+  font-family: "Source Serif 4", serif;
 }
 
 /* paragraph 24px 700 color: #7D5C4E*/
@@ -187,13 +206,23 @@ html {
 }
 
 
-/* paragraph 18px color:#000000 */
+/* paragraph 18px color:#000000 ----change text mobile screen*/
 .medium-400 {
   font-size: var(--Medium-400-fs);
   line-height: var(--Medium-400-lh);
   letter-spacing: var(--Medium-400-ls);
   font-weight: var(--regular);
   color: var(--Sec_brown);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* paragraph 18px ---no use media query  color:#656363*/
+.medium-400-Grey-600 {
+  font-size: var(--Medium-400-fs);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
+  font-weight: var(--regular);
+  color: var(--Grey600);
   font-family: 'Source Sans Pro', sans-serif;
 }
 

@@ -4,30 +4,35 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Breadcrumb section */
 .breadcrumb-sec {
-    padding: 0;
-    background-color: var(--cont-bg-sec-color);
+  padding: 0;
+  background-color: var(--cont-bg-sec-color);
 }
 
 .breadcrumb-inner-sec {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 15px 16px;
-    column-gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 16px;
+  column-gap: 16px;
+}
+
+.breadcrumb-image{
+  margin-bottom: -5px;
 }
 
 /* Tab section start */
-.prodcut-tab-buttons-section{
+.prodcut-tab-buttons-section {
   padding: 10px 0 0 0;
 }
 
-.product-tab-buttons{
+.product-tab-buttons {
   width: 100%;
   height: 100%;
   display: grid;
@@ -35,11 +40,11 @@
   overflow: hidden;
 }
 
-.btns_cont{
+.btns_cont {
   width: 100%;
 }
 
-.tab-btn{
+.tab-btn {
   width: auto;
   height: 50px;
   display: flex;
@@ -50,7 +55,7 @@
   white-space: nowrap;
 }
 
-.tab-btn button{
+.tab-btn button {
   font-size: var(--lg-icon-text-fs);
   line-height: var(--lg-icon-text-lh);
   letter-spacing: var(--lg-icon-text-ls);
@@ -63,12 +68,12 @@
   padding: 10px 0 0 0;
 }
 
-.tab-btn.active  button{
+.tab-btn.active button {
   color: var(--black);
   font-weight: var(--bold);
 }
 
-.tab-btn .button-underline{
+.tab-btn .button-underline {
   width: 100%;
   height: 4px;
   background-color: #006350;
@@ -76,240 +81,406 @@
   opacity: 0;
 }
 
-.tab-btn:hover .button-underline{
-  background-color: #006350;   
+.tab-btn:hover .button-underline {
+  background-color: #006350;
   opacity: 1;
 }
 
-.tab-btn.active .button-underline{
+.tab-btn.active .button-underline {
   opacity: 1;
-  background-color: #006350;   
+  background-color: #006350;
 }
 
 /* tab links 
 ------------- */
 
-.tab-container{
-  display: none;    
+.tab-container {
+  display: none;
 }
 
 
-/* product information section */
- .slider-and-details{
+/* slider and product information section
+============================== */
+.slider-and-details {
   background-color: var(--cont-bg-sec-color);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
- }
+}
 
- .slider-and-details .slider-and-details-inner-sec{
+.slider-and-details .slider-and-details-inner-sec {
   width: 1280px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
- .image-slider-sec{
+.image-slider-sec {
   width: 50%;
 }
 
-.product-detail-by-btn{
-   width: 50%;
-   display: flex;
+.product-image-slide {
+  padding-bottom: 20px;
+}
+
+.image-slider-pagination .swiper-pagination-bullet {
+  background-color: var(--NeroWhite);
+  border: 1.5px solid var(--Dark_brown);
+  width: 14px;
+  height: 14px;
+}
+
+.image-slider-pagination .swiper-pagination-bullet-active {
+  background-color: var(--Sec_brown) !important;
+}
+
+/* 2product details section 
+============================*/
+
+.product-detail-by-btn {
+  width: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   row-gap: 48px;
   padding: 0 32px;
- }
+}
 
- .product-title-icon{
+.product-title-icon {
   display: flex;
   justify-content: center;
-  align-items: center; 
- }
+  align-items: center;
+}
 
- /* .proceed-to-by-btn{
-  width: 119px;
- } */
-
- .proceed-to-by-btn a{
+.proceed-to-by-btn a {
   padding: 21px 156px;
- }
+}
+
+/* Ingredients section */
+.ingredients-section {
+  background-color: var(--NeroWhite);
+}
+
+.ingredients-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* ingredient small card */
+
+.ingredients-cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 40px;
+  padding: 0 120px;
+}
+
+.ing-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+  height: 110px;
+}
+
+.ing-card-det p {
+  color: var(--Grey600);
+}
+
+/* Nutions section 
+ ===================*/
+.nutrition-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.nutrition-section {
+  background-color: var(--cont-bg-sec-color);
+}
+
+
+/* table section */
+.nutrition-two-table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 120px;
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  min-width: 578px;
+  width: 100%;
+}
+
+.nutrition-table thead tr {
+  color: #ffffff;
+  text-align: center;
+  font-weight: var(--bold);
+  color: var(--black);
+  font-size: var(--Medium-400-fs);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nutrition-table th,
+.nutrition-table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+.nutrition-table tbody tr {
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+  font-size: var(--lg-icon-text-fs);
+  line-height: var(--lg-icon-text-lh);
+  letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--regular);
+  color: var(--Grey600);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* table */
+
+/* storage instruction section
+=============================== */
+.storage-section{
+  background-color: var(--NeroWhite);
+}
+
+.storage-heading{
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.storage-three-sec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storage-instruction-sec{
+  width: 30%;
+}
+
+.storage-instruction-sec p:first-child{
+  padding-bottom: 16px;
+}
+
+
+/* Feeding Instructions section
+=================================== */
+.feeding-instruction-section{
+  background-color: var(--cont-bg-sec-color);
+}
+
+.feeding-instruction-heading{
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.feeding-instruction-inner-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feeding-instruction-details{
+  width: 60%;
+  row-gap: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feeding-chart{
+  text-decoration: underline;
+  color: var(--Grey600);
+}
 
 /* Subscribe to our Email section start 
 ========================================*/
 .subscribe-email-sec {
-    padding: 0;
+  padding: 0;
 }
 
 .subs-email-inner-sec {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 48px;
-    height: 570px;
-    padding-top: 80px;
-    background-image: url(./images/active-campaign-bg-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 48px;
+  height: 570px;
+  padding-top: 80px;
+  background-image: url(./images/active-campaign-bg-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .subscribe-email-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .subs-email-inp .email-input {
-    color: var(--Grey400);
-    padding: 15px 20px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid var(--Light_Rose_Fog);
-    outline: none;
-    width: 388px;
-    box-sizing: border-box;
+  color: var(--Grey400);
+  padding: 15px 20px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--Light_Rose_Fog);
+  outline: none;
+  width: 388px;
+  box-sizing: border-box;
 }
 
 .subs-email-inp .email-input:focus {
-    border: 1px solid var(--Light_Rose_Fog);
+  border: 1px solid var(--Light_Rose_Fog);
 }
 
 .subs-email-btn .subscribe-button {
-    border: none;
-    outline: none;
-    padding: 15px 51px;
-    margin-left: -4px;
+  border: none;
+  outline: none;
+  padding: 15px 51px;
+  margin-left: -4px;
 }
 
 /* Subscribe to our Email section */
 @media(max-width:576px) {
-    .subscribe-email-sec {
-      padding: 0 24px;
-      text-align: center;
-    }
-  
-    .subs-email-inner-sec {
-      row-gap: 24px;
-      height: auto;
-      padding-top: 32px;
-      padding-bottom: 130px;
-      background-size: contain;
-      background-position: bottom;
-    }
-  
-    .subs-email-inp .email-input {
-      padding: 9px 10px;
-      width: 220px;
-    }
-  
-    .subs-email-btn .subscribe-button {
-      padding: 13px 13px;
-      margin-left: -4px;
-    }
-  
-    .subs-email-btn .subscribe-button button {
-      font-size: var(--lg-icon-text-fs);
-    }
+  .subscribe-email-sec {
+    padding: 0 24px;
+    text-align: center;
   }
 
-/* Subscribe to our Email section end */ 
+  .subs-email-inner-sec {
+    row-gap: 24px;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 130px;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .subs-email-inp .email-input {
+    padding: 9px 10px;
+    width: 220px;
+  }
+
+  .subs-email-btn .subscribe-button {
+    padding: 13px 13px;
+    margin-left: -4px;
+  }
+
+  .subs-email-btn .subscribe-button button {
+    font-size: var(--lg-icon-text-fs);
+  }
+}
+
+/* Subscribe to our Email section end */
 
 /* accordion section start */
 /* Pet Meal FAQ */
 .pet-meal-faq-sec {
-    background-color: var(--cont-bg-sec-color);
-  }
-  
-  .pet-meal-faq-inner-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 24px;
-  }
-  
-  .pet-meal-faq-det {
-    margin-bottom: 24px;
-  }
-  
-  /* ------- */
+  background-color: var(--cont-bg-sec-color);
+}
+
+.pet-meal-faq-inner-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.pet-meal-faq-det {
+  margin-bottom: 24px;
+}
+
+/* ------- */
+.pet-meal-faq-accordion {
+  width: 83%;
+}
+
+.inner-accordion-section {
+  width: 100%;
+  background-color: #FDF8F7;
+}
+
+.acc-box {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  position: relative;
+  background-color: var(--NeroWhite);
+}
+
+.accordion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headin-op-cl-icon {
+  position: relative;
+}
+
+.headin-op-cl-icon p {
+  position: relative;
+  padding: 17px;
+}
+
+.iconOpen {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.iconClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.hidden-box {
+  display: none;
+  padding: 0px 40px 16px 16px;
+}
+
+.hidden-box p {
+  color: var(--heading-color);
+}
+
+.active .hidden-box {
+  display: block;
+}
+
+@media(max-width:576px) {
+
+  /* accordion section start*/
   .pet-meal-faq-accordion {
-    width: 83%;
-  }
-  
-  .inner-accordion-section {
     width: 100%;
-    background-color: #FDF8F7;
-  }
-  
-  .acc-box {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.5s linear;
-    position: relative;
-    background-color: var(--NeroWhite);
-  }
-  
-  .accordion {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .headin-op-cl-icon {
-    position: relative;
-  }
-  
-  .headin-op-cl-icon p {
-    position: relative;
-    padding: 17px;
-  }
-  
-  .iconOpen {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .iconClose {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .hidden-box {
-    display: none;
-    padding: 0px 40px 16px 16px;
-  }
-  
-  .hidden-box p {
-    color: var(--heading-color);
-  }
-  
-  .active .hidden-box {
-    display: block;
-  }
-
-  @media(max-width:576px){
-    /* accordion section start*/
-    .pet-meal-faq-accordion {
-      width: 100%;
   }
 
   .headin-op-cl-icon p {
-      padding: 17px 48px 17px 17px;
+    padding: 17px 48px 17px 17px;
   }
 
-  }
-
-
-  
+}
