@@ -137,6 +137,22 @@
   background-color: var(--Sec_brown) !important;
 }
 
+/* product title mobile view */
+.product-title-icon-mobile-view{
+  display: none;
+}
+
+/* Porduct accordion open and close icon hide */
+.open-and-close-icon{
+  display: none;
+}
+
+/* footer by btn */
+.footer-product-by-btn{
+  display: none;
+}
+
+
 /* 2product details section 
 ============================*/
 
@@ -156,13 +172,24 @@
   align-items: center;
 }
 
+.proceed-to-by-btn {
+  width: 75%;
+}
+
 .proceed-to-by-btn a {
-  padding: 21px 156px;
+  padding: 21px 0;
 }
 
 /* Ingredients section */
 .ingredients-section {
   background-color: var(--NeroWhite);
+}
+
+.ingredients-inner-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ingredients-heading {
@@ -173,13 +200,14 @@
 /* ingredient small card */
 
 .ingredients-cards {
+  width: 1035px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 45px;
   row-gap: 40px;
-  padding: 0 120px;
+  /* padding: 0 120px; */
 }
 
 .ing-card {
@@ -212,13 +240,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 120px;
+  column-gap: 100px;
 }
 
 .nutrition-table {
   border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 18px;
   min-width: 578px;
   width: 100%;
 }
@@ -236,7 +262,7 @@
 
 .nutrition-table th,
 .nutrition-table td {
-  padding: 12px 15px;
+  padding: 16px 26px 16px 26px;
   border: 1px solid #dddddd;
 }
 
@@ -268,7 +294,7 @@
 .storage-three-sec{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .storage-instruction-sec{
@@ -296,6 +322,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.feeding-instruction-det-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feeding-instruction-details{

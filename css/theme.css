@@ -156,9 +156,9 @@ html {
 /* paragraph 24px 700 color: #7D5C4E*/
 .XLarge-800 {
   font-size: var(--XLarge-400-fs);
-  font-weight: var(--bold);
   line-height: var(--XLarge-400-lh);
   letter-spacing: var(--XLarge-400-ls);
+  font-weight: var(--bold);
   color: var(--Sec_brown);
   font-family: 'Source Sans Pro', sans-serif;
 }

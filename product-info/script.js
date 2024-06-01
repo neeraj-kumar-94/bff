@@ -41,6 +41,40 @@ var swiper = new Swiper(".product-image-slide", {
 });
 
 
+// product information accordion
+// =============================
+const productDetail = document.getElementsByClassName("detail-box");
+const iconOpen = document.getElementsByClassName("openIcon");
+const iconClose = document.getElementsByClassName("closeIcon");
+
+for (let i = 0; i < iconClose.length; i++) {
+  iconClose[i].style.display = "none";
+}
+
+for (let i = 0; i < productDetail.length; i++) {
+  productDetail[i].addEventListener("click", () => {
+    for (let j = 0; j < productDetail.length; j++) {
+      if (j !== i) {
+        productDetail[j].classList.remove("active");
+        iconClose[j].style.display = "none";
+        iconOpen[j].style.display = "block";
+      }
+    }
+
+    const result = productDetail[i].classList.toggle("active");
+
+    if (result) {
+      iconClose[i].style.display = "block";
+      iconOpen[i].style.display = "none";
+    } else {
+      iconClose[i].style.display = "none";
+      iconOpen[i].style.display = "block";
+    }
+  });
+}
+
+
+
 
 // navbar
 // ======
