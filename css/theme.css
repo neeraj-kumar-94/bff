@@ -195,7 +195,7 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* 20px font size color:#7D5C4E*/
+/* 20px font size color:#000000*/
 .large-400-black {
   font-size: var(--Large-400-fs);
   line-height: var(--Large-400-lh);
@@ -206,7 +206,7 @@ html {
 }
 
 
-/* paragraph 18px color:#000000 ----change text mobile screen*/
+/* paragraph 18px color:#7D5C4E ----change text mobile screen*/
 .medium-400 {
   font-size: var(--Medium-400-fs);
   line-height: var(--Medium-400-lh);
@@ -344,8 +344,8 @@ html {
 .lg-icon-text {
   font-size: var(--lg-icon-text-fs);
   line-height: var(--lg-icon-text-lh);
-  font-weight: var(--semi-bold);
   letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--semi-bold);
   color: var(--Grey600);
   font-family: 'Source Sans Pro', sans-serif;
 }

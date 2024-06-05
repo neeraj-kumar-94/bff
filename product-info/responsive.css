@@ -141,7 +141,7 @@
     /* slider section */
     .slider-and-details .slider-and-details-inner-sec {
         flex-direction: column;
-        row-gap: 32px;
+        row-gap: 28px;
     }
 
     .image-slider-sec {
@@ -198,7 +198,7 @@
     }
 
     .product-detail-by-btn {
-        width: 70%;
+        width: 312px;
         padding: 0;
         text-align: center;
         row-gap: 0;
@@ -215,13 +215,33 @@
         letter-spacing: var(--lg-icon-text-ls);
     }
 
-    .product-title-icon {
-        display: none;
+    /* proceed to by button */
+    .buy-button-box {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 13px 26px;
+        background-color: var(--cont-bg-sec-color);
+        text-align: center;
+        z-index: 20;
     }
 
     .proceed-to-by-btn {
-        display: none;
+        width: 90%;
+        max-width: 308px;
+        margin: 0 auto;
     }
+
+    .proceed-to-by-btn a {
+        padding: 13px 0;
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+        letter-spacing: var(--lg-icon-text-ls);
+    }
+
+    .product-title-icon {
+        display: none;
+    } 
 
     /* product title------ */
     .product-title-icon-mobile-view {
@@ -239,17 +259,7 @@
     .product-title-mobile-view h2 {
         font-size: 26px;
         line-height: 30px;
-    }
-
-    .product-icon-mobile-view {
-        width: 30px;
-        height: 30px;
-    }
-
-    .product-icon-mobile-view img {
-        width: 100%;
-        height: 100%;
-    }
+    } 
 
     /* ingredients-section */
     .ingredients-section {
@@ -393,33 +403,16 @@
 
     .active .hide-details {
         display: block;
-    }
-
-
-    /* proceed to by footer btn */
-    .footer-product-by-btn {
-        display: block;
-        padding: 13px 26px;
-        background-color: var(--cont-bg-sec-color);
-        text-align: center;
-    }
-
-    .proceed-to-by-btn-footer {
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    .proceed-to-by-btn-footer a{
-        padding: 13px 0;
-    }
-
+    } 
 }
 
 @media (max-width:400px) {
     .ingredients-cards {
         column-gap: 10px;
-    }
+    } 
+}
 
+@media (max-width:350px){
     .product-detail-by-btn {
         width: 90%;
         padding: 0;
