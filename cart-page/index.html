@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- Link css file -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+
+    <!-- Navbar section  -->
+    <div class="nav-container main-container">
+        <nav class="navbar xl-width">
+            <div class="logo">
+                <span class="logo-cap">BRUNSWICK FUR FOOD</span>
+                <span class="logo-sm">As food should be</span>
+            </div>
+            <div class="nav-links">
+                <ul class="nav-inner-links">
+                    <li class="nav-link-item"><a class="nav-link" href="#">About us</a></li>
+                    <li class="nav-link-item"><a class="nav-link"
+                            href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html">Bowl Plans</a> </li>
+                    <li class="nav-link-item"><a class="nav-link" href="#">Give it a Go</a></li>
+                    <li class="nav-dw-btn nav-link-item">
+                        <a href="#">Read <img src="../bff-images/nav-dropdown-menu-icon.png" alt=""></a>
+                        <ul class="nav-dropdown-links" id="nav-dropdown">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Policies</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-login-btn">
+                <a class="nav-login-anch" href="#">Login</a>
+            </div>
+            <div class="nav-cart-img">
+                <a href="#">
+                    <img src="../bff-images/nav-cart-icon.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- mobile navbar -->
+    <div class="mobile-nav-container">
+        <div class="mobile-nav-inner-sec">
+            <div class="mobile-humburger">
+                <img src="../bff-images/humburger.png" alt="" id="humburger-icon">
+            </div>
+            <div class="mobile-nav-logo">
+                <p class="mob-nav-logo-big-size Small-800-b">BRUNSWICK FUR FOOD</p>
+                <p class="mob-nav-logo-small-size">As food should be</p>
+            </div>
+            <div class="mob-nav-cart-img">
+                <img src="../bff-images/mobile-cart-img.png" alt="">
+            </div>
+        </div>
+        <div class="mobile-sidebar">
+            <div class="menu-close-icon">
+                <div class="close-icon-img">
+                    <img src="../bff-images/close-icon.png" alt="" id="close-icon">
+                </div>
+            </div>
+            <div class="sidebar-links-sec">
+                <ul class="slider-links-inner-sec">
+                    <li><a href="./index.html" class="sidebar-link">Home</a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html"
+                            class="sidebar-link">Our Meals</a></li>
+                    <li><a href="#" class="sidebar-link">Give it a Go</a></li>
+                    <li><a href="#" class="sidebar-link">Order History</a></li>
+                    <li><a href="#" class="sidebar-link">Subscription Policy </a></li>
+                    <li><a href="#" class="sidebar-link">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-login-btn">
+                <a href="#" class="s-log-btn Large-button">Login</a>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb section -->
+    <div class="breadcrumb-sec main-container">
+        <div class="breadcrumb-inner-sec xl-width">
+            <div class="home-link">
+                <a href="https://neeraj-kumar-94.github.io/bff/" class="link-breadcrumb">Home</a>
+            </div>
+            <div class="breadcrumb-image">
+                <img src="./images/breadcrub-icon.png" alt="">
+            </div>
+            <div class="product-catalogue">
+                <a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html"
+                    class="link-breadcrumb">Product Catalogue<span></span></a>
+            </div>
+            <div class="breadcrumb-image">
+                <img src="./images/breadcrub-icon.png" alt="">
+            </div>
+            <div class="product-info">
+                <a href="https://neeraj-kumar-94.github.io/bff/product-info/index.html" class="link-breadcrumb">Product
+                    Info</a>
+            </div>
+            <div class="breadcrumb-image">
+                <img src="./images/breadcrub-icon.png" alt="">
+            </div>
+            <div class="product-info">
+                <a href="#" class="link-breadcrumb">Customization</a>
+            </div>
+            <div class="breadcrumb-image">
+                <img src="./images/breadcrub-icon.png" alt="">
+            </div>
+            <div class="product-cat">
+                <p class="current-page-name">Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your cart section -->
+    <div class="your-cart-section main-container">
+        <div class="your-cart-inner-section xl-width">
+            <div class="your-cart-heading-and-add-more-btn">
+                <div class="your-cart-heading">
+                    <h1 class="xxl-heading">YOUR CART</h1>
+                </div>
+                <div class="your-cart-add-more-btn">
+                    <a href="#" class="xl-gradient-text">Add More</a>
+                </div>
+            </div>
+            <div class="cart-and-product-two-section">
+                <div class="cart-and-product-section">
+                    <div class="availabe-coupons-sec">
+                        <div class="available-coupon-text">
+                            <p class="large-400-p-brown">AVAILABLE COUPONS</p>
+                        </div>
+                        <div class="coupon-related-text">
+                            <p class="medium-400-Grey-600">Use code <span class="coupon-code">BFF10</span> to get 10%
+                                off </p>
+                        </div>
+                        <div class="coupon-related-hide-text" id="invisible-text">
+                            <p class="medium-400-Grey-600 hide-coupons">Use code <span class="coupon-code">BFF10</span> to get 10%
+                                off </p>
+                            <p class="medium-400-Grey-600 hide-coupons">Use code <span class="coupon-code">BFF10</span> to get 10%
+                                off </p>
+                        </div>
+                        <div class="show-more-btn">
+                            <button class="xl-gradient-text" id="toggle-btn" onclick="moreLess()">Show More</button>
+                        </div>
+                    </div>
+                    <div class="order-details-section">
+                        <div class="oredr-details-heading">
+                            <p class="large-400-p-brown">ORDER DETAILS</p>
+                        </div>
+                        <!-- product 1 -->
+                        <div class="add-product-cart">
+                            <div class="product-image-sec">
+                                <div class="product-image">
+                                    <img src="./images/add-to-cart-product.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-detail-sec">
+                                <div class="product-title">
+                                    <p class="large-400-p-brown">BFF Chicken Bowl Meal Plan (7 packs/week)</p>
+                                </div>
+                                <div class="product-quantity-and-size-dropdown">
+                                    <div class="product-size-dropdown">
+                                        <label for="meal-size" class="medium-400 label-font">Meal Size :</label>
+                                        <select id="meal-size" name="meal-size" class="select-quant-size">
+                                            <option value="225" selected>225 g / day</option>
+                                            <option value="450">450 g / day</option>
+                                            <option value="650">650 g / day</option>
+                                            <option value="900">900 g / day</option>
+                                        </select>
+                                    </div>
+                                    <div class="product-quantity-dropdown">
+                                        <label for="quantity" class="medium-400 label-font">Qty:</label>
+                                        <select id="quantity" name="quantity" class="select-quant-size">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <p class="large-400-p-brown">$ 73</p>
+                                </div>
+                                <div class="subscribe-image-and-text">
+                                    <div class="subscribe-text">
+                                        <p class="medium-400">Subscribed</p>
+                                    </div>
+                                    <div class="subscribe-image">
+                                        <img src="./images/Icons0251.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Close icon -->
+                            <div class="product-delete-button">
+                                <a href="#">
+                                    <img src="./images/product-delete.png" alt="Cose icon">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- product 2 -->
+                        <div class="add-product-cart">
+                            <div class="product-image-sec">
+                                <div class="product-image">
+                                    <img src="./images/add-to-cart-product.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-detail-sec">
+                                <div class="product-title">
+                                    <p class="large-400-p-brown">BFF Lamb Bowl Meal Plan (7 packs/week)</p>
+                                </div>
+                                <div class="product-quantity-and-size-dropdown">
+                                    <div class="product-size-dropdown">
+                                        <label for="meal-size" class="medium-400 label-font">Meal Size :</label>
+                                        <select id="meal-size" name="meal-size" class="select-quant-size">
+                                            <option value="225" selected>225 g / day</option>
+                                            <option value="450">450 g / day</option>
+                                            <option value="650">650 g / day</option>
+                                            <option value="900">900 g / day</option>
+                                        </select>
+                                    </div>
+                                    <div class="product-quantity-dropdown">
+                                        <label for="quantity" class="medium-400 label-font">Qty:</label>
+                                        <select id="quantity" name="quantity" class="select-quant-size">
+                                            <option value="1">1</option>
+                                            <option value="2" selected>2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <p class="large-400-p-brown">$ 37.5</p>
+                                </div>
+                                <div class="subscribe-image-and-text">
+                                    <div class="subscribe-text">
+                                        <p class="medium-400">Subscribed</p>
+                                    </div>
+                                    <div class="subscribe-image">
+                                        <img src="./images/Icons0251.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Close icon -->
+                            <div class="product-delete-button">
+                                <a href="#">
+                                    <img src="./images/product-delete.png" alt="Cose icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-discount-and-frequncy-subsc-sec">
+                    <div class="discount-form-section">
+                        <div class="discount-form-title">
+                            <p class="large-400-p-brown">COUPONS</p>
+                        </div>
+                        <div class="discount-form-inner-section">
+                            <form class="discount-form">
+                                <input type="text" class="discount-input" name="discount-code"
+                                    placeholder="Discount Code" required>
+                                <button type="submit" class="apply-button">APPLY</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="set-delivery-freq-sec">
+                        <p class="large-400-p-brown set-delivery-freq-title">Set Delivery Frequency for Subscription
+                        <p>
+                        <div class="delivery-frequency-two-button">
+                            <form class="form">
+                                <div class="delivery-freq">
+                                    <label class="Small-600-regular">
+                                        <input type="radio" name="delivery_frequency" value="fortnightly" checked>
+                                        Fortnightly
+                                    </label>
+                                </div>
+                                <div class="delivery-freq">
+                                    <label class="Small-600-regular">
+                                        <input type="radio" name="delivery_frequency" value="monthly">
+                                        Monthly
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="next-delivery-date-box">
+                            <div class="next-del-date">
+                                <div class="next-delivery-date-icon">
+                                    <img src="./images/Icons0251.png" alt="">
+                                </div>
+                                <p class="medium-400-black">Your next delivery on 15 April</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-price-detail">
+                        <div class="price-details-text">
+                            <p class="large-400-p-brown">PRICE DETAILS <span>(2 items)</span></p>
+                        </div>
+                        <div class="subtotal-text-and-price">
+                            <div class="subtotal-text">
+                                <p class="large-400-grey600">Subtotal</p>
+                            </div>
+                            <div class="subtotal-price">
+                                <p class="large-400-grey600">$143.00</p>
+                            </div>
+                        </div>
+                        <div class="shiping-charge-paid-or-no-paid">
+                            <div class="shiping-charge-text">
+                                <p class="large-400-grey600">Shipping Charges</p>
+                            </div>
+                            <div class="paid-or-no-paid">
+                                <p class="large-400-grey600">Free</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total-price-and-button-sec">
+                        <div class="total-price-text-price">
+                            <div class="total-price-text">
+                                <p class="XLarge-800">TOTAL AMOUNT</p>
+                            </div>
+                            <div class="total-price">
+                                <p class="XLarge-800">$143.00</p>
+                            </div>
+                        </div>
+                        <div class="place-order-button">
+                            <button class="Large-button">Place Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer-section main-container">
+        <div class="footer-inner-sec xl-width">
+            <footer>
+                <div class="footer-det-three-sec">
+                    <div class="footer-logo-det-sec">
+                        <div class="f-logo-sm-lg">
+                            <p class="f-logo-lg XXLarge-800">BRUNSWICK FUR FOOD</p>
+                            <p class="f-logo-sm large-400-black">As food should be</p>
+                        </div>
+                        <div class="footer-icon-text-two-sec">
+                            <div class="footer-icon-text-first-sec">
+                                <div class="f-i-img">
+                                    <img src="../bff-images/footer-icon.png" alt="">
+                                </div>
+                                <p class="Small-600">Mon to Sun:</p>
+                                <p class="XSmall-400">10:00 AM to 6:00 PM</p>
+                            </div>
+                            <div class="footer-icon-second-sec">
+                                <div class="f-i-img">
+                                    <img src="../bff-images/footer-icon2.png" alt="">
+                                </div>
+                                <p class="Small-600">Call us:</p>
+                                <p class="XSmall-400">0433 985 402</p>
+                            </div>
+                        </div>
+                        <div class="footer-title-f-sec">
+                            <p class="Small-800-b">Join us & save $15 on Starter Pack!</p>
+                            <p class="footer-mobile-text-para small-400">We’ll help you find the food that is right for
+                                your dog even
+                                if it isn’t our own.</p>
+                        </div>
+                    </div>
+                    <div class="loging-and-signup-button">
+                        <div class="footer-loging-singup-inner-sec">
+                            <div class="footer-signup-btn">
+                                <a href="#" class="Large-button">Sign Up</a>
+                            </div>
+                            <div class="footer-loging-btn">
+                                <a href="#" class="Large-button">Log In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-links-two-section">
+                        <div class="footer-useful-links-sec">
+                            <div class="f-main-link">
+                                <p class="footer-links-top-h XLarge-800">COMPANY</p>
+                            </div>
+                            <div class="f-link-item">
+                                <a class="f-main-link-item small-400" href="#">About Us</a>
+                                <a class="f-main-link-item small-400" href="#">Policies</a>
+                                <a class="f-main-link-item small-400" href="#">Contact Us</a>
+                                <a class="mobile-newsletter-btn f-main-link-item small-400" href="#">Newsletter</a>
+                                <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Login</a>
+                                <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Sign Up</a>
+                            </div>
+                        </div>
+                        <div class="footer-useful-links-sec">
+                            <div class="f-main-link">
+                                <p class="footer-links-top-h XLarge-800">USEFUL LINKS</p>
+                            </div>
+                            <div class="f-link-item">
+                                <a class="f-main-link-item small-400" href="#">Starter Pack</a>
+                                <a class="f-main-link-item small-400" href="#">Bowl Plans</a>
+                                <a class="f-main-link-item small-400" href="#">FAQ</a>
+                                <a class="f-main-link-item small-400" href="#">Blog</a>
+                                <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copy-right-sec">
+                    <div class="f-copy-right-text">
+                        <p class="copy-right-txt small-400">2024 Brunswick Fur Food. All Rights Reserved.</p>
+                    </div>
+                    <div class="policy-etc-link">
+                        <ul>
+                            <li class="copy-right-txt small-400">Terms & Condition</li>
+                            <li class="copy-right-txt small-400">Privacy Policy</li>
+                            <li class="copy-right-txt small-400">Cookie Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-facebook-insta-logo">
+                        <div class="footer-f-logo">
+                            <a href="#">
+                                <img src="../bff-images/facebook.png" alt="Facebook logo">
+                            </a>
+                        </div>
+                        <div class="footer-ins-logo">
+                            <a href="#">
+                                <img src="../bff-images/insta.png" alt="Instagram logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-image-section">
+        <div class="footer-image">
+            <img src="./images/footer-image.png" alt="">
+        </div>
+    </div>
+
+    <!-- link javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -135,6 +135,14 @@ html {
   font-family: 'Source Serif Pro', serif;
 }
 
+.xxl-heading {
+  font-size: var(--all-headings-font-size);
+  font-weight: var(--bold);
+  line-height: var(--all-headings-line-height);
+  color: var(--heading-color);
+  font-family: 'Source Serif Pro', serif;
+}
+
 /* heading 36px font-family:serif-pro*/
 .lg-heading {
   font-size: var(--medium-heading-fs);
@@ -205,6 +213,17 @@ html {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* 20px font size color:#656363*/
+.large-400-grey600 {
+  font-size: var(--Large-400-fs);
+  line-height: var(--Large-400-lh);
+  letter-spacing: var(--Large-400-ls);
+  font-weight: var(--semi-bold);
+  color: var(--Grey600);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 
 /* paragraph 18px color:#7D5C4E ----change text mobile screen*/
 .medium-400 {
@@ -223,6 +242,15 @@ html {
   letter-spacing: var(--Medium-400-ls);
   font-weight: var(--regular);
   color: var(--Grey600);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.medium-400-black {
+  font-size: var(--Medium-400-fs);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
+  font-weight: var(--regular);
+  color: var(--black);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -349,6 +377,45 @@ html {
   color: var(--Grey600);
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/* gradient text start 
+=========================*/
+/* graident text 20px  */
+.xl-gradient-text {
+  font-size: var(--Large-400-fs);
+  line-height: var(--Large-400-lh);
+  letter-spacing: var(--Large-400-ls);
+  font-weight: var(--semi-bold);
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(to right,
+      #5D3E31 0%,
+      #704B3B 24%,
+      #855946 50%,
+      #7D5C4E 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.xl-gradient-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1.5px;
+  /* You can adjust the height of the underline */
+  background: linear-gradient(to right,
+      #5D3E31 0%,
+      #704B3B 24%,
+      #855946 50%,
+      #7D5C4E 100%);
+}
+/* gradient text end  */
+
+
 
 /* breadcrumb classes */
 .link-breadcrumb{
