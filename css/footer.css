@@ -2,6 +2,7 @@
   ===================*/
   .footer-section {
     background-color: var(--Grey100);
+    padding-bottom: 0;
   }
   
   .footer-inner-sec {
@@ -123,6 +124,36 @@
     padding: 13px 42px;
     white-space: nowrap;
   }
+
+  /* Footer image section */
+  .footer-image-section{
+    background-color: var(--Grey100);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footer-image{
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-image img{
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width: 576px){
+    .footer-image-section{
+      height: 139.5px;
+    }
+  }
+
+  @media(max-width: 450px){
+    .footer-image-section{
+      height: 84.46px;
+    }
+  }
+
 
 
   /* footer media query */

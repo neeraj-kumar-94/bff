@@ -27,6 +27,11 @@
   margin-bottom: -5px;
 }
 
+/* hide link mobile screen */
+.view-link-breadcrumb{
+  display: none;
+}
+
 
 
 /* Subscribe to our Email section start 
@@ -132,6 +137,7 @@
   padding: 16px;
   max-width: 738px;
   width: 55%;
+  border-right: .5px solid rgba(0, 0, 0, .1);
 }
 
 /* available coupons section */
@@ -204,7 +210,6 @@
 
 .select-quant-size {
   background-color: transparent;
-  font-size: 16px;
   padding: 5px;
   border: none;
   /* edit font */
@@ -263,6 +268,7 @@
   padding: 16px;
   max-width: 523px;
   width: 40%;
+  white-space: nowrap;
 }
 
 
@@ -270,7 +276,7 @@
   width: 100%;
   white-space: nowrap;
   padding-bottom: 16px;
-  border-bottom: .5px solid rgba(0, 0, 0, .1);
+  border-bottom: .5px solid rgba(0, 0, 0, .1); 
 }
 
 .discount-form-title {
@@ -288,7 +294,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   border: 1px solid var(--Rose-Fog);
   border-radius: 4px;
-  width: 80%;
+  width: 75%;
 }
 
 .discount-form .discount-input:focus {
@@ -299,8 +305,8 @@
 .discount-form .apply-button {
   border: none;
   outline: none;
+  width: 83px ;
   padding: 16.5px 19px;
-  width: 20%;
   font-size: var(--Medium-400-fs);
   line-height: var(--Medium-400-lh);
   letter-spacing: var(--Medium-400-ls);
@@ -360,6 +366,7 @@ input[type="radio"] {
   display: flex;
   justify-content: flex-start;
   align-content: baseline;
+  white-space: wrap;
   column-gap: 2px;
   border: .2px solid rgba(0, 0, 0, .1);
   border-radius: 4px;

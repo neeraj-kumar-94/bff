@@ -58,7 +58,7 @@ html {
   --light: 300;
   --regular: 400;
   --medium: 500;
-  --semi-bold: 400;
+  --semi-bold: 600;
   --bold: 700;
   --extra-bold: 800;
 
@@ -301,10 +301,10 @@ html {
 /* Font size 16px color #49454F */
 .small-400 {
   font-size: var(--lg-icon-text-fs);
-  font-weight: var(--regular);
-  letter-spacing: var(--lg-icon-text-ls);
-  color: var(--Grey800);
   line-height: var(--lg-icon-text-lh);
+  letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--regular);
+  color: var(--Grey800);
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
