@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-html {
+html,body {
   scroll-behavior: smooth;
 }
 
@@ -121,12 +121,14 @@ html {
 /* headings 56px*/
 .h1-heading {
   font-size: var(--h1-font-size);
-  font-weight: var(--bold);
   line-height: var(--h1-line-height);
   color: var(--heading-color);
+  font-weight: var(--bold);
   font-family: 'Source Serif Pro', serif;
 }
 
+
+/* headings 48px*/
 .all-headings {
   font-size: var(--all-headings-font-size);
   font-weight: var(--bold);
