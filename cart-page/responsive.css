@@ -285,12 +285,6 @@
       .total-price-text-price { 
         padding: 16px 0 0;
       }
-
-      /* footer image */
-      .footer-image-section{ 
-        height: 84px;
-        margin-bottom: 80px;
-      }
 }
 
 @media(max-width: 432px) {
@@ -304,4 +298,11 @@
     .discount-form .discount-input {
         width: 72%;
     }
+}
+
+/* footer image margin bottom */
+@media (max-width: 576px){
+    .footer-image-section{
+    margin-bottom: 84.46px;
+}
 }

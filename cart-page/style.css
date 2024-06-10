@@ -1,6 +1,6 @@
 @import url(../css/theme.css);
-@import url(../css/nav.css);
 @import url(../css/footer.css);
+@import url(../css/nav.css);
 
 
 * {
@@ -426,23 +426,4 @@ input[type="radio"] {
   outline: none;
   border: none;
 }
-
-/* Footer image section  */
-.footer-section{
-  padding-bottom: 0;
-}
-
-.footer-image-section{
-  background-color: var(--Grey100);
-  width: 100%;
-  overflow: hidden;
-}
-.footer-image{
-  width: 100%;
-  height: 100%;
-}
-
-.footer-image img{
-  width: 100%;
-  height: 100%;
-}
+ 

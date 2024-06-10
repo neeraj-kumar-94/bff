@@ -32,7 +32,306 @@
     display: none;
 }
 
+/* First section
+================== */
+.checkout-first-section{
+    width: 738px;
+}
+
+
 /* Check out Main section start */
-.checkout-product-section{
+.checkout-product-section {
     background-color: var(--Linen);
+}
+
+/* product section */
+.product-section {
+    background-color: var(--Linen);
+    padding: 16px;
+}
+
+.product-box {
+    background-color: var(--Linen);
+    margin-bottom: 24px;
+}
+
+.product-box:last-child {
+    margin-bottom: 0;
+}
+
+.order-summery-text p {
+    font-weight: var(--semi-bold);
+}
+
+.order-summery-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+/* Product image and details section 
+======================================*/
+.product-image-and-details-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 48px;
+}
+
+/* product image qunatity */
+.product-image-and-quantity {
+    position: relative;
+}
+
+.product-image {
+    width: 90px;
+    height: 90px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-top-quantity {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+
+.product-top-quantity {
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-top-quantity p {
+    color: var(--NeroWhite);
+    font-size: var(--xlarge-reg-fs);
+    font-family: 'Source Sans Pro';
+    font-weight: var(--bold);
+}
+
+/* only product detail section */
+.product-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.product-title-and-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* bold pack */
+.product-units-and-pack span {
+    font-weight: bold;
+}
+
+/* subscribe email */
+.subscription-and-image {
+    display: flex;
+    justify-content: flex-start;
+    align-content: baseline;
+}
+
+/* Form section start
+======================= */
+
+/* First contact section */
+
+.contact-inner-section {
+    padding: 24px 0 26px;
+    border-bottom: .5px solid rgba(0, 0, 0, .1);
+}
+
+.contact-title-text {
+    margin-bottom: 24px;
+}
+
+.form-input-and-label-box-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.label-and-input-box {
+    position: relative;
+    width: 100%;
+}
+
+.common-label-box {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    padding: 0 4px;
+    background-color: var(--NeroWhite);
+    z-index: 1;
+}
+
+.relative-label {
+    font-size: var(--xlarge-reg-fs);
+    font-weight: var(--regular);
+    line-height: 16px;
+    color: var(--Grey800);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.relative-input {
+    width: 100%;
+    padding: 19px 19px;
+    border: 1px solid var(--Rose-Fog);
+    border-radius: 4px;
+    /* font related */
+    font-size: var(--lg-icon-text-fs);
+    font-weight: var(--regular);
+    line-height: var(--lg-icon-text-lh);
+    color: var(--brown);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.relative-input:focus {
+    outline: none;
+    border: 1px solid var(--Rose-Fog);
+}
+
+/* check box */
+.check-box-and-text {
+    margin-top: 32px;
+}
+
+.check-box:focus {
+    accent-color: var(--TobaccoBrown);
+}
+
+
+/* Delivery section
+==================== */
+.delivery-inner-section {
+    padding: 26px 0;
+    border-bottom: .5px solid rgba(0, 0, 0, .1);
+}
+
+
+/* Delivery title and current location link */
+.delivery-title-and-current-location-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.enter-other-details-title {
+    margin-bottom: 26px;
+}
+
+/* REUSE CODE*************start */
+
+.state-teritory-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+#state {
+    background-color: var(--NeroWhite); 
+    appearance: none; /* Remove default arrow in most browsers */
+    -webkit-appearance: none; /* Remove default arrow in Chrome, Safari, Edge */
+    -moz-appearance: none; /* Remove default arrow in Firefox */ 
+}
+
+#state:focus {
+ accent-color: red;
+}
+
+.state-teritory-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url('./images/down-arrow-Icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    pointer-events: none;
+} 
+
+/* REUSE CODE*************end */
+ 
+
+/* Post code form use post code check */
+.post-code-label-and-input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+    margin: 26px 0 32px;
+    white-space: nowrap;
+}
+
+.discount-form-title {
+    margin-bottom: 12px;
+}
+
+.post-code-input{
+    padding: 18px 16px;
+    font-size: var(--lg-icon-text-fs);
+    letter-spacing: var(--lg-icon-text-ls);
+    line-height: var(--lg-icon-text-lh);
+    color: var(--Grey400);
+    font-weight: var(--semi-bold);
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid var(--Rose-Fog);
+    border-radius: 4px;
+    width: 213px;
+}
+
+.discount-form .discount-input:focus {
+    border: 1px solid var(--Rose-Fog);
+    outline: none;
+}
+
+.check-button {
+    border: none;
+    outline: none;
+    width: 83px;
+    padding: 16.5px 19px;
+    font-size: var(--Medium-400-fs);
+    line-height: var(--Medium-400-lh);
+    letter-spacing: var(--Medium-400-ls);
+    font-weight: var(--regular);
+    color: var(--NeroWhite);
+    background-color: var(--Disabled_brown);
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* payment section start
+========================= */
+
+.payment-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 26px;
+    padding: 26px 0 18px;
 }

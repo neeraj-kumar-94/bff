@@ -184,6 +184,26 @@ html,body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* paragraph 24px 400 XLarge-400 color:#000000*/
+.xlarge-p-black {
+  font-size: var(--XLarge-400-fs);
+  font-weight: var(--regular);
+  line-height: var(--XLarge-400-lh);
+  letter-spacing: var(--XLarge-400-ls);
+  color: var(--black);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* paragraph 24px 400 XLarge-400 color:#000000*/
+.xlarge-p-black-bold {
+  font-size: var(--XLarge-400-fs);
+  font-weight: var(--bold);
+  line-height: var(--XLarge-400-lh);
+  letter-spacing: var(--XLarge-400-ls);
+  color: var(--black);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* 20px font size color:#352B26*/
 .large-400-p-brown {
   font-size: var(--Large-400-fs);
@@ -237,7 +257,7 @@ html,body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* paragraph 18px ---no use media query  color:#656363*/
+/* paragraph 18px color:#656363*/
 .medium-400-Grey-600 {
   font-size: var(--Medium-400-fs);
   line-height: var(--Medium-400-lh);
@@ -246,6 +266,8 @@ html,body {
   color: var(--Grey600);
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/* paragraph 18px color:#000000*/
 
 .medium-400-black {
   font-size: var(--Medium-400-fs);
@@ -307,6 +329,28 @@ html,body {
   letter-spacing: var(--lg-icon-text-ls);
   font-weight: var(--regular);
   color: var(--Grey800);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Font size 16px color #656363 */
+.small-400-grey-600 {
+  font-size: var(--lg-icon-text-fs);
+  line-height: var(--lg-icon-text-lh);
+  letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--regular);
+  color: var(--Grey600);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Font size 16px color #352B26 */
+.small-400-brown {
+  font-size: var(--lg-icon-text-fs);
+  line-height: var(--lg-icon-text-lh);
+  letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--regular);
+  color: var(--brown);
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
 }

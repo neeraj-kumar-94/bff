@@ -420,3 +420,11 @@
         row-gap: 0;
     }
 }
+
+
+/* footer image margin bottom */
+@media (max-width: 576px){
+    .footer-image-section{
+    margin-bottom: 84.46px;
+}
+}

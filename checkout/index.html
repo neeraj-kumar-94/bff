@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <!-- Link css file -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./responsive.css">
 </head>
 
@@ -107,19 +107,19 @@
             <div class="breadcrumb-image">
                 <img src="./images/breadcrub-icon.png" alt="">
             </div>
-            <div class="product-info">
+            <div class="selection">
                 <a href="#" class="link-breadcrumb">Selection</a>
             </div>
             <div class="breadcrumb-image">
                 <img src="./images/breadcrub-icon.png" alt="">
             </div>
-            <div class="product-info">
-                <a href="#" class="link-breadcrumb">Cart</a>
+            <div class="cart-page">
+                <a href="https://neeraj-kumar-94.github.io/bff/cart-page/index.html" class="link-breadcrumb">Cart</a>
             </div>
             <div class="breadcrumb-image">
                 <img src="./images/breadcrub-icon.png" alt="">
             </div>
-            <div class="product-cat">
+            <div class="chceckout">
                 <p class="current-page-name">Checkout</p>
             </div>
         </div>
@@ -132,44 +132,83 @@
                 <div class="checkout-first-section">
                     <!-- product section -->
                     <div class="product-section">
+                        <div class="order-summery-and-price">
+                            <div class="order-summery-text">
+                                <p class="large-400-p">Order Summary</p>
+                            </div>
+                            <div class="order-summery-price">
+                                <p class="xlarge-p-black-bold">$127.00</p>
+                            </div>
+                        </div>
                         <div class="product-inner-section">
-                            <div class="order-summery-and-price">
-                                <div class="order-summery-text">
-                                    <p>Order Summary</p>
-                                </div>
-                                <div class="order-summery-price">
-                                    <p>$127.00</p>
+                            <!-- First Product -->
+                            <div class="product-box">
+                                <div class="product-image-and-details-section">
+                                    <div class="product-image-and-quantity">
+                                        <div class="product-image">
+                                            <img src="./images/product-image.png" alt="Product image">
+                                        </div>
+                                        <div class="product-top-quantity">
+                                            <p>1</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="product-title-and-price">
+                                            <div class="product-title">
+                                                <p class="large-400-p-brown">BFF Chicken Bowl Meal Plan (7 packs/week)
+                                                </p>
+                                            </div>
+                                            <div class="product-price">
+                                                <p class="large-400-p-brown">$73.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-size">
+                                            <p class="medium-400-Grey-600">225g/day</p>
+                                        </div>
+                                        <div class="product-units-and-pack">
+                                            <p class="medium-400-Grey-600">2 units <span>(14 packs)</span></p>
+                                        </div>
+                                        <div class="subscription-and-image">
+                                            <p class="small-400-grey-600">Weekly Subscription </p>
+                                            <div class="subscription-image">
+                                                <img src="./images/Icons1254.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-image-and-details-section">
-                                <div class="product-image-and-quantity">
-                                    <div class="product-image">
-                                        <img src="" alt="">
-                                    </div>
-                                    <div class="product-image-quantity">
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                                <div class="product-details">
-                                    <div class="product-title-and-price">
-                                        <div class="product-title">
-                                            <p>BFF Chicken Bowl Meal Plan (7 packs/week)</p>
+                            <!-- Second Product -->
+                            <div class="product-box">
+                                <div class="product-image-and-details-section">
+                                    <div class="product-image-and-quantity">
+                                        <div class="product-image">
+                                            <img src="./images/product-image.png" alt="Product image">
                                         </div>
-                                        <div class="product-price">
-                                            <p>$73.00</p>
+                                        <div class="product-top-quantity">
+                                            <p>1</p>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-size">
-                                    <p>225g/day</p>
-                                </div>
-                                <div class="product-units-and-pack">
-                                    <p>2 units <span>(14 packs)</span></p>
-                                </div>
-                                <div class="subscription-and-image">
-                                    <p>Weekly Subscription </p>
-                                    <div class="subscription-image">
-                                        <img src="" alt="">
+                                    <div class="product-details">
+                                        <div class="product-title-and-price">
+                                            <div class="product-title">
+                                                <p class="large-400-p-brown">BFF Lamb Bowl Meal Plan (7 packs/week)</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <p class="large-400-p-brown">$37.50</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-size">
+                                            <p class="medium-400-Grey-600">225g/day</p>
+                                        </div>
+                                        <div class="product-units-and-pack">
+                                            <p class="medium-400-Grey-600">1 units <span>(7 packs)</span></p>
+                                        </div>
+                                        <div class="subscription-and-image">
+                                            <p class="small-400-grey-600">Weekly Subscription </p>
+                                            <div class="subscription-image">
+                                                <img src="./images/Icons1254.png" alt="">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -177,15 +216,216 @@
                     </div>
                     <div class="form-section">
                         <div class="form-inner-section">
+                            <!-- form -->
                             <form class="checkout-main-form">
+                                <!-- Contact section -->
                                 <div class="contact-section">
                                     <div class="contact-inner-section">
                                         <div class="contact-title-text">
-                                            <p>CONTACT</p>
+                                            <p class="large-400-p-brown">CONTACT</p>
                                         </div>
-                                        <div class="label-and-input-box">
-                                            <label for="phone" class="relative-label">Phone</label>
-                                            <input type="text" id="phone" name="phone" class="">
+                                        <div class="form-input-and-label-box-section">
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="phone" class="relative-label">Phone</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="phone" name="phone" class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="email" class="relative-label">Email</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="email" id="email" name="email" class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="dog-name" class="relative-label">Your Doggo's
+                                                        Name</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="dog-name" name="dog-name"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="check-box-and-text">
+                                            <input type="checkbox" id="email-news-offers" name="email-news-offers"
+                                                class="check-box">
+                                            <label for="email-news-offers" class="medium-400-black">Email me with news
+                                                and offers</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Delivery Section -->
+                                <div class="delivery-section">
+                                    <div class="delivery-inner-section">
+                                        <div class="delivery-title-and-current-location-link">
+                                            <div class="delivery-title-text">
+                                                <p class="large-400-p-brown">DELIVERY</p>
+                                            </div>
+                                            <div class="current-location-link">
+                                                <a href="#" class="xl-gradient-text">Detect my current location</a>
+                                            </div>
+                                        </div>
+                                        <div class="post-code-form">
+                                            <div class="post-code-title">
+                                                <p class="small-400-brown">Enter your Postcode and check if we deliver
+                                                    in your area.</p>
+                                            </div>
+                                            <div class="post-code-form-inner-sec">
+                                                <form class="">
+                                                    <div class="post-code-label-and-input label-and-input-box">
+                                                        <div class="common-label-box">
+                                                            <label for="post-code"
+                                                                class="relative-label">Postcode</label>
+                                                        </div>
+                                                        <div class="commor-input-box">
+                                                            <input type="text" class="post-code-input relative-input"
+                                                                name="post-code" required>
+                                                        </div>
+                                                        <button type="submit" class="check-button">Check</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="enter-other-details-title">
+                                            <p class="small-400-brown">Enter other delivery details</p>
+                                        </div>
+                                        <div class="form-input-and-label-box-section">
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="country-region"
+                                                        class="relative-label">Country/Region</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="country-region" name="country-region"
+                                                        class="relative-input" placeholder="Australia">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="first-name" class="relative-label">First Name</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="first-name" name="first-name"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="last-name" class="relative-label">Last Name</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="last-name" name="last-name"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="apartment" class="relative-label">Apartment, suite, etc.
+                                                        (optional)</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="apartment" name="apartment"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="city" class="relative-label">City</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="city" name="city" class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="state-teritory-dropdown  label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="state" class="relative-label">State/Territory</label>
+                                                </div>
+                                                <select id="state" name="state" class="state-dropdown relative-input">
+                                                    <option value="ACT">Australian Capital Territory</option>
+                                                    <option value="NSW">New South Wales</option>
+                                                    <option value="NT">Northern Territory</option>
+                                                    <option value="QLD">Queensland</option>
+                                                    <option value="SA">South Australia</option>
+                                                    <option value="TAS">Tasmania</option>
+                                                    <option value="VIC">Victoria</option>
+                                                    <option value="WA">Western Australia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="check-box-and-text">
+                                            <input type="checkbox" id="save-information" name="save-information"
+                                                class="check-box">
+                                            <label for="save-information" class="medium-400-black">Save this information
+                                                for next time</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Payment Section -->
+                                <div class="payment-section">
+                                    <div class="payment-inner-section">
+                                        <div class="payment-title">
+                                            <div class="payment-title-text">
+                                                <p class="large-400-p-brown">PAYMENT</p>
+                                            </div>
+                                            <div class="transaction-secure-text">
+                                                <p class="small-400-brown">All transactions are secure and encrypted.
+                                                </p>
+                                            </div>
+                                            <div class="credit-card-and-debit-card-text">
+                                                <p class="small-400-brown">CREDIT/DEBIT CARD</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-input-and-label-box-section">
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="card-number" class="relative-label">Card Number</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="card-number" name="card-number"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="expiration-date" class="relative-label">Expiration date
+                                                        (MM/YY)</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="expiration-date" name="expiration-date"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="security-code" class="relative-label">Security
+                                                        Code</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="security-code" name="security-code"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                            <div class="label-and-input-box">
+                                                <div class="common-label-box">
+                                                    <label for="name-on-card" class="relative-label">Name on
+                                                        Card</label>
+                                                </div>
+                                                <div class="commor-input-box">
+                                                    <input type="text" id="name-on-card" name="name-on-card"
+                                                        class="relative-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="check-box-and-text">
+                                            <input type="checkbox" id="use-shipping-address" name="use-shipping-address"
+                                                class="check-box">
+                                            <label for="use-shipping-address" class="medium-400-black">Use shipping address as billing address</label>
                                         </div>
                                     </div>
                                 </div>

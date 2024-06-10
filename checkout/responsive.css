@@ -32,3 +32,25 @@
         display: inline-block;
     }
 }
+
+/* post code form */
+@media(max-width: 576px) {
+    .product-discount-and-frequncy-subsc-sec {
+        max-width: 312px;
+        padding: 0;
+    }
+
+    /* discount form button */
+    .discount-form-title {
+        display: none;
+    }
+
+    .discount-form .apply-button {
+        font-size: var(--lg-icon-text-fs);
+    }
+
+    .discount-form {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+}
