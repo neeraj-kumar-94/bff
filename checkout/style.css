@@ -32,10 +32,23 @@
     display: none;
 }
 
+/* Checkout main form
+======================== */
+
+.checkout-product-and-form-inner-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /* First section
 ================== */
-.checkout-first-section{
-    width: 738px;
+.checkout-first-section {
+    max-width: 738px;
+    width: 60%;
+    padding: 16px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
 }
 
 
@@ -45,7 +58,7 @@
 }
 
 /* product section */
-.product-section {
+.product-inner-section {
     background-color: var(--Linen);
     padding: 16px;
 }
@@ -69,6 +82,29 @@
     align-items: center;
     margin-bottom: 32px;
 }
+
+/* hide dropdown image */
+.dropdown-images{
+    display: none;
+}
+
+.dropdown-close, .dropdown-open{
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown-close img, .dropdown-open img{
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown-open{
+    display: none;
+}
+
+/* .some-product-section{
+    display: inline-block;
+} */
 
 /* Product image and details section 
 ======================================*/
@@ -206,7 +242,7 @@
 
 .relative-input:focus {
     outline: none;
-    border: 1px solid var(--Rose-Fog);
+    border: 3px solid var(--TobaccoBrown);
 }
 
 /* check box */
@@ -241,20 +277,20 @@
 
 /* REUSE CODE*************start */
 
-.state-teritory-dropdown{
+.state-teritory-dropdown {
     position: relative;
     display: inline-block;
 }
 
-#state {
-    background-color: var(--NeroWhite); 
-    appearance: none; /* Remove default arrow in most browsers */
-    -webkit-appearance: none; /* Remove default arrow in Chrome, Safari, Edge */
-    -moz-appearance: none; /* Remove default arrow in Firefox */ 
+.state-dropdown {
+    background-color: var(--NeroWhite);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-#state:focus {
- accent-color: red;
+.state-dropdown:focus {
+    border: 1px solid var(--Rose-Fog);
 }
 
 .state-teritory-dropdown::after {
@@ -269,11 +305,9 @@
     background-repeat: no-repeat;
     transform: translateY(-50%);
     pointer-events: none;
-} 
+}
 
 /* REUSE CODE*************end */
- 
-
 /* Post code form use post code check */
 .post-code-label-and-input {
     width: 100%;
@@ -289,7 +323,7 @@
     margin-bottom: 12px;
 }
 
-.post-code-input{
+.post-code-input {
     padding: 18px 16px;
     font-size: var(--lg-icon-text-fs);
     letter-spacing: var(--lg-icon-text-ls);
@@ -327,11 +361,174 @@
 /* payment section start
 ========================= */
 
-.payment-title{
+.payment-title {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     row-gap: 26px;
     padding: 26px 0 18px;
+}
+
+
+.clearable-input {
+    position: relative;
+    display: inline-block;
+}
+
+#name-on-card{
+    padding-right: 40px;
+}
+
+.clearable-input .clear-card-name {
+    position: absolute;
+    right: 5px;  
+    top: 50%; 
+    transform: translateY(-50%); 
+    cursor: pointer;
+} 
+
+
+/* BILLING ADDRESS Section */
+.billing-address-title {
+    margin: 24px 0;
+}
+
+
+
+/* Payment section */
+/* second section
+=========================== */
+.checkout-second-section {
+    width: 40%;
+    max-width: 538px;
+    padding: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+}
+
+.product-discount-and-frequncy-subsc-sec {
+    width: 100%;
+    /* white-space: nowrap; */
+}
+
+/* set delivery frequncy section */
+.set-delivery-freq-sec {
+    padding: 16px 0;
+    border-bottom: .5px solid rgba(0, 0, 0, .1);
+}
+
+.set-delivery-freq-sec .set-delivery-freq-title {
+    padding-bottom: 28px;
+    white-space: wrap;
+}
+
+.delivery-frequency-button .delivery-frequency-inner-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 100%;
+}
+
+.delivery-freq {
+    border: 1px solid var(--Rose-Fog);
+    padding: 16px 26px;
+    border-radius: 8px;
+    width: 312px;
+}
+
+.delivery-freq .del-frq-label {
+    display: flex;
+    justify-content: flex-start;
+    align-content: baseline;
+    column-gap: 8px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--Sec_brown);
+}
+
+/* subscription checkbox and read policy link */
+.subscription-policy-checkbox-and-read-policy-link {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+/* product price and details */
+.product-price-detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 16px 0;
+    border-bottom: .5px solid rgba(0, 0, 0, .1);
+}
+
+.read-policy-link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+
+.subtotal-text-and-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* coupon code text and price */
+.coupon-code-and-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coupon-code-and-text p{
+    color: #36724F;
+}
+
+.shiping-charge-paid-or-no-paid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* total amount and button */
+.total-price-text-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 32px;
+}
+
+.total-price-text p,
+.total-price p {
+    color: var(--brown);
+}
+
+.pay-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-now-button button {
+    width: 90%;
+    padding: 13px 0;
+    outline: none;
+    border: none;
 }

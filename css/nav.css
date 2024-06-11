@@ -1,6 +1,9 @@
 .nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
   width: 100%;
-  padding: 100px;
   height: 70px;
   background-color: var(--Grey100);
   padding: 10px 0px;
@@ -70,6 +73,10 @@
 .nav-dropdown-links {
   width: 100%;
   display: none;
+}
+
+#nav-dropdown{
+  z-index:  50;
 }
 
 #nav-dropdown .dropdown-item {
@@ -257,5 +264,23 @@
 
   .mobile-nav-container {
     display: block;
+  }
+}
+
+
+
+/* BREAD CRUMB POSITION STICKY ONLY DESKTOP */
+.breadcrumb-sec{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  z-index: 30;
+}
+
+@media(max-width: 576px){
+  .breadcrumb-sec{ 
+    position: unset;
+    top: auto;
+    z-index: auto;
   }
 }
