@@ -419,6 +419,12 @@
     border-bottom: .5px solid rgba(0, 0, 0, .1);
 }
 
+.set-delivery-freq-sec .set-delivery-freq-title-small-text{
+    font-size: var(--Medium-400-fs);
+    line-height: var(--Medium-400-lh);
+    letter-spacing: var(--Medium-400-ls);
+}
+
 .set-delivery-freq-sec .set-delivery-freq-title {
     padding-bottom: 28px;
     white-space: wrap;

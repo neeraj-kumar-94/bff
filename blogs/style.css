@@ -96,11 +96,11 @@
 
 
 
-
 /* Subscribe to our Email section start 
 ========================================*/
 .subscribe-email-sec {
   padding: 0;
+  box-sizing: border-box;
 }
 
 .subs-email-inner-sec {
@@ -108,12 +108,16 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  row-gap: 48px;
-  height: 570px;
-  padding-top: 80px;
-  background-image: url(./images/active-campaign-bg-image.png);
+  background-image: url(./images/subscribe-email.png);
   background-position: center;
   background-repeat: no-repeat;
+  row-gap: 45px;
+  padding-top: 80px;
+  padding-bottom: 325px;
+}
+
+.subscribe-email-details{
+margin-bottom: 16px;
 }
 
 .subscribe-email-form {
@@ -161,13 +165,13 @@
   }
 
   .subs-email-inp .email-input {
-    padding: 9px 10px;
+    padding: 13.5px 10px;
     width: 220px;
   }
 
   .subs-email-btn .subscribe-button {
     padding: 13px 13px;
-    margin-left: -4px;
+    margin-left: -9px;
   }
 
   .subs-email-btn .subscribe-button button {
@@ -175,7 +179,10 @@
   }
 }
 
-/* Subscribe to our Email section end */
+/* Subscribe to our Email section end 
+======================================*/ 
+
+
 
 /* accordion section start */
 /* Pet Meal FAQ */

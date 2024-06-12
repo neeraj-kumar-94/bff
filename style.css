@@ -630,10 +630,12 @@
   background-color: var(--Light_Rose_Fog);
 }
 
-/* Subscribe to our Email section 
-  ==================================*/
+
+/* Subscribe to our Email section start 
+========================================*/
 .subscribe-email-sec {
   padding: 0;
+  box-sizing: border-box;
 }
 
 .subs-email-inner-sec {
@@ -641,14 +643,16 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  row-gap: 48px;
-  height: 570px;
-  padding-top: 80px;
-
-  /* bg image  */
-  background-image: url(./bff-images/active-campaign-bg-image.png);
+  background-image: url(./bff-images/subscribe-email.png);
   background-position: center;
   background-repeat: no-repeat;
+  row-gap: 45px;
+  padding-top: 80px;
+  padding-bottom: 325px;
+}
+
+.subscribe-email-details{
+margin-bottom: 16px;
 }
 
 .subscribe-email-form {
@@ -678,6 +682,41 @@
   padding: 15px 51px;
   margin-left: -4px;
 }
+
+/* Subscribe to our Email section */
+@media(max-width:576px) {
+  .subscribe-email-sec {
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .subs-email-inner-sec {
+    row-gap: 24px;
+    height: auto;
+    padding-top: 32px;
+    padding-bottom: 130px;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .subs-email-inp .email-input {
+    padding: 13.5px 10px;
+    width: 220px;
+  }
+
+  .subs-email-btn .subscribe-button {
+    padding: 13px 13px;
+    margin-left: -9px;
+  }
+
+  .subs-email-btn .subscribe-button button {
+    font-size: var(--lg-icon-text-fs);
+  }
+}
+
+/* Subscribe to our Email section end 
+======================================*/ 
+
 
 
 /* Pet Meal FAQ */

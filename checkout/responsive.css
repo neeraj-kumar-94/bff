@@ -90,6 +90,23 @@
 /* media query 576px */
 @media (max-width:576px) {
 
+    /*Checkout main containe */
+    .checkout-section{
+        padding: 0;
+    }
+
+    .checkout-form-section{
+        display: flex;
+        justify-content: center;
+        padding: 0px 24px;
+    }
+
+    .checkout-form-inner-section{
+        width: 312px;
+    }
+
+    
+    
     /* title text */
     .contact-title-text p,
     .delivery-title-text p,
@@ -105,6 +122,13 @@
         line-height: var(--XSmall-400-lh);
     }
 
+    .check-box-and-text {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        margin-top: 24px;
+    }
+
     .check-box-and-text label {
         font-size: var(--XSmall-400-fs);
         line-height: var(--XSmall-400-lh);
@@ -112,7 +136,7 @@
 
     /* First section */
     .checkout-first-section {
-        max-width: 312px;
+        max-width: 100%;
         padding: 0;
     }
 
@@ -120,7 +144,7 @@
     .checkout-second-section {
         width: 100%;
         max-width: 312px;
-        padding: 0;
+        padding: 20px 0 24px;
     }
 
     /* product section */
@@ -183,8 +207,6 @@
         display: block;
     }
 
-
-
 }
 
 
@@ -235,6 +257,13 @@
         font-size: var(--lg-icon-text-fs);
         line-height: var(--lg-icon-text-lh);
         letter-spacing: var(--lg-icon-text-ls);
+    }
+ 
+
+    .set-delivery-freq-sec .set-delivery-freq-title-small-text{
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+        letter-spacing: var(--xlarge-reg-ls);
     }
 
     .delivery-frequency-two-button .form {
