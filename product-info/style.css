@@ -441,7 +441,8 @@ margin-bottom: 16px;
 /* Subscribe to our Email section end 
 ======================================*/ 
 
-/* accordion section start */
+/* accordion section start 
+==========================*/
 /* Pet Meal FAQ */
 .pet-meal-faq-sec {
   background-color: var(--cont-bg-sec-color);
@@ -455,13 +456,30 @@ margin-bottom: 16px;
   row-gap: 24px;
 }
 
+/* accordion and image section */
+.accordion-and-images-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 66px;
+}
+
+.curious-dog-image {
+  margin-top: -100px;
+}
+
+.curious-dog-image img {
+  width: 100%;
+  height: 100%;
+}
+
 .pet-meal-faq-det {
   margin-bottom: 24px;
 }
 
 /* ------- */
 .pet-meal-faq-accordion {
-  width: 83%;
+  width: 785px;
 }
 
 .inner-accordion-section {
@@ -520,6 +538,32 @@ margin-bottom: 16px;
   display: block;
 }
 
+@media (max-width: 930px) {
+
+  /* accordion and image section */
+  .accordion-and-images-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+
+  /* accordion section start*/
+  .pet-meal-faq-accordion {
+    width: 90%;
+  }
+
+  .curious-dog-image {
+    width: 329px;
+    height: 404px;
+    margin-top: 0;
+  }
+
+}
+
 @media(max-width:576px) {
 
   /* accordion section start*/
@@ -530,5 +574,20 @@ margin-bottom: 16px;
   .headin-op-cl-icon p {
     padding: 17px 48px 17px 17px;
   }
+
+  .accordion-and-images-section {
+    row-gap: 20px;
+  }
+
+  .curious-dog-image {
+    width: 200px;
+    height: 237.3px;
+    margin-top: 0;
+  }
+
+  .pet-meal-faq-det {
+    margin-bottom: 0;
+  }
+
 
 }
