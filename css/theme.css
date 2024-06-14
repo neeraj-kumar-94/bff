@@ -278,6 +278,17 @@ html,body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* paragraph 18px color:#000000*/
+
+.medium-400-choco {
+  font-size: var(--Medium-400-fs);
+  line-height: var(--Medium-400-lh);
+  letter-spacing: var(--Medium-400-ls);
+  font-weight: var(--bold);
+  color: var(--brown);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Font size 16px color #000000  */
 .Small-800-b {
   font-size: var(--lg-icon-text-fs);
@@ -351,6 +362,17 @@ html,body {
   letter-spacing: var(--lg-icon-text-ls);
   font-weight: var(--regular);
   color: var(--brown);
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Font size 16px color #666666*/
+.small-400-Grey400 {
+  font-size: var(--lg-icon-text-fs);
+  line-height: var(--lg-icon-text-lh);
+  letter-spacing: var(--lg-icon-text-ls);
+  font-weight: var(--regular);
+  color: var(--Grey400);
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
 }

@@ -33,133 +33,200 @@
     }
 }
 
+/* product section */
 
-/* Our Bowl Plans section */
-@media(max-width:1320px) {
-    .our-bowl-details-sec {
-        width: 50%;
-    }
 
-    .our-bowl-dog-image {
-        width: 50%;
-    }
 
-    .our-bowl-dog-image img {
-        width: 100%;
-        height: 100%;
-    }
 
-    .four-product {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
 
-@media(max-width:1114px) {
-    .four-product {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media(max-width:857px) {
-    .our-bowl-heading h1 {
-        font-size: var(--XXLarge-400-fs);
-        line-height: var(--XXLarge-400-lh);
-    }
+/* media query 576px */
+@media (max-width:576px) {
 
-    .our-bowl-detail-paragraph p {
-        font-size: var(--Medium-400-fs);
-        line-height: var(--Medium-400-lh);
-        letter-spacing: var(--Medium-400-ls);
-    }
 
-    .our-bowl-plan-sec {
-        padding-top: 40px;
-    }
-
-    .our-bowl-details-sec {
-        padding-right: 20px;
-    }
-}
-
-@media(max-width:725px) {
-    .four-product {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 24px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .product {
-        width: 300px;
-        margin: 0 auto;
-    }
-}
-
-@media(max-width:576px) {
-    .our-bowl-plan-sec {
-        display: none;
-    }
-
-    .our-bowl-heading-product-sec {
+    .checkout-form-section {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-top: 16px;
-        padding-bottom: 24px;
+        padding: 0px 24px;
     }
 
-    .breadcrumb-inner-sec {
-        padding: 15px 24px;
+    .checkout-form-inner-section {
+        width: 312px;
     }
 
-}
 
-/* bowl-details-section */
-@media(max-width: 900px) {
-    .bowl-details-three-sec {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-@media(max-width:725px) {
-    .bowl-details-three-sec {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media(max-width:576px) {
-    .bowl-detail-inner-sec {
-        width: 312px !important;
-        background-position: cover;
+    /* title text */
+    .contact-title-text p,
+    .delivery-title-text p,
+    .payment-title-text p,
+    .billing-address-title p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
     }
 
-    .bowl-details-three-sec {
-        row-gap: 24px;
-        column-gap: 0;
-    }
-
-    .bowl-paragraph p {
+    .current-location-link a,
+    .read-policy-link a {
         font-size: var(--XSmall-400-fs);
         line-height: var(--XSmall-400-lh);
     }
 
-    .bowl-heading p {
-        font-size: var(--Large-400-fs);
-        line-height: var(--Large-400-lh);
-        letter-spacing: var(--Large-400-ls);
+    .check-box-and-text {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        margin-top: 24px;
     }
 
-    .b-image,
-    .b-image img {
-        width: 24px;
-        height: 24px;
+    .check-box-and-text label {
+        font-size: var(--XSmall-400-fs);
+        line-height: var(--XSmall-400-lh);
     }
 
-    .bowl-img,
-    .bowl-img img {
-        width: 24px;
-        height: 24px;
+    /* First section */
+    .checkout-first-section {
+        max-width: 100%;
+        padding: 0;
     }
 
+    /* second section */
+    .checkout-second-section {
+        width: 100%;
+        max-width: 312px;
+        padding: 20px 0 24px;
+    }
+
+    /* product section */
+
+    .order-summery-text p {
+        color: var(--TobaccoBrown);
+    }
+
+    .order-summery-price p {
+        font-size: var(--Medium-400-fs);
+        line-height: var(--Medium-400-lh);
+    }
+
+    .product-image-and-details-section {
+        align-items: flex-start;
+        column-gap: 16px;
+    }
+
+    .product-image {
+        width: 64px;
+        height: 64px;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-title p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+    }
+
+    .product-price p,
+    .product-size p,
+    .product-units-and-pack p,
+    .subscription-and-image p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+    }
+
+}
+
+
+/* Price details and total amount */
+/* Payment Frequncy */
+@media (max-width: 576px) {
+    /* second section
+    ================== */
+    .product-discount-and-frequncy-subsc-sec {
+        max-width: 312px;
+        padding: 0;
+    }
+
+    /* discount form button */
+    .discount-form-title {
+        display: none;
+    }
+
+    .discount-form .apply-button{
+        font-size: var(--lg-icon-text-fs);
+    }
+
+    .discount-form {
+        padding-bottom: 16px;
+        padding-top: 16px;
+    }
+
+    .set-delivery-freq-sec .set-delivery-freq-title {
+        padding-bottom: 16px;
+        white-space: wrap;
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+        letter-spacing: var(--lg-icon-text-ls);
+    }
+
+
+    .set-delivery-freq-sec .set-delivery-freq-title-small-text {
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+        letter-spacing: var(--xlarge-reg-ls);
+    }
+
+    .delivery-frequency-two-button .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 16px;
+    }
+
+    .delivery-freq {
+        border: 1px solid var(--Rose-Fog);
+        padding: 16px 26px;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    /* product price details*/
+    .price-details-text p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+        letter-spacing: auto;
+    }
+
+    .price-details-text span {
+        font-size: var(--XSmall-400-fs);
+        line-height: var(--XSmall-400-lh);
+        letter-spacing: auto;
+    }
+
+    .subtotal-text p,
+    .subtotal-price p,
+    .coupon-code-and-text p,
+    .coupon-code-price p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+        letter-spacing: auto;
+    }
+
+    .shiping-charge-text p,
+    .paid-or-no-paid p {
+        font-size: var(--lg-icon-text-fs);
+        line-height: var(--lg-icon-text-lh);
+        letter-spacing: auto;
+    }
+
+    .total-price-text p,
+    .total-price p {
+        font-size: var(--Medium-400-fs);
+        line-height: var(--Medium-400-lh);
+        letter-spacing: auto;
+    }
     
 }
