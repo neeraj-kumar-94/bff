@@ -479,6 +479,10 @@ input[type="radio"] {
     border-bottom: .5px solid rgba(0, 0, 0, .1);
 }
 
+.product-price-detail span{
+    font-weight: var(--regular);
+  } 
+
 .read-policy-link {
     display: flex;
     justify-content: center;

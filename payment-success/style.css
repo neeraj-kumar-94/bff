@@ -34,16 +34,32 @@
 
 /* Payment main section
 ============================ */
+.payment-success{
+  padding-top: 46px;
+}
+
 .payment-success-two-section{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
 .products-and-user-details-section{
+  max-width: 60%;
   width: 706px;
+  position: relative;
   background-color: var(--Linen);
+  margin-right: 25px;
+}
+
+.products-and-user-details-section::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  bottom: 0;
+  border-right: .5px solid rgba(0, 0, 0, .1);
 }
 
 /* Product section */
@@ -139,7 +155,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  column-gap: 15px;
 }
 
 /* bold pack */
@@ -156,14 +173,23 @@
 
 /* Price Details and total amount*/ 
 /* product price and details */
-.product-price-detail {
+.price-details-and-total-amount{
+  padding: 0 16px 0;
+  }
+  
+  .product-price-detail {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   row-gap: 16px;
-  padding: 16px;
-  border-bottom: .5px solid rgba(0, 0, 0, .1);
+  padding-top: 16px;
+  border-top: 1px dashed rgba(0, 0, 0, .1);
+  border-bottom: 1px dashed rgba(0, 0, 0, .1);
+}
+
+.product-price-detail span{
+  font-weight: var(--regular);
 }
 
 .read-policy-link {
@@ -205,7 +231,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0 32px;
+  padding: 16px 0 16px;
+  border-top: 1px dashed rgba(0, 0, 0, .1);
+}
+
+.total-price-box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .total-price-text p,
@@ -213,13 +248,104 @@
   color: var(--brown);
 }
 
-/* product informatin section
+/* Customer information section
 ============================= */
-.customer-info-title p{
+.customer-info-inner-sec{
+  padding: 16px;
+}
+
+.customer-info-title,
+.payment-title,
+.shiping-method-title{
+  padding: 16px 0;
+}
+
+.customer-info-title p,
+.payment-title p,
+.shiping-method-title p{
   font-weight: var(--semi-bold);
 }
 
+.shipping-and-billing-address{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 138px;
+}
 
+.shipping-add-title,
+.billing-address-title{
+  padding-bottom: 12px;
+}
+
+
+.billing-user-details,
+.shiping-user-details{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+
+.image-ending-digit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  column-gap: 6px;
+  }
+  
+  .image-ending-digit .image{
+  width: 32px;
+  height: 14.25px;
+}
+
+.image-ending-digit .image img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Second section
+================== */
+.purchase-confirmation{
+  max-width: 523px;
+  width: 40%;
+}
+
+.purchase-confirmation-inner-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+  text-align: center;
+}
+
+.purchase-heading-and-para{
+  max-width: 400px;
+  width: 90%;
+  padding-bottom: 16px; 
+}
+
+.purchase-heading p{
+  color: var(--brown);
+  padding-bottom: 4px;
+}
+
+.countinue-shoping-button{
+  max-width: 432px;
+  width: 90%;
+}
+
+.countinue-shoping-button a{
+  padding: 21.5px 0;
+}
+
+/* display none mobile view button */
+.countinue-shoping-button-mobile-view{
+  display: none;
+}
 
 
 /* accordion section start 

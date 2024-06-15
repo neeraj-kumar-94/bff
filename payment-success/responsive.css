@@ -127,41 +127,116 @@
         line-height: var(--lg-icon-text-lh);
     }
 
-    .product-price p,
     .product-size p,
     .product-units-and-pack p,
     .subscription-and-image p {
+        font-size: var(--XSmall-400-fs);
+        line-height: var(--XSmall-400-lh);
+    }
+
+}
+
+
+@media(max-width: 900px) {
+    .payment-success-two-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    .products-and-user-details-section {
+        max-width: 90%;
+        width: 706px;
+        margin-right: 0;
+    }
+
+    .products-and-user-details-section::after {
+        display: none;
+    }
+
+
+    .purchase-confirmation {
+        max-width: 523px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment-success {
+        padding-top: 24px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .products-and-user-details-section {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Desktop button */
+    .countinue-shoping-button {
+        display: none;
+    }
+
+    /* display none mobile view button */
+    .countinue-shoping-button-mobile-view {
+        margin: 0 auto;
+        display: block;
+        width: 308px;
+        margin-bottom: 24px;
+    }
+
+    .countinue-shoping-button-mobile-view a {
+        font-size: var(--lg-icon-text-fs);
+        font-weight: var(--semi-bold);
+        padding: 13px 0;
+    }
+
+    .purchase-heading p {
+        font-size: var(--Large-400-fs);
+        line-height: var(--Large-400-lh);
+        letter-spacing: var(--Large-400-ls);
+    }
+
+    .purchase-paragraph p {
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+    }
+
+    .shipping-and-billing-address {
+        column-gap: 55px;
+    }
+
+    .customer-info-title p,
+    .payment-title p,
+    .shiping-method-title p {
         font-size: var(--lg-icon-text-fs);
         line-height: var(--lg-icon-text-lh);
     }
 
+    .shipping-add-title p,
+    .billing-address-title p {
+        font-weight: var(--bold);
+        font-size: var(--XSmall-400-fs);
+        line-height: var(--XSmall-400-lh);
+    }
+
+    .billing-user-details p,
+    .shiping-user-details p,
+    .shipping-method p,
+    .image-ending-digit p {
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+    }
 }
 
 
 /* Price details and total amount */
 /* Payment Frequncy */
 @media (max-width: 576px) {
-    /* second section
-    ================== */
-    .product-discount-and-frequncy-subsc-sec {
-        max-width: 312px;
-        padding: 0;
-    }
-
-    /* discount form button */
-    .discount-form-title {
-        display: none;
-    }
-
-    .discount-form .apply-button{
-        font-size: var(--lg-icon-text-fs);
-    }
-
-    .discount-form {
-        padding-bottom: 16px;
-        padding-top: 16px;
-    }
-
     .set-delivery-freq-sec .set-delivery-freq-title {
         padding-bottom: 16px;
         white-space: wrap;
@@ -228,5 +303,5 @@
         line-height: var(--Medium-400-lh);
         letter-spacing: auto;
     }
-    
+
 }
