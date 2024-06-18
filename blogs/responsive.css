@@ -24,3 +24,129 @@
     }
 }
 
+
+/* cards and header media query
+================================ */
+@media(max-width: 1200px) {
+
+    /* card media query
+    ==================== */
+    .post-title-text {
+        font-size: var(--Large-400-fs);
+        line-height: var(--Large-400-lh);
+        letter-spacing: var(--Large-400-ls);
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+    .blog-heading-and-paragraph {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .blog-details-and-image {
+        height: auto;
+        position: unset;
+        flex-direction: column;
+    }
+
+    /* Header layout */
+    .blog-heading-and-paragraph {
+        width: 100%;
+    }
+
+    .blog-post-section {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    .header-web-image {
+        display: none;
+    }
+
+    .header-mobile-image {
+        display: inline-block;
+    }
+
+    .blog-top-paragraph p {
+        font-size: var(--XLarge-400-fs);
+        line-height: var(--XLarge-400-lh);
+        letter-spacing: var(--XLarge-400-ls);
+    }
+
+    .blog-header-image-sec {
+        position: unset;
+    }
+
+}
+
+@media(max-width: 850px) {
+    .post-cards-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post-cards-inner-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        column-gap: 40px;
+        row-gap: 60px;
+    }
+}
+
+@media(max-width: 576px) {
+
+    /* header section
+    ================== */
+    .blog-top-paragraph p {
+        font-size: var(--Large-400-fs);
+        line-height: var(--Large-400-lh);
+        letter-spacing: var(--Large-400-ls);
+    }
+
+    /* post cars and grid layout
+    ============================= */
+
+    .post-card-sec {
+        background-color: var(--cont-bg-sec-color);
+        padding: 16px 0;
+        max-width: 312px;
+        width: 100%;
+      }
+
+    .post-cards-inner-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        column-gap: 0;
+        row-gap: 14px;
+        max-width: 312px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .post-date p {
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+    }
+
+    .post-title-text {
+        color: var(--black);
+    }
+
+    .post-detail p {
+        font-size: var(--XSmall-400-fs);
+        line-height: var(--XSmall-400-lh);
+    }
+
+    .read-more-button a {
+        font-size: var(--xlarge-reg-fs);
+        line-height: var(--xlarge-reg-lh);
+        font-weight: var(--bold);
+    }
+}
