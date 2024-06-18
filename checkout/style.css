@@ -250,6 +250,10 @@
     margin-top: 32px;
 }
 
+.check-box {
+    accent-color: var(--TobaccoBrown); 
+}
+
 .check-box:focus {
     accent-color: var(--TobaccoBrown);
 }

@@ -417,7 +417,7 @@ html,body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* XXLarge-600 semi-bold 28px  color:#656363*/
+/* XXLarge-600 semi-bold 28px  color:#7D5C4E*/
 .XXLarge-600-brown {
   font-size: var(--XXLarge-400-fs);
   line-height: var(--XXLarge-400-lh);
@@ -465,13 +465,15 @@ html,body {
   cursor: pointer;
   position: relative;
   display: inline-block;
+  transition: height 0.3s ease, background 0.3s ease;
 }
+
 
 .xl-gradient-text::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 1px;
+  bottom: 1px ;
   width: 100%;
   height: 1.5px;
   /* You can adjust the height of the underline */
@@ -480,6 +482,16 @@ html,body {
       #704B3B 24%,
       #855946 50%,
       #7D5C4E 100%);
+}
+
+.xl-gradient-text:hover {
+  color: var(--Dark_brown);  
+  background: none;  
+}
+
+.xl-gradient-text:hover::after {
+  background: #4B2D23;
+  height: 1px;
 }
 /* gradient text end  */
 
