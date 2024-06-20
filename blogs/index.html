@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Link css file -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -28,7 +30,7 @@
                     <li class="nav-dw-btn nav-link-item">
                         <a href="#">Read <img src="../bff-images/nav-dropdown-menu-icon.png" alt=""></a>
                         <ul class="nav-dropdown-links" id="nav-dropdown">
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="https://neeraj-kumar-94.github.io/bff/blogs/index.html">Blog</a></li>
                             <li><a class="dropdown-item" href="#">Policies</a></li>
                             <li><a class="dropdown-item" href="#">FAQs</a></li>
                         </ul>
@@ -67,13 +69,13 @@
             </div>
             <div class="sidebar-links-sec">
                 <ul class="slider-links-inner-sec">
-                    <li><a href="./index.html" class="sidebar-link">Home</a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/blogs/index.html" class="sidebar-link">Home</a></li>
                     <li><a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html"
                             class="sidebar-link">Our Meals</a></li>
                     <li><a href="#" class="sidebar-link">Give it a Go</a></li>
                     <li><a href="#" class="sidebar-link">Order History</a></li>
                     <li><a href="#" class="sidebar-link">Subscription Policy </a></li>
-                    <li><a href="#" class="sidebar-link">Blogs</a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/blogs/index.html" class="sidebar-link">Blogs</a></li>
                 </ul>
             </div>
             <div class="sidebar-login-btn">
@@ -115,243 +117,853 @@
                     </div>
                 </div>
             </div>
-            <div class="post-cards-section">
-                <div class="post-cards-inner-section">
-                    <!-- post card 1 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">13 March 2024</p>
+            <!-- post slider -->
+            <div class="swiper post-slider">
+                <div class="swiper-wrapper post-cards-inner-slider">
+                    <div class="swiper-slide">
+                        <!-- posts first group -->
+                        <div class="post-cards-section">
+                            <div class="post-cards-inner-section">
+                                <!-- post card 1 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">13 March 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Aging , Health
+                                                    and Happiness
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs become seniors a lot younger than we
+                                                    may think.
+                                                    A year for a dog is many-many years of a human life. You may have an
+                                                    early
+                                                    senior...........</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
+                                <!-- post card 2 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">12 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Signs of Aging in Your Dog
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Have you been noticing these changes in
+                                                    the behavior
+                                                    of your aging dog? Here are some signs to be aware of and what you
+                                                    can do to
+                                                    help.....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Senior Dog Aging , Health and Happiness</p>
+                                <!-- post card 3 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">04 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Understanding the Nutrition
+                                                    Spectrum:
+                                                    Lightly Cooked vs. Raw Food vs. Kibble for Dogs</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">A lot has been said about the benefits of
+                                                    feeding
+                                                    fresh food to your canine</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">Dogs become seniors a lot younger than we may think.
-                                        A year for a dog is many-many years of a human life. You may have an early
-                                        senior...........</p>
+                                <!-- post card 4 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">26 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Care:
+                                                    Nourishment &
+                                                    Lifestyle Tips</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Typically, when a dog’s age reaches age 7
+                                                    or above,
+                                                    they are considered a senior dog. Smaller dog breeds tend to live
+                                                    longer and may
+                                                    not be classified as senior................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="xl-gradient-text">Read More</a>
+                                <!-- post card 5 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">20 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Tips and Tricks for Your
+                                                    Fussy Dog</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs, like humans, can exhibit varying
+                                                    behaviors for
+                                                    a variety of reasons, and it's important to note that individual
+                                                    dogs may have
+                                                    different preferences and reactions.....</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 6 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Sensitive Stomach Dog Food
+                                                    for Optimal
+                                                    Digestion</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">When choosing pet food for your dog,
+                                                    whether they
+                                                    have sensitive stomach or not, the essential aspects to consider
+                                                    typically
+                                                    ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 7 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/feeding-f-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Feeding Fido: A
+                                                    Comprehensive Dog Food
+                                                    Chart for Every Weight Class</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">The appropriate amount of food for a dog
+                                                    may vary
+                                                    based on factors such as their</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 8 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">16 April 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Say No to Doggo Junk Food
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">As dog owners, we all want to provide our
+                                                    furry
+                                                    friends with the best possible nutrition. However, with the
+                                                    increasing
+                                                    popularity of ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- post card 2 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">12 February 2024</p>
+                    <div class="swiper-slide">
+                        <!-- posts first group -->
+                        <div class="post-cards-section">
+                            <div class="post-cards-inner-section">
+                                <!-- post card 1 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">13 March 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Aging , Health
+                                                    and Happiness
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs become seniors a lot younger than we
+                                                    may think.
+                                                    A year for a dog is many-many years of a human life. You may have an
+                                                    early
+                                                    senior...........</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
+                                <!-- post card 2 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">12 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Signs of Aging in Your Dog
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Have you been noticing these changes in
+                                                    the behavior
+                                                    of your aging dog? Here are some signs to be aware of and what you
+                                                    can do to
+                                                    help.....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Signs of Aging in Your Dog</p>
+                                <!-- post card 3 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">04 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Understanding the Nutrition
+                                                    Spectrum:
+                                                    Lightly Cooked vs. Raw Food vs. Kibble for Dogs</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">A lot has been said about the benefits of
+                                                    feeding
+                                                    fresh food to your canine</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">Have you been noticing these changes in the behavior of your aging dog? Here are some signs to be aware of and what you can do to help.....................</p>
+                                <!-- post card 4 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">26 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Care:
+                                                    Nourishment &
+                                                    Lifestyle Tips</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Typically, when a dog’s age reaches age 7
+                                                    or above,
+                                                    they are considered a senior dog. Smaller dog breeds tend to live
+                                                    longer and may
+                                                    not be classified as senior................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
+                                <!-- post card 5 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">20 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Tips and Tricks for Your
+                                                    Fussy Dog</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs, like humans, can exhibit varying
+                                                    behaviors for
+                                                    a variety of reasons, and it's important to note that individual
+                                                    dogs may have
+                                                    different preferences and reactions.....</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 6 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Sensitive Stomach Dog Food
+                                                    for Optimal
+                                                    Digestion</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">When choosing pet food for your dog,
+                                                    whether they
+                                                    have sensitive stomach or not, the essential aspects to consider
+                                                    typically
+                                                    ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 7 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/feeding-f-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Feeding Fido: A
+                                                    Comprehensive Dog Food
+                                                    Chart for Every Weight Class</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">The appropriate amount of food for a dog
+                                                    may vary
+                                                    based on factors such as their</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 8 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">16 April 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Say No to Doggo Junk Food
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">As dog owners, we all want to provide our
+                                                    furry
+                                                    friends with the best possible nutrition. However, with the
+                                                    increasing
+                                                    popularity of ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- post card 3 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">04 February 2024</p>
+                    <div class="swiper-slide">
+                        <!-- posts first group -->
+                        <div class="post-cards-section">
+                            <div class="post-cards-inner-section">
+                                <!-- post card 1 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">13 March 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Aging , Health
+                                                    and Happiness
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs become seniors a lot younger than we
+                                                    may think.
+                                                    A year for a dog is many-many years of a human life. You may have an
+                                                    early
+                                                    senior...........</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
+                                <!-- post card 2 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">12 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Signs of Aging in Your Dog
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Have you been noticing these changes in
+                                                    the behavior
+                                                    of your aging dog? Here are some signs to be aware of and what you
+                                                    can do to
+                                                    help.....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Understanding the Nutrition Spectrum: Lightly Cooked vs. Raw Food vs. Kibble for Dogs</p>
+                                <!-- post card 3 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">04 February 2024</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Understanding the Nutrition
+                                                    Spectrum:
+                                                    Lightly Cooked vs. Raw Food vs. Kibble for Dogs</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">A lot has been said about the benefits of
+                                                    feeding
+                                                    fresh food to your canine</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">A lot has been said about the benefits of feeding fresh food to your canine</p>
+                                <!-- post card 4 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">26 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Senior Dog Care:
+                                                    Nourishment &
+                                                    Lifestyle Tips</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Typically, when a dog’s age reaches age 7
+                                                    or above,
+                                                    they are considered a senior dog. Smaller dog breeds tend to live
+                                                    longer and may
+                                                    not be classified as senior................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
+                                <!-- post card 5 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">20 December 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Tips and Tricks for Your
+                                                    Fussy Dog</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">Dogs, like humans, can exhibit varying
+                                                    behaviors for
+                                                    a variety of reasons, and it's important to note that individual
+                                                    dogs may have
+                                                    different preferences and reactions.....</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 6 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Sensitive Stomach Dog Food
+                                                    for Optimal
+                                                    Digestion</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">When choosing pet food for your dog,
+                                                    whether they
+                                                    have sensitive stomach or not, the essential aspects to consider
+                                                    typically
+                                                    ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 7 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">10 November 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/feeding-f-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Feeding Fido: A
+                                                    Comprehensive Dog Food
+                                                    Chart for Every Weight Class</p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">The appropriate amount of food for a dog
+                                                    may vary
+                                                    based on factors such as their</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- post card 8 -->
+                                <div class="post-card-sec">
+                                    <div class="post-card">
+                                        <div class="card-date-and-like-button">
+                                            <div class="post-date">
+                                                <p class="small-400">16 April 2023</p>
+                                            </div>
+                                            <div class="post-like-button">
+                                                <img src="./images/share-btn.png" alt="Share button">
+                                            </div>
+                                        </div>
+                                        <div class="post-image">
+                                            <img src="./images/post-image.png" alt="Post image">
+                                        </div>
+                                        <div class="post-title-and-post-detail">
+                                            <div class="post-title">
+                                                <p class="post-title-text XXLarge-600-brown">Say No to Doggo Junk Food
+                                                </p>
+                                            </div>
+                                            <div class="post-detail">
+                                                <p class="medium-400-Grey-600">As dog owners, we all want to provide our
+                                                    furry
+                                                    friends with the best possible nutrition. However, with the
+                                                    increasing
+                                                    popularity of ....................</p>
+                                            </div>
+                                        </div>
+                                        <div class="read-more-button-section">
+                                            <div class="read-more-button">
+                                                <a href="#" class="large-400-p">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- post card 4 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">26 December 2023</p>
-                                </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Senior Dog Care: Nourishment & Lifestyle Tips</p>
-                                </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">Typically, when a dog’s age reaches age 7 or above, they are considered a senior dog. Smaller dog breeds tend to live longer and may not be classified as senior................</p>
-                                </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- post card 5 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">20 December 2023</p>
-                                </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Tips and Tricks for Your Fussy Dog</p>
-                                </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">Dogs, like humans, can exhibit varying behaviors for a variety of reasons, and it's important to note that individual dogs may have different preferences and reactions.....</p>
-                                </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- post card 6 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">10 November 2023</p>
-                                </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Sensitive Stomach Dog Food for Optimal Digestion</p>
-                                </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">When choosing pet food for your dog, whether they have sensitive stomach or not, the essential aspects to consider typically ....................</p>
-                                </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- post card 7 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">10 November 2023</p>
-                                </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/feeding-f-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Feeding Fido: A Comprehensive Dog Food Chart for Every Weight Class</p>
-                                </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">The appropriate amount of food for a dog may vary based on factors such as their</p>
-                                </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- post card 8 -->
-                    <div class="post-card-sec">
-                        <div class="post-card">
-                            <div class="card-date-and-like-button">
-                                <div class="post-date">
-                                    <p class="small-400">16 April 2023</p>
-                                </div>
-                                <div class="post-like-button">
-                                    <img src="./images/share-btn.png" alt="Share button">
-                                </div>
-                            </div>
-                            <div class="post-image">
-                                <img src="./images/post-image.png" alt="Post image">
-                            </div>
-                            <div class="post-title-and-post-detail">
-                                <div class="post-title">
-                                    <p class="post-title-text XXLarge-600-brown">Say No to Doggo Junk Food</p>
-                                </div>
-                                <div class="post-detail">
-                                    <p class="medium-400-Grey-600">As dog owners, we all want to provide our furry friends with the best possible nutrition. However, with the increasing popularity of ....................</p>
-                                </div>
-                            </div>
-                            <div class="read-more-button-section">
-                                <div class="read-more-button">
-                                    <a href="#" class="large-400-p">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
+                <div class="swiper-button-next"><div class="next-arrow"><img src="./images/next-arrow.png" alt=""></div></div>
+                <div class="swiper-button-prev"><div class="prev-arrow"><img src="./images/previous-arrow.png" alt=""></div></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -488,6 +1100,9 @@
             <img src="../bff-images/footer-image.png" alt="">
         </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- link javascript file -->
     <script src="script.js"></script>
