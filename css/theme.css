@@ -154,7 +154,7 @@ html,body {
   font-family: 'Source Serif Pro', serif;
 }
 
-/* heading 36px font-family:serif-*/
+/* heading 36px font-family:serif-4*/
 .lg-heading-serif-4 {
   font-size: var(--medium-heading-fs);
   line-height: var(--medium-heading-lh);
@@ -197,8 +197,8 @@ html,body {
 /* paragraph 24px 400 XLarge-400 color:#000000*/
 .xlarge-p-black-bold {
   font-size: var(--XLarge-400-fs);
-  font-weight: var(--bold);
   line-height: var(--XLarge-400-lh);
+  font-weight: var(--bold);
   letter-spacing: var(--XLarge-400-ls);
   color: var(--black);
   font-family: 'Source Sans Pro', sans-serif;
