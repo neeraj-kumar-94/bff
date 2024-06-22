@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html,body{
+  scroll-behavior: smooth;
+}
+
 /* Breadcrumb section */
 .breadcrumb-sec {
   padding: 0;
@@ -30,7 +34,14 @@
 
 /* Blog heading, details and image 
 ===================================*/
- 
+ul li a{
+  transition: all .3s linear;
+}
+
+ /* Section title change color */
+ .section-title h2{
+  color: var(--black);
+ }
 
 
 
