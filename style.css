@@ -77,71 +77,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* card slider css code */
-
-.how-it-works-card-slider {
-  display: none;
-  position: relative;
-  width: 100%;
-  height: 520px;
-}
-
-.h-it-w-sl-next-arrow {
-  position: absolute;
-  top: auto;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 100%;
-  padding: 5px;
-  color: white;
-  z-index: 2;
-}
-
-.h-it-w-sl-next-arrow img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.h-it-w-sl-prev-arrow {
-  position: absolute;
-  top: auto;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 100%;
-  padding: 5px;
-  color: white;
-  z-index: 2;
-}
-
-.h-it-w-sl-prev-arrow img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom, 8px);
-  top: var(--swiper-pagination-top, auto);
-  left: 50%;
-  transform: translateX(-50%);
-  width: 38%;
-}
-
-.h-it-w-sl-pagination .swiper-pagination-bullet {
-  background-color: var(--Sec_brown);
-}
-
-/* card slider css code end */
 
 .h-it-w-card {
   display: flex;
@@ -183,6 +123,46 @@
 
 .h-w-c-paragraph .h-w-c-inner-para {
   margin-bottom: 20px;
+}
+
+/* how it works cards slider css*/
+.previous-arrow{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.next-arrow{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pagination-dots{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot{ 
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  border: 1px solid var(--Rose-Fog);
+  display: inline-block;
+}
+
+.active, .dot:hover{
+  background-color: var(--Rose-Fog);;
+}
+
+.arrows{
+  display: none;
+}
+
+.dots{
+  display: none;
 }
 
 
@@ -230,6 +210,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   row-gap: 64px;
 }
 
@@ -264,73 +245,9 @@
   font-family: "Source Serif 4", serif;
 } 
 
-/* card display none 
-  cards slider css code */
-.tail-wagingly-slider-section {
-  padding: 0 40px;
+/* navigation */
+.navigation {
   display: none;
-  text-align: center; 
-}
-
-.tail-wagingly-slider-cont {
-  position: relative;
-  /* border: 1px solid pink; */
-  width: 100%;
-  /* height: 400px; */
-
-}
-
-.tail-wagingly-slide-next-arr {
-  position: absolute;
-  bottom: -100px;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 100%;
-  padding: 5px;
-  color: white;
-  z-index: 2;
-  margin-top: 10px;
-}
-
-.tail-wagingly-slide-next-arr img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.tail-wagingly-slide-pre-arr {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 100%;
-  padding: 5px;
-  color: white;
-  z-index: 2;
-  right: unset;
-  bottom: 40px;
-  margin-top: 10px;
-}
-
-.tail-wagingly-slide-pre-arr img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.tail-wagingly-slide-pagination {
-  position: absolute;
-  bottom: 0px;
-  display: block;
-  margin-bottom: 100px;
-}
-
-.tail-wagingly-slide-pagination .swiper-pagination-bullet{
-  background-color: var(--Sec_brown);
 }
 
 /* Give our Starter Pack a go ! section  */
