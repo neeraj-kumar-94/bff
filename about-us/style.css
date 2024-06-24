@@ -98,7 +98,8 @@
   margin-bottom: 24px;
 }
 
-/* Meet our Team Section  */
+/* Meet our Team Section 
+======================== */
 .meet-team-section{
   padding-bottom: 0;
 }
@@ -108,26 +109,12 @@
   margin-bottom: 48px;
 }
 
-.team-member-cards{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .team-member-image{
   margin-bottom: 12px;
 }
 
-.team-member-cards .team-member-card{
-  width: 24%;
-}
-
 .member-dsg {
   margin: 12px 0 16px 0;
-}
-/* team member card slider */
-.team-member-slider{
-  display: none;
 }
 
 /* bottom line */

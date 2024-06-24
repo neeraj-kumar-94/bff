@@ -16,13 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // Team member cards
-var swiper = new Swiper(".team-cards-slider", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  }
-});
+if (window.innerWidth < 576) {
+  var swiper = new Swiper(".team-cards-slider", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}

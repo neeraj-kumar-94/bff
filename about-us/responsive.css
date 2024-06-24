@@ -40,6 +40,32 @@
     }
 }
 
+/* slider media query start*/
+@media (min-width: 576px) {
+    .swiper {
+        overflow: visible;
+        width: 100%;
+    } 
+
+    .swiper-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        width: 24% !important;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+/* slider media query start*/
+
+
 @media (max-width:576px) {
 
     /* Welcome To Brunswick Fur Food section 
@@ -175,36 +201,41 @@
 
     /* Meet our Team Section
     ========================= */
-    .meet-team-section{
+    .meet-team-section {
         margin-top: 24px;
         background-color: var(--Linen);
         padding-bottom: 32px;
     }
-    
-    .meet-our-team-heading{
+
+    .meet-our-team-heading {
         text-align: center;
         margin-bottom: 24px;
-      }
-    
+    }
+
     .meet-our-team-heading h2 {
         font-size: var(--xl-heading-fs);
         line-height: var(--xl-heading-lh);
     }
 
+    .swiper-slide{
+        width: 100%;
+        border: 1px solid green;
+      }
+
     /* slider navigation */
     .swiper-pagination-bullet {
         width: 10px;
-        height: 10px; 
+        height: 10px;
         font-weight: var(--bold);
         border: 1.5px solid var(--Sec_brown);
         background-color: var(--Linen);
-      }
-      
-      .swiper-pagination-bullet-active {
-        background-color: var(--Sec_brown);
-      }
+    }
 
-    .team-cards-slider{
+    .swiper-pagination-bullet-active {
+        background-color: var(--Sec_brown);
+    }
+
+    .team-cards-slider {
         padding-bottom: 50px;
     }
 
@@ -222,9 +253,9 @@
         width: 100%;
     }
 
-    .team-member-image{
+    .team-member-image {
         margin-bottom: 8px;
-      }
+    }
 
     .team-member-card h2 {
         font-size: var(--Medium-400-fs);
@@ -247,7 +278,7 @@
     }
 
     /* bottom line */
-    .bottom-line{
+    .bottom-line {
         display: none;
     }
 
