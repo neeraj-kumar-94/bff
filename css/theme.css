@@ -408,7 +408,7 @@ html,body {
 }
 
 
-/* XXLarge-600 28px extra bold color:#000000*/
+/* XXLarge-600 28px bold color:#000000*/
 .XXLarge-800 {
   font-size: var(--XXLarge-400-fs);
   line-height: var(--XXLarge-400-lh);
