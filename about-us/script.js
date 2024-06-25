@@ -17,13 +17,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Team member cards
-if (window.innerWidth < 576) {
-  var swiper = new Swiper(".team-cards-slider", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+// JavaScript part
+var swiper;
+
+function initSwiper() {
+  if (window.innerWidth < 576) {
+    if (!swiper) {
+      swiper = new Swiper(".team-cards-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (swiper) {
+      swiper.destroy(true, true);
+      swiper = undefined;
+    }
+  }
 }
+
+// Initialize Swiper on load
+initSwiper();
+
+// Reinitialize Swiper on resize
+window.addEventListener('resize', initSwiper);

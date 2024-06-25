@@ -4,21 +4,17 @@
     .main-section {
         display: flex;
         justify-content: center;
-        padding: 37px 24px 45px 24px;
+        padding: 40px 24px 46px 24px;
     }
 
     .inner-section {
         width: 312px;
-        height: auto;
     }
 
     /*   headings start */
-    .main-heading {
-        margin-bottom: 13px;
-    }
 
     .tag-line {
-        margin-bottom: 50px;
+        margin-bottom: 46px;
     }
 
     .main-heading h1 {
@@ -27,22 +23,32 @@
     }
 
     .tag-line h2 {
-        font-size: var(--Large-400-fs);
-        line-height: var(--Large-400-lh);
-        letter-spacing: var(--Large-400-ls);
+        font-size: var(--Medium-400-fs);
+        line-height: var(--Medium-400-lh);
+        letter-spacing: var(--Medium-400-ls);
+        font-weight: var(--regular);
     }
 
     /*   headings end */
 
-    /* or text */
-    .or-text {
-        padding: 18px 0 12px 0;
-        text-align: center;
+    /*   image
+    =============== */
+
+    .reset-pass-image {
+        width: 244.16px;
+        height: 126.8px;
+        margin: 44.26px 0 27.19px 0;
     }
 
-    .or-text p {
-        font-size: var(--xlarge-reg-fs);
-        line-height: var(--xlarge-reg-lh);
+    .reset-pass-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* form section */
+    .form-section {
+        width: 100%;
+        max-width: auto;
     }
 
     /* signup */
@@ -59,6 +65,7 @@
     .signup a {
         font-size: var(--xlarge-reg-fs);
         line-height: var(--xlarge-reg-lh);
+        text-transform: uppercase;
     }
 
 
@@ -76,11 +83,17 @@
         font-weight: var(--semi-bold);
         padding: 13px;
     }
+
     /* bottom line */
+    /* bottom line */
+    .middle-line {
+        padding: 38.93px 0 32.07px 0;
+    }
+
     .bottom-line .half-bottom-line {
         width: 312px;
         height: .5px;
         background-color: rgba(0, 0, 0, 0.2);
-      }
+    }
 
 }

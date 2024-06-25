@@ -22,7 +22,7 @@
   width: 80%;
 }
 
-.home-header-melborn{
+.home-header-melborn {
   display: block;
 }
 
@@ -126,26 +126,26 @@
 }
 
 /* how it works cards slider css*/
-.previous-arrow{
+.previous-arrow {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-.next-arrow{
+.next-arrow {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.pagination-dots{
+.pagination-dots {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.dot{ 
+.dot {
   width: 14px;
   height: 14px;
   border-radius: 100%;
@@ -153,15 +153,17 @@
   display: inline-block;
 }
 
-.active, .dot:hover{
-  background-color: var(--Rose-Fog);;
+.active,
+.dot:hover {
+  background-color: var(--Rose-Fog);
+  ;
 }
 
-.arrows{
+.arrows {
   display: none;
 }
 
-.dots{
+.dots {
   display: none;
 }
 
@@ -243,7 +245,7 @@
   line-height: var(--all-headings-line-height);
   color: var(--heading-color);
   font-family: "Source Serif 4", serif;
-} 
+}
 
 /* navigation */
 .navigation {
@@ -315,7 +317,7 @@
   text-align: center;
 }
 
-/* web image */ 
+/* web image */
 /* .starter-pack-img .starter-pack-lg-img{
     display: none;
 } */
@@ -339,18 +341,13 @@
 
 .wh-ch-four-icont-text {
   width: 100%;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(2 ,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   row-gap: 48px;
 }
 
 .wh-ch-icont-text {
-  /* width: 35%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,15 +386,14 @@
 
 .our-bowl-product-card-cont {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 21px;
 }
 
 .our-bowl-prd {
-  width: 304px;
-  height: 367px;
+  max-width: 304px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +402,7 @@
 
 .our-bo-pr-det {
   width: 100%;
-  padding: 82px 16px 71px;
+  padding: 70px 16px 24px;
   background-color: var(--cont-bg-sec-color);
   margin-top: -65px;
   z-index: -1;
@@ -420,35 +416,20 @@
   margin-bottom: 12px;
 }
 
-.gradient-text {
-  font-size: var(--Large-400-fs);
-  line-height: var(--Large-400-lh);
-  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
+/* product again change */
 
-.gradient-text::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+.know-more-btn-and-images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
-/* What our Clients say ! section */
+/* What our Clients say ! section
+================================ */
 
 .testimonial-sec {
   background-color: var(--cont-bg-sec-color);
-  /* padding: 80px 0px 60px 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,8 +549,9 @@
   padding-bottom: 325px;
 }
 
-.subscribe-email-details{
-margin-bottom: 16px;
+.subscribe-email-details {
+  margin-bottom: 16px;
+  padding: 0 24px;
 }
 
 .subscribe-email-form {
@@ -603,17 +585,21 @@ margin-bottom: 16px;
 /* Subscribe to our Email section */
 @media(max-width:576px) {
   .subscribe-email-sec {
-    padding: 0 24px;
+    padding: 0;
     text-align: center;
+    overflow: hidden;
   }
 
   .subs-email-inner-sec {
     row-gap: 24px;
-    height: auto;
     padding-top: 32px;
-    padding-bottom: 130px;
-    background-size: contain;
+    padding-bottom: 138px;
+    background-size: 550px auto;
     background-position: bottom;
+  }
+
+  .subscribe-email-details {
+    margin-bottom: 0px;
   }
 
   .subs-email-inp .email-input {
@@ -632,7 +618,7 @@ margin-bottom: 16px;
 }
 
 /* Subscribe to our Email section end 
-======================================*/ 
+======================================*/
 
 /* accordion section start 
 ==========================*/
@@ -781,4 +767,6 @@ margin-bottom: 16px;
   .pet-meal-faq-det {
     margin-bottom: 0;
   }
+
+
 }

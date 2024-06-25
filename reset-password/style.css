@@ -18,24 +18,25 @@
 }
 
 .inner-section{
-  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
+/*   image
+=============== */
+
+.reset-pass-image{
+  margin: 48px 0 34px 0;
+}
 
 /*   headings
 ======================= */
-.main-heading {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .tag-line{
   text-align: center;
-  margin-bottom: 29px;
+  margin-bottom: 45px;
 }
 
 .main-heading h1 {
@@ -49,6 +50,14 @@
 
 /* form section start
 =====================*/
+/* form width aur height start*/
+/* form width aur height */
+.form-section{
+  width: 100%;
+  max-width: 432px;
+}
+/* form width aur height end*/
+
 .label-input-boxes {
   display: flex;
   justify-content: center;
@@ -81,7 +90,7 @@
 
 .relative-input {
   width: 100%;
-  padding: 19px 19px;
+  padding: 17px 19px;
   border: 1px solid var(--Rose-Fog);
   border-radius: 4px;
   /* font related */
@@ -102,6 +111,11 @@
 
 /* buttons and forget password
 ================================ */
+.continue-as-guest{
+  width: 100%;
+  max-width: 432px;
+}
+
 .submit-button{
   margin-top: 36px;
 }

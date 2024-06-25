@@ -4,161 +4,175 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Breadcrumb section */
 .breadcrumb-sec {
-    padding: 0;
+  padding: 0;
 }
 
 .breadcrumb-inner-sec {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--cont-bg-sec-color);
-    padding: 15px 16px;
-    column-gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--cont-bg-sec-color);
+  padding: 15px 16px;
+  column-gap: 16px;
 }
 
 /* Our Bowl Plans section */
 .our-bowl-plan-inner-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-bowl-details-sec {
-    padding-right: 43px;
+  padding-right: 43px;
 }
 
 .our-bowl-detail-paragraph p:first-child {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 /* product section */
-.our-bowl-heading-product-sec{
+.our-bowl-heading-product-sec {
   display: none;
 }
+
 .product-section {
-    padding-top: 0;
+  padding-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .four-product {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 22px;
 }
 
 .product {
-    background-color: var(--cont-bg-sec-color);
-    /* width: 303px; */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 12px 13.66px;
-    border: .5px solid rgba(0, 0, 0, 0.22);
-    border-radius: 8px;
+  width: 306px;
+  background-color: var(--cont-bg-sec-color);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 12px 13.66px;
+  border: .5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .product-details {
-    width: 100%;
-    padding: 0px 13px;
+  width: 100%;
+  padding: 0px 13px;
 }
 
+/* icon image start */
+.product-name-and-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+/* icon image end */
+
 .product-quantity span {
-    color: var(--Grey400);
+  color: var(--Grey400);
 }
 
 .product-icon-text {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 4px;
 }
 
 .product-price-text {
-    padding: 12px 0;
-    color: var(--brown);
+  padding: 12px 0;
+  color: var(--brown);
 }
 
 .product-price-text .from-word {
-    font-size: var(--XSmall-400-fs);
-    line-height: var(--XSmall-400-lh);
-    font-weight: var(--regular);
-    color: var(--brown);
-    font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--XSmall-400-fs);
+  line-height: var(--XSmall-400-lh);
+  font-weight: var(--regular);
+  color: var(--brown);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .product-quantity-and-title {
-    padding: 10px 12px 10px 10px;
-    border: 1px solid var(--LightGreen);
-    margin: 12px 0;
-    border-radius: 4px;
+  padding: 10px 12px 10px 10px;
+  border: 1px solid var(--LightGreen);
+  margin: 12px 0;
+  border-radius: 4px;
 }
 
 .product-quantity {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
 }
 
 .product-learn-more-btn {
-    padding: auto;
+  padding: auto;
 }
 
 .product-learn-more-btn a {
-    padding: 13px 0;
+  padding: 13px 0;
 }
 
 /* bowl-details-section */
 .bowl-details-section {
-    background-color: var(--cont-bg-sec-color);
+  background-color: var(--cont-bg-sec-color);
 }
 
 .bowl-detail-inner-sec {
-    background-image: url(./images/middle-section.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url(./images/middle-section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bowl-details-three-sec {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    column-gap: 40px;
-    row-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 40px;
+  row-gap: 40px;
 }
 
 .bowl-detail {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    row-gap: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .b-image-and-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bowl-img-and-para {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bowl-heading p {
-    color: var(--brown);
+  color: var(--brown);
 }
-
 
 /* Subscribe to our Email section start 
 ========================================*/
@@ -180,8 +194,9 @@
   padding-bottom: 325px;
 }
 
-.subscribe-email-details{
-margin-bottom: 16px;
+.subscribe-email-details {
+  margin-bottom: 16px;
+  padding: 0 24px;
 }
 
 .subscribe-email-form {
@@ -215,17 +230,21 @@ margin-bottom: 16px;
 /* Subscribe to our Email section */
 @media(max-width:576px) {
   .subscribe-email-sec {
-    padding: 0 24px;
+    padding: 0;
     text-align: center;
+    overflow: hidden;
   }
 
   .subs-email-inner-sec {
     row-gap: 24px;
-    height: auto;
     padding-top: 32px;
-    padding-bottom: 130px;
-    background-size: contain;
+    padding-bottom: 138px;
+    background-size: 550px auto;
     background-position: bottom;
+  }
+
+  .subscribe-email-details {
+    margin-bottom: 0px;
   }
 
   .subs-email-inp .email-input {
@@ -244,7 +263,8 @@ margin-bottom: 16px;
 }
 
 /* Subscribe to our Email section end 
-======================================*/ 
+======================================*/
+
 
 /* accordion section start 
 ==========================*/

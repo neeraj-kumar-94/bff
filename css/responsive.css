@@ -113,25 +113,6 @@
   }
 }
 
-/* Our Bowl Plans section */
-@media(max-width:576px) {
-  .big-title-font {
-    font-size: 26px;
-    line-height: 30px;
-    color: var(--TobaccoBrown);
-    font-family: 'Source Serif Pro', serif;
-    font-weight: var(--bold);
-  }
-
-  .our-bowl-val-text-cnt {
-    width: 312px;
-  }
-
-  .our-bowl-txt-inner-cnt .o-b-sm-t {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
 
 /* testimonial code */
 @media (max-width:1440px) {
@@ -221,31 +202,15 @@
   }
 }
 
-/* How it works ? section */
-@media (max-width: 1300px) {
-  .how-it-works-simple-card-sec {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-}
-
-@media (max-width: 1025px) {
-  .how-it-works-simple-card-sec {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
 
 /* Our Bowl Plans section */
 @media (max-width: 1300px) {
   .our-bowl-product-card-cont {
     column-gap: 20px;
-    /* flex-wrap: wrap; */
   }
 
   .our-bowl-prd {
     width: 100%;
-    height: 367px;
   }
 
   .our-bo-pr-img {
@@ -266,7 +231,30 @@
     letter-spacing: var(--Large-400-ls);
     font-weight: var(--bold);
   }
+
+  .knwo-more-btn a {
+    font-size: var(--XSmall-400-fs);
+    line-height: var(--XSmall-400-lh);
+  }
 }
+
+@media (max-width: 950px){
+  .our-bowl-product-card-cont {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .our-bowl-prd {
+    max-width: 304px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 @media(max-width: 576px) {
   .our-b-plan-inner-sec {
@@ -280,9 +268,25 @@
     width: 312px;
   }
 
-  .our-bowl-prd {
-    width: 146px;
+  .big-title-font {
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--TobaccoBrown);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: var(--bold);
+  }
 
+  .our-bowl-val-text-cnt {
+    width: 312px;
+  }
+
+  .our-bowl-txt-inner-cnt .o-b-sm-t {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .our-bowl-prd {
+    width: 152.37px;
     height: auto;
   }
 
@@ -297,17 +301,28 @@
     font-weight: var(--bold);
   }
 
-  .gradient-text {
+  .knwo-more-btn a {
     font-size: var(--xlarge-reg-fs);
     line-height: var(--xlarge-reg-lh);
     font-weight: var(--bold);
+    white-space: nowrap;
+  }
+
+  .knwo-more-btn a::after{
+    bottom: 3px;
+    height: 1px;
+  }
+
+  .bowl-icon-image{
+    width: 18px;
+    height: 18px;
   }
 
   .our-bo-pr-det {
     width: 100%;
     padding: 33px 8px 16px;
     background-color: var(--cont-bg-sec-color);
-    margin-top: -20px;
+    margin-top: -40px;
     z-index: -1;
     border-radius: 8px;
   }
@@ -317,7 +332,24 @@
   }
 }
 
-/* How it works cards */
+
+/* How it works ? section */
+@media (max-width: 1300px) {
+  .how-it-works-simple-card-sec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 1025px) {
+  .how-it-works-simple-card-sec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* How it works cards 
+=====================*/
 @media(max-width:576px) {
 
   /* how it works cards slider start */
@@ -351,7 +383,6 @@
   }
 
   /* how it works cards slider end */
-
   .how-it-works-cards-cnt {
     display: flex;
     justify-content: center;
@@ -532,38 +563,6 @@
   }
 }
 
-/* Subscribe to our Email section */
-@media(max-width:576px) {
-  .subscribe-email-sec {
-    padding: 0 24px;
-    text-align: center;
-  }
-
-  .subs-email-inner-sec {
-    row-gap: 24px;
-    height: auto;
-    padding-top: 32px;
-    padding-bottom: 130px;
-    background-size: contain;
-    background-position: bottom;
-  }
-
-  .subs-email-inp .email-input {
-    padding: 9px 10px;
-    width: 220px;
-  }
-
-  .subs-email-btn .subscribe-button {
-    padding: 13px 13px;
-    margin-left: -4px;
-  }
-
-  .subs-email-btn .subscribe-button button {
-    font-size: var(--lg-icon-text-fs);
-  }
-}
-
-
 /* Tail-waggingly delicious: Our dog food recipe */
 @media(max-width:1300px) {
   .tail-wagingly-card {
@@ -635,7 +634,7 @@
     object-fit: contain;
   }
 
-  .tail-w-ca-title{
+  .tail-w-ca-title {
     margin-top: 30px;
   }
 
@@ -684,15 +683,4 @@
     background-color: var(--Rose-Fog);
     ;
   }
-
-  /* accordion section start*/
-  .pet-meal-faq-accordion {
-    width: 100%;
-  }
-
-  .headin-op-cl-icon p {
-    padding: 17px 48px 17px 17px;
-  }
-
-  /* accordion section end */
 }
