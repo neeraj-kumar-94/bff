@@ -1,6 +1,6 @@
-@import url(/css/theme.css);
-@import url(/css/nav.css);
-@import url(/css/footer.css);
+@import url(../css/theme.css);
+@import url(../css/nav.css);
+@import url(../css/footer.css);
 
 
 * {
@@ -9,7 +9,8 @@
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -31,17 +32,117 @@ html,body{
   margin-bottom: -5px;
 }
 
+/* post details main section
+============================= */
+.post-details-and-short-post-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post {
+  max-width: 738px;
+  width: 60%;
+  padding: 32px;
+  border-right: .5px solid rgba(0, 0, 0, 0.1);
+}
+
+.short-post-cards {
+  max-width: 523px;
+  width: 40%;
+}
+
+.post-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.post-date-and-share-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 24px 0;
+}
+
 
 /* Blog heading, details and image 
 ===================================*/
-ul li a{
+.anchor_links {
+  list-style-type: none;
+}
+
+.anchor_links li {
+  padding-bottom: 24px;
+}
+
+.anchor_links li:first-child{
+  padding-top: 12px;
+}
+
+.anchor_links li a {
+  color: var(--TobaccoBrown);
+  text-decoration: none;
   transition: all .3s linear;
 }
 
- /* Section title change color */
- .section-title h2{
+/* Section title and details paragraph
+======================================= */
+.section-title-and-paragraph{
+  scroll-margin-top: 130px;
+  margin-bottom: 24px;
+}
+
+.section-title{
+  padding-bottom: 12px;
   color: var(--black);
+}
+
+.section-paragraph p{
+  padding-bottom: 24px;
+}
+
+.section-paragraph p:last-child{
+  padding-bottom: 0;
+}
+
+
+/* Back to to button */
+.back-top-button{
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* Second section [Short post section]
+ ===================== */
+ .short-post{
+  background-color: var(--Linen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  margin-bottom: 16px;
  }
+ 
+ .short-post-inner-sec{
+  max-width: 352px;
+  width: 90%;
+ }
+ 
+.short-post-detail{
+  color: var(--brown);
+}
+
+.short-post-date-and-share-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.short-post-detail,
+.excerpt{
+  padding-bottom: 16px;
+}
 
 
 

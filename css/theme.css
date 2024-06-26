@@ -118,7 +118,7 @@ html,body {
 }
 
 
-/* headings 56px*/
+/* headings 56px use media query*/
 .h1-heading {
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
@@ -128,7 +128,7 @@ html,body {
 }
 
 
-/* headings 48px*/
+/* headings 48px use media query*/
 .all-headings {
   font-size: var(--all-headings-font-size);
   font-weight: var(--bold);
@@ -137,6 +137,7 @@ html,body {
   font-family: 'Source Serif Pro', serif;
 }
 
+/* headings 48px No use media query*/
 .xxl-heading {
   font-size: var(--all-headings-font-size);
   font-weight: var(--bold);
