@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Blog detail</title>
     <!-- Link css file -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -26,14 +26,19 @@
                             href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html">Bowl Plans</a> </li>
                     <li class="nav-link-item"><a class="nav-link" href="#">Give it a Go</a></li>
                     <li class="nav-dw-btn nav-link-item">
-                        <a href="#">Read <img src="../bff-images/nav-dropdown-menu-icon.png" alt=""></a>
-                        <ul class="nav-dropdown-links" id="nav-dropdown">
-                            <li><a class="dropdown-item"
-                                    href="https://neeraj-kumar-94.github.io/bff/blogs/index.html">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Policies</a></li>
-                            <li><a class="dropdown-item" href="#">FAQs</a></li>
-                        </ul>
-                    </li>
+                        <div class="read-toggle-and-images" id="readMore">
+                            <p class="read-toggle" href="#">Read</p>
+                            <div class="open-and-close-arrow">
+                                <img class="close-arrow" src="../bff-images/nav-dropdown-menu-icon.png" alt="">
+                                <img class="open-arrow" src="../bff-images/active-state.png" alt="">
+                            </div>
+                        </div>
+                        <div class="nav-hidden-links">
+                            <a class="nav-link" href="https://neeraj-kumar-94.github.io/bff/blogs/index.html">Blog</a>
+                            <a class="nav-link" href="#">Policies</a>
+                            <a class="nav-link" href="#">FAQs</a>
+                        </div>
+                    </li>                    
                     <li class="nav-link-item"><a class="nav-link"
                             href="https://neeraj-kumar-94.github.io/bff/contact-us/index.html">Contact</a></li>
                 </ul>
@@ -48,6 +53,7 @@
             </div>
         </nav>
     </div>
+    
     <!-- mobile navbar -->
     <div class="mobile-nav-container">
         <div class="mobile-nav-inner-sec">
@@ -408,14 +414,14 @@
                         <div class="footer-icon-text-two-sec">
                             <div class="footer-icon-text-first-sec">
                                 <div class="f-i-img">
-                                    <img src="/bff-images/footer-icon.png" alt="">
+                                    <img src="../bff-images/footer-icon.png" alt="">
                                 </div>
                                 <p class="Small-600">Mon to Sun:</p>
                                 <p class="XSmall-400">10:00 AM to 6:00 PM</p>
                             </div>
                             <div class="footer-icon-second-sec">
                                 <div class="f-i-img">
-                                    <img src="/bff-images/footer-icon2.png" alt="">
+                                    <img src="../bff-images/footer-icon2.png" alt="">
                                 </div>
                                 <p class="Small-600">Call us:</p>
                                 <p class="XSmall-400">0433 985 402</p>
@@ -480,12 +486,12 @@
                     <div class="footer-facebook-insta-logo">
                         <div class="footer-f-logo">
                             <a href="#">
-                                <img src="/bff-images/facebook.png" alt="Facebook logo">
+                                <img src="../bff-images/facebook.png" alt="Facebook logo">
                             </a>
                         </div>
                         <div class="footer-ins-logo">
                             <a href="#">
-                                <img src="/bff-images/insta.png" alt="Instagram logo">
+                                <img src="../bff-images/insta.png" alt="Instagram logo">
                             </a>
                         </div>
                     </div>
@@ -497,7 +503,7 @@
     <!-- footer Image -->
     <div class="footer-image-section">
         <div class="footer-image">
-            <img src="/bff-images/footer-image.png" alt="">
+            <img src="../bff-images/footer-image.png" alt="">
         </div>
     </div>
 

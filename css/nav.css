@@ -48,50 +48,54 @@
   margin-right: 0px;
 }
 
+
+/* dropdown items start
+======================= */
 .nav-dw-btn {
   position: relative;
+  width: 114px;
+  cursor: pointer;
 }
 
-.nav-dw-btn a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.nav-dw-btn.active {
+  background-color: #CECECE;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.nav-dropdown-links {
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+.nav-hidden-links{
   position: absolute;
-  text-align: center;
-  list-style: none;
+  top: 40px;
 }
 
-.nav-dropdown-links {
-  width: 100%;
+/* toggle css start */
+.read-toggle-and-images{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.open-arrow{
   display: none;
 }
 
-#nav-dropdown{
-  z-index:  50;
-}
-
-#nav-dropdown .dropdown-item {
+.nav-hidden-links{
+  width: 114px;
+  text-align: center;
   background-color: var(--NeroWhite);
+  display: none;
 }
 
-#nav-dropdown .dropdown-item:hover {
-  background-color: #CECECE;
+.nav-hidden-links a{
+  width: 100%;
+  display: inline-block;
 }
 
-.nav-dw-btn:hover .nav-dropdown-links {
-  display: block;
-}
+/* toggle css start */
+/* dropdown items end
+======================= */
 
-.nav-link-item a {
+.nav-link, .read-toggle-and-images {
   font-size: var(--Large-400-fs);
   font-weight: var(--regular);
   text-decoration: none;
@@ -103,9 +107,22 @@
   transition: all .3s linear;
 }
 
-.nav-link-item:hover a {
+.nav-link:hover {
   background-color: #CECECE;
 }
+
+.read-toggle-and-images:hover{
+  background-color: #CECECE;
+}
+
+
+.nav-link.active {
+  border-radius: 0;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--Grey100);
+  transition: none;
+}
+
 
 .nav-login-btn .nav-login-anch {
   font-size: var(--Medium-400-fs);
@@ -132,14 +149,14 @@
     margin-right: 0px;
   }
 
-  .nav-link-item a {
+  .nav-link {
     padding: 12px 14px;
   }
 }
 
 
 @media(max-width:948px) {
-  .nav-link-item a {
+  .nav-link{
     font-size: var(--lg-icon-text-fs);
     line-height: var(--lg-icon-text-lh);
     letter-spacing: var(--lg-icon-text-ls);
