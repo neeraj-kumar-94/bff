@@ -1,0 +1,103 @@
+@import url(../css/theme.css);
+@import url(../css/nav.css);
+@import url(../css/footer.css);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Subscribe to our Email section start 
+========================================*/
+.subscribe-email-sec {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subs-email-inner-sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./images/subscribe-email.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  row-gap: 45px;
+  padding-top: 80px;
+  padding-bottom: 325px;
+}
+
+.subscribe-email-details {
+  margin-bottom: 16px;
+  padding: 0 24px;
+}
+
+.subscribe-email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.subs-email-inp .email-input {
+  color: var(--Grey400);
+  padding: 15px 20px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid var(--Light_Rose_Fog);
+  outline: none;
+  width: 388px;
+  box-sizing: border-box;
+}
+
+.subs-email-inp .email-input:focus {
+  border: 1px solid var(--Light_Rose_Fog);
+}
+
+.subs-email-btn .subscribe-button {
+  border: none;
+  outline: none;
+  padding: 15px 51px;
+  margin-left: -4px;
+}
+
+/* Subscribe to our Email section */
+@media(max-width:576px) {
+  .subscribe-email-sec {
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .subs-email-inner-sec {
+    row-gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 138px;
+    background-size: 550px auto;
+    background-position: bottom;
+  }
+
+  .subscribe-email-details {
+    margin-bottom: 0px;
+  }
+
+  .subs-email-inp .email-input {
+    padding: 13.5px 10px;
+    width: 220px;
+  }
+
+  .subs-email-btn .subscribe-button {
+    padding: 13px 13px;
+    margin-left: -9px;
+  }
+
+  .subs-email-btn .subscribe-button button {
+    font-size: var(--lg-icon-text-fs);
+  }
+}
+
+/* Subscribe to our Email section end 
+======================================*/
