@@ -461,13 +461,6 @@
 }
 
 /* Radio buttons start */
-
-/* input[type="radio"] {
-    width: 20px;
-    height: 20px;
-    accent-color: var(--Sec_brown);
-} */
-
 input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;

@@ -349,11 +349,34 @@
   column-gap: 8px;
 }
 
+/* Radio buttons start */
 input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 20px;
   height: 20px;
-  accent-color: var(--Sec_brown);
+  border: 2px solid  var(--Sec_brown);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
 }
+
+/* Style the radio button when it is checked */
+input[type="radio"]:checked::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color:  var(--Sec_brown);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Radio buttons end */
+
 
 /* next delivery date box */
 .next-delivery-date-box {

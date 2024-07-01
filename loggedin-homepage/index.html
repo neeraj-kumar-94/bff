@@ -45,8 +45,24 @@
                             href="https://neeraj-kumar-94.github.io/bff/contact-us/index.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav-login-btn">
-                <a class="nav-login-anch" href="https://neeraj-kumar-94.github.io/bff/login/index.html">Login</a>
+            <div class="nav-login-btn login-dropdown">
+                <div class="user-image">
+                    <img src="./images/user-image.png" alt="User Image">
+                </div>
+                <div class="username-and-arrows">
+                    <div class="user-name-and-image" id="userToggle">
+                        <p class="login-username">Aakriti</p>
+                        <div class="open-and-close-arrow-second">
+                            <img class="close-arrow-second" src="../bff-images/nav-dropdown-menu-icon.png" alt="">
+                            <img class="open-arrow-second" src="../bff-images/active-state.png" alt="">
+                        </div>
+                    </div>
+                    <div class="user-hide-details">
+                        <a class="nav-link" href="https://neeraj-kumar-94.github.io/bff/blogs/index.html">Blog</a>
+                        <a class="nav-link" href="#">Policies</a>
+                        <a class="nav-link" href="#">FAQs</a>
+                    </div>
+                </div>
             </div>
             <div class="nav-cart-img">
                 <a href="https://neeraj-kumar-94.github.io/bff/cart-page/index.html">
@@ -104,11 +120,11 @@
         <div class="loggedin-homepage-inner-section xl-width">
             <div class="username-and-puppy-image">
                 <div class="loggedin-username">
-                    <h2>Hi, Aakriti</h2>
-                    <p>We hope Santa is doing great !</p>
+                    <h2 class="xxl-heading">Hi, Aakriti</h2>
+                    <p class="medium-400">We hope Santa is doing great!</p>
                 </div>
                 <div class="puppy-image">
-                    <img src="./images/puppy-image.png" alt="">
+                    <img src="./images/puppy-image.png" alt="Image of a puppy">
                 </div>
             </div>
             <div class="loggedin-details-and-short-post">
@@ -117,78 +133,171 @@
                     <div class="loggedin-details-inner-sec">
                         <div class="current-subscription-sec">
                             <div class="subscription-heading">
-                                <h2>Your Current Subscription </h2>
+                                <h2 class="XXLarge-800">Your Current Subscription</h2>
                             </div>
                             <div class="product-and-subs-details">
                                 <div class="ongoing-box">
-                                    <p>Ongoing</p>
+                                    <p class="Small-800-b">Ongoing</p>
                                 </div>
                                 <div class="small-product">
-                                    <div class="product-image">
-                                        <img src="" alt="">
+                                    <div class="sm-product-image">
+                                        <img src="./images/web-ingredient.png" alt="Product image">
                                     </div>
                                     <div class="product-title-and-quant">
-                                        <p>BFF Beef Bowl</p>
-                                        <p>225gm/day</p>
-                                        <p>FORTNIGHTLY SUBSCRIPTION</p>
-                                    </div>
-                                    <div class="next-delivery-and-skip-btn">
-                                        <div class="next-delivery-and-date">
-                                            <p class="next-delivery">Your next delivery</p>
-                                            <p class="next-del-date">11 May 2024</p>
-                                        </div>
-                                        <div class="skip-button">
-                                            <a href="#">Want to Skip ?</a>
-                                        </div>
-                                    </div>
-                                    <div class="pause-subscription">
-                                        <div class="pause-subs-text">
-                                            <p>Pause Subscription</p>
-                                        </div>
-                                        <div class="pause-subs-image">
-                                            <p>Pause Subscription</p>
-                                        </div>
-                                    </div>
-                                    <div class="cancel-subscription">
-                                        <div class="cancel-subs-text">
-                                            <p>Pause Subscription</p>
-                                        </div>
-                                        <div class="cancel-subs-image">
-                                            <p>Pause Subscription</p>
-                                        </div>
-                                    </div>
-                                    <div class="some-help-section">
-                                        <div class="image-and-conetent">
-                                            <div class="help-image">
-                                                <img src="" alt="">
-                                            </div>
-                                            <div class="help-content">
-                                                <a href="mailto:abcsupport@gmail.com">abcsupport@gmail.com</a>
-                                            </div>
-                                        </div>
-                                        <div class="image-and-conetent">
-                                            <div class="help-image">
-                                                <img src="" alt="">
-                                            </div>
-                                            <div class="help-content">
-                                                <a href="#">0433-985-402</a>
-                                            </div>
-                                        </div>
-                                        <div class="image-and-conetent">
-                                            <div class="help-image">
-                                                <img src="" alt="">
-                                            </div>
-                                            <div class="help-content">
-                                                <a href="#">Chat with us</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="got-a-minute-sec">
-                                        <div class="got-a-minute-title">
-                                            <h2>Got a minute ?</h2>
-                                        </div>
+                                        <p class="medium-400-choco">BFF Beef Bowl</p>
+                                        <p class="small-400-grey-600">225gm/day</p>
+                                        <p class="small-400-grey-600">FORTNIGHTLY SUBSCRIPTION</p>
                                     </div>
                                 </div>
+                                <div class="next-delivery-and-skip-btn">
+                                    <div class="next-delivery-and-date">
+                                        <p class="next-delivery medium-400-choco">Your next delivery</p>
+                                        <p class="next-del-date small-400-grey-600">11 May 2024</p>
+                                    </div>
+                                    <div class="skip-button">
+                                        <a href="#" aria-label="Skip next delivery" class="xl-gradient-text">Want to
+                                            Skip?</a>
+                                    </div>
+                                </div>
+                                <div class="pause-subscription">
+                                    <div class="pause-subs-text">
+                                        <p class="medium-400">Pause Subscription</p>
+                                    </div>
+                                    <div class="pause-subs-image">
+                                        <img src="./images/right_arrow.png" alt="Pause icon">
+                                    </div>
+                                </div>
+                                <div class="cancel-subscription">
+                                    <div class="cancel-subs-text">
+                                        <p class="medium-400">Cancel Subscription</p>
+                                    </div>
+                                    <div class="cancel-subs-image">
+                                        <img src="./images/right_arrow.png" alt="Cancel icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="some-help-section">
+                            <p class="some-help-section-title XXLarge-600">Looking for some help?</p>
+                            <div class="some-help-three-sec">
+                                <div class="image-and-content">
+                                    <div class="help-image">
+                                        <img src="./images/mailto.png" alt="Email icon">
+                                    </div>
+                                    <div class="help-content">
+                                        <a href="mailto:abcsupport@gmail.com"
+                                            class="small-400-brown">abcsupport@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="image-and-content">
+                                    <div class="help-image">
+                                        <img src="./images/phone.png" alt="Phone icon">
+                                    </div>
+                                    <div class="help-content">
+                                        <a href="tel:0433985402" class="small-400-brown">0433-985-402</a>
+                                    </div>
+                                </div>
+                                <div class="image-and-content">
+                                    <div class="help-image">
+                                        <img src="./images/whatsapp.png" alt="WhatsApp icon">
+                                    </div>
+                                    <div class="help-content">
+                                        <a href="#" aria-label="Chat with us on WhatsApp" class="small-400-brown">Chat
+                                            with us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="got-a-minute-sec">
+                            <div class="got-a-minute-title">
+                                <h2 class="XXLarge-600">Got a minute?</h2>
+                            </div>
+                            <div class="back-image-and-button">
+                                <div class="review-google-text">
+                                    <p class="medium-400-choco">Review us on Google</p>
+                                </div>
+                                <div class="review-button">
+                                    <button class="Large-button">Reviews</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Small posts sectins -->
+                <div class="short-post-cards">
+                    <div class="short-post">
+                        <div class="short-post-inner-sec">
+                            <div class="short-post-date-and-share-btn">
+                                <p class="small-400">13 March 2024</p>
+                                <div class="short-share-btn">
+                                    <a href="#">
+                                        <img src="./images/share_Icons.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="short-post-title-and-excerpt">
+                                <p class="short-post-detail XXLarge-600">Senior Dog Aging , Health and Happiness</p>
+                                <p class="excerpt medium-400-Grey-600">Dogs become seniors a lot younger than we may think. A year for a dog is many-many years of a human life. You may have an early senior...........</p>
+                            </div>
+                            <div class="short-post-read-more-btn">
+                                <a class="xl-gradient-text" href="https://neeraj-kumar-94.github.io/bff/blog-detail/index.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-post">
+                        <div class="short-post-inner-sec">
+                            <div class="short-post-date-and-share-btn">
+                                <p class="small-400">04 February 2024</p>
+                                <div class="short-share-btn">
+                                    <a href="#">
+                                        <img src="./images/share_Icons.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="short-post-title-and-excerpt">
+                                <p class="short-post-detail XXLarge-600">Understanding the Nutrition Spectrum: Lightly Cooked vs. Raw Food vs. Kibble for Dogs</p>
+                                <p class="excerpt medium-400-Grey-600">A lot has been said about the benefits of feeding fresh food to your canine</p>
+                            </div>
+                            <div class="short-post-read-more-btn">
+                                <a class="xl-gradient-text" href="https://neeraj-kumar-94.github.io/bff/blog-detail/index.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-post">
+                        <div class="short-post-inner-sec">
+                            <div class="short-post-date-and-share-btn">
+                                <p class="small-400">26 December 2023</p>
+                                <div class="short-share-btn">
+                                    <a href="#">
+                                        <img src="./images/share_Icons.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="short-post-title-and-excerpt">
+                                <p class="short-post-detail XXLarge-600">Senior Dog Care: Nourishment & Lifestyle Tips</p>
+                                <p class="excerpt medium-400-Grey-600">Typically, when a dog’s age reaches age 7 or above, they are considered a senior dog. Smaller dog breeds tend to live longer and may not be classified as senior................</p>
+                            </div>
+                            <div class="short-post-read-more-btn">
+                                <a class="xl-gradient-text" href="https://neeraj-kumar-94.github.io/bff/blog-detail/index.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="short-post">
+                        <div class="short-post-inner-sec">
+                            <div class="short-post-date-and-share-btn">
+                                <p class="small-400">20 December 2023</p>
+                                <div class="short-share-btn">
+                                    <a href="#">
+                                        <img src="./images/share_Icons.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="short-post-title-and-excerpt">
+                                <p class="short-post-detail XXLarge-600">Tips and Tricks for Your Fussy Dog</p>
+                                <p class="excerpt medium-400-Grey-600">Dogs, like humans, can exhibit varying behaviors for a variety of reasons, and it's important to note that individual dogs may have different preferences and reactions.....</p>
+                            </div>
+                            <div class="short-post-read-more-btn">
+                                <a class="xl-gradient-text" href="https://neeraj-kumar-94.github.io/bff/blog-detail/index.html">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -196,6 +305,7 @@
             </div>
         </div>
     </div>
+
 
 
 
@@ -255,7 +365,8 @@
                         </div>
                         <div class="footer-title-f-sec">
                             <p class="Small-800-b">Join us & save $15 on Starter Pack!</p>
-                            <p class="footer-mobile-text-para small-400">We’ll help you find the food that is right for
+                            <p class="footer-mobile-text-para small-400">We’ll help you find the food that is
+                                right for
                                 your dog even
                                 if it isn’t our own.</p>
                         </div>
@@ -281,7 +392,8 @@
                                 <a class="f-main-link-item small-400" href="#">Contact Us</a>
                                 <a class="mobile-newsletter-btn f-main-link-item small-400" href="#">Newsletter</a>
                                 <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Login</a>
-                                <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Sign Up</a>
+                                <a class="login-signup-mobile-link f-main-link-item small-400" href="#">Sign
+                                    Up</a>
                             </div>
                         </div>
                         <div class="footer-useful-links-sec">

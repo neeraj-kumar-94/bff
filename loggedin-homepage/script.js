@@ -54,6 +54,29 @@ document.addEventListener("DOMContentLoaded", function () {
 // ====================
 
 
+// Login user toggle 
+// =====================
+document.addEventListener("DOMContentLoaded", function () {
+  let readMoreButton = document.querySelector(".username-and-arrows");
+  let closeArrow = document.querySelector(".close-arrow-second");
+  let openArrow = document.querySelector(".open-arrow-second");
+  let hideLinks = document.querySelector(".user-hide-details");
+
+  readMoreButton.addEventListener("click", function () {
+    if (hideLinks.style.display === "block") {
+      hideLinks.style.display = "none";
+      closeArrow.style.display = "block";
+      openArrow.style.display = "none";
+      readMoreButton.classList.remove("active");
+    } else {
+      hideLinks.style.display = "block";
+      closeArrow.style.display = "none";
+      openArrow.style.display = "block";
+      readMoreButton.classList.add("active");
+    }
+  });
+});
+
 
 // Team member cards
 // JavaScript part
