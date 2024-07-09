@@ -47,14 +47,14 @@
         width: 100%;
     } 
 
-    .swiper-wrapper {
+    .team-card-inner-sec {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .swiper-slide {
+    .member-card-box {
         width: 24% !important;
     }
 
@@ -217,7 +217,7 @@
         line-height: var(--xl-heading-lh);
     }
 
-    .swiper-slide{
+    .member-card-box{
         width: 100%;
       }
 

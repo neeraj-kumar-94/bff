@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Navbar active state underline
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".nav-link");
   const currentUrl = window.location.href;
 
-  navLinks.forEach(link => {
-      if (link.href === currentUrl) {
-          link.classList.add("active");
-      }
+  navLinks.forEach((link) => {
+    if (link.href === currentUrl) {
+      link.classList.add("active");
+    }
   });
 });
 
@@ -53,8 +53,48 @@ document.addEventListener("DOMContentLoaded", function () {
 // navbar section end
 // ====================
 
+// accordion
+// =============
+const ourItemDiv = document.getElementsByClassName("acc-box");
+const openIcon = document.getElementsByClassName("iconOpen");
+const closeIcon = document.getElementsByClassName("iconClose");
 
-// how it works section card slider
+// Initially hide all close icons
+for (let i = 0; i < closeIcon.length; i++) {
+  closeIcon[i].style.display = "none";
+}
+
+for (let i = 0; i < ourItemDiv.length; i++) {
+  ourItemDiv[i].addEventListener("click", () => {
+    console.log("clicked");
+
+    // First, close all items
+    for (let j = 0; j < ourItemDiv.length; j++) {
+      if (j !== i) {
+        // Don't toggle the clicked item
+        ourItemDiv[j].classList.remove("active");
+        closeIcon[j].style.display = "none";
+        openIcon[j].style.display = "block";
+      }
+    }
+
+    // Then, toggle the clicked item
+    const result = ourItemDiv[i].classList.toggle("active");
+
+    if (result) {
+      closeIcon[i].style.display = "block";
+      openIcon[i].style.display = "none";
+    } else {
+      closeIcon[i].style.display = "none";
+      openIcon[i].style.display = "block";
+    }
+  });
+}
+
+//================================
+//   HOME PAGE JavaScript
+//================================
+
 let contentNum = 1;
 function controler(x) {
   if (window.innerWidth <= 576) {
@@ -72,7 +112,6 @@ function contentSlide(n) {
   let dots = document.getElementsByClassName("dot");
 
   if (window.innerWidth > 576) {
-    
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "block";
     }
@@ -101,8 +140,6 @@ window.addEventListener("resize", function () {
   contentSlide(contentNum);
 });
 
-
-// ========================
 // tail wagingly section
 // ========================
 let postion = 1;
@@ -122,7 +159,6 @@ function melaSlide(n) {
   let pagination = document.getElementsByClassName("circyle");
 
   if (window.innerWidth > 576) {
-    
     for (let i = 0; i < meals.length; i++) {
       meals[i].style.display = "block";
     }
@@ -150,76 +186,91 @@ window.addEventListener("resize", function () {
   melaSlide(postion);
 });
 
-// Anchor button
-// document.querySelectorAll(".button").forEach((button) => {
-//   button.addEventListener("click", function (event) {
-//     event.preventDefault();
-//     // Your custom code here
-//     console.log("Button clicked");
-//   });
-// });
+//================================
+//   PRODUCT INFROMATION JAVASCRIPT
+//================================
 
-// testimonial section
-var swiper = new Swiper(".testimonial-slide-inner-sec", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    450: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    450: {
-      slidesPerView: 1.5,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 30,
-    },
-    1570: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  },
+//   CART PAGE JAVASCRIPT
+// =======================
+document.addEventListener("DOMContentLoaded", function () {
+  let invisibleText = document.getElementById("invisible-text");
+  invisibleText.style.display = "none";
 });
 
+const moreLess = function () {
+  let invisibleText = document.getElementById("invisible-text");
+  let btnText = document.getElementById("toggle-btn");
+
+  if (invisibleText.style.display !== "none") {
+    invisibleText.style.display = "none";
+    btnText.innerHTML = "Show More";
+  } else {
+    invisibleText.style.display = "inline";
+    btnText.innerHTML = "Show Less";
+  }
+};
 
 
-// accordion
-const ourItemDiv = document.getElementsByClassName("acc-box");
-const openIcon = document.getElementsByClassName("iconOpen");
-const closeIcon = document.getElementsByClassName("iconClose");
+// =======================
+//  product tabs tabs
+// =======================
+let tabButtons = document.querySelectorAll(".tab-btn");
 
-// Initially hide all close icons
-for (let i = 0; i < closeIcon.length; i++) {
-  closeIcon[i].style.display = "none";
+for (let i = 0; i < tabButtons.length; i++) {
+  tabButtons[i].addEventListener("click", function () {
+    let tabBtnId = this.dataset.tabs;
+    let allBtnId = document.getElementById(tabBtnId);
+    let allTabHideDetails = document.querySelectorAll(".tab-container");
+    let allButtons = document.querySelectorAll(".tab-btn");
+
+    for (let j = 0; j < allTabHideDetails.length; j++) {
+      allTabHideDetails[j].style.display = "none";
+    }
+
+    for (let k = 0; k < allButtons.length; k++) {
+      allButtons[k].classList.remove("active");
+    }
+
+    allBtnId.style.display = "block";
+    this.classList.add("active");
+  });
 }
 
-for (let i = 0; i < ourItemDiv.length; i++) {
-  ourItemDiv[i].addEventListener("click", () => {
-    // First, close all items
-    for (let j = 0; j < ourItemDiv.length; j++) {
+document.querySelector(".tab-btn").click();
+
+
+// product information accordion
+// =============================
+const productDetail = document.getElementsByClassName("detail-box");
+const iconOpen = document.getElementsByClassName("openIcon");
+const iconClose = document.getElementsByClassName("closeIcon");
+
+for (let i = 0; i < iconClose.length; i++) {
+  iconClose[i].style.display = "none";
+}
+
+for (let i = 0; i < productDetail.length; i++) {
+  productDetail[i].addEventListener("click", () => {
+    for (let j = 0; j < productDetail.length; j++) {
       if (j !== i) {
-        // Don't toggle the clicked item
-        ourItemDiv[j].classList.remove("active");
-        closeIcon[j].style.display = "none";
-        openIcon[j].style.display = "block";
+        productDetail[j].classList.remove("active");
+        iconClose[j].style.display = "none";
+        iconOpen[j].style.display = "block";
       }
     }
 
-    // Then, toggle the clicked item
-    const result = ourItemDiv[i].classList.toggle("active");
+    const result = productDetail[i].classList.toggle("active");
 
     if (result) {
-      closeIcon[i].style.display = "block";
-      openIcon[i].style.display = "none";
+      iconClose[i].style.display = "block";
+      iconOpen[i].style.display = "none";
     } else {
-      closeIcon[i].style.display = "none";
-      openIcon[i].style.display = "block";
+      iconClose[i].style.display = "none";
+      iconOpen[i].style.display = "block";
     }
   });
 }
+
+
+// CHECKOUT PAGE
+// ===================

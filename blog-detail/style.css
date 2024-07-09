@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 15px 16px;
-  column-gap: 16px;
+  column-gap: 70px;
 }
 
 .breadcrumb-image {
@@ -45,11 +45,6 @@ body {
   width: 60%;
   padding: 32px;
   border-right: .5px solid rgba(0, 0, 0, 0.1);
-}
-
-.short-post-cards {
-  max-width: 523px;
-  width: 40%;
 }
 
 .post-title {
@@ -114,6 +109,13 @@ body {
 
 /* Second section [Short post section]
  ===================== */
+ .short-post-cards {
+  max-width: 523px;
+  width: 40%;
+  border: 1px solid blue;
+}
+
+ 
  .short-post{
   background-color: var(--Linen);
   display: flex;
@@ -122,6 +124,7 @@ body {
   padding: 24px;
   margin-bottom: 16px;
  }
+ 
  
  .short-post-inner-sec{
   max-width: 352px;

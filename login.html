@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Link css file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar section  -->
+    <div class="nav-container main-container">
+        <nav class="navbar xl-width">
+            <div class="logo-section">
+                <a href="https://neeraj-kumar-94.github.io/bff/" class="logo">BRUNSWICK FUR FOOD</a>
+            </div>
+            <div class="nav-links">
+                <ul class="nav-inner-links">
+                    <li class="nav-link-item"><a class="nav-link"
+                            href="https://neeraj-kumar-94.github.io/bff/about-us/index.html">About us</a></li>
+                    <li class="nav-link-item"><a class="nav-link"
+                            href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html">Bowl Plans</a> </li>
+                    <li class="nav-link-item"><a class="nav-link" href="#">Give it a Go</a></li>
+                    <li class="nav-dw-btn nav-link-item">
+                        <div class="read-toggle-and-images" id="readMore">
+                            <p class="read-toggle" href="#">Read</p>
+                            <div class="open-and-close-arrow">
+                                <img class="close-arrow" src="./images/nav-dropdown-menu-icon.png" alt="">
+                                <img class="open-arrow" src="./images/active-state.png" alt="">
+                            </div>
+                        </div>
+                        <div class="nav-hidden-links">
+                            <a class="nav-link" href="https://neeraj-kumar-94.github.io/bff/blogs/index.html">Blog</a>
+                            <a class="nav-link" href="#">Policies</a>
+                            <a class="nav-link" href="#">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="nav-link-item"><a class="nav-link"
+                            href="https://neeraj-kumar-94.github.io/bff/contact-us/index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-login-btn">
+                <a class="nav-login-anch" href="https://neeraj-kumar-94.github.io/bff/login/index.html">Login</a>
+            </div>
+            <div class="nav-cart-img">
+                <a href="https://neeraj-kumar-94.github.io/bff/cart-page/index.html">
+                    <img src="./images/nav-cart-icon.png" alt="">
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- mobile navbar -->
+    <div class="mobile-nav-container">
+        <div class="mobile-nav-inner-sec">
+            <div class="mobile-humburger"><img src="./images/humburger.png" alt="" id="humburger-icon">
+            </div>
+            <div class="mobile-nav-logo">
+                <p class="bff-mobile-view-logo Small-800-b">BRUNSWICK FUR FOOD</p>
+            </div>
+            <div class="mob-nav-cart-img">
+                <a href="https://neeraj-kumar-94.github.io/bff/cart-page/index.html">
+                    <img src="./images/mobile-cart-img.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-sidebar">
+            <div class="menu-close-icon">
+                <div class="close-icon-img"><img src="./images/close-icon.png" alt="" id="close-icon">
+                </div>
+            </div>
+            <div class="sidebar-links-sec">
+                <ul class="slider-links-inner-sec">
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/" class="sidebar-link">Home</a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/product-listing/index.html"
+                            class="sidebar-link">Our
+                            Meals</a></li>
+                    <li><a href="#" class="sidebar-link">Give it a Go</a></li>
+                    <li><a href="#" class="sidebar-link">Order History</a></li>
+                    <li><a href="#" class="sidebar-link">Subscription Policy </a></li>
+                    <li><a href="https://neeraj-kumar-94.github.io/bff/blogs/index.html" class="sidebar-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-login-btn"><a href="https://neeraj-kumar-94.github.io/bff/login/index.html"
+                    class="s-log-btn Large-button">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Login main section -->
+    <div class="main-section">
+        <div class="inner-section">
+            <div class="main-heading">
+                <h1 class="xxl-heading">Welcome Back !</h1>
+            </div>
+            <div class="login-account-heading">
+                <h2 class="XXLarge-800">Login to your account</h2>
+            </div>
+            <div class="form-section">
+                <form>
+                    <div class="label-input-boxes">
+                        <div class="label-and-input-box">
+                            <div class="label-box">
+                                <label for="email" class="relative-label">Phone or email</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="email" name="email" class="relative-input"
+                                    aria-label="Phone or email" required>
+                            </div>
+                        </div>
+                        <div class="label-and-input-box">
+                            <div class="label-box">
+                                <label for="dog-name" class="relative-label">Your Doggo's
+                                    Name</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="dog-name" name="dog-name" class="relative-input"
+                                    aria-label="Your Doggo's Name" required>
+                            </div>
+                        </div>
+                        <div class="label-and-input-box">
+                            <div class="label-box">
+                                <label for="password" class="relative-label">Password</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" id="password" name="password" class="relative-input"
+                                    aria-label="Password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="https://neeraj-kumar-94.github.io/bff/reset-password/index.html">Forgot Password ?</a>
+                    </div>
+                    <div class="submit-button">
+                        <input class="Large-button" type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="or-text">
+                <p class="small-400">or</p>
+            </div>
+            <div class="continue-as-guest">
+                <a href="#" class="as-guest-btn">Continue as guest</a>
+            </div>
+            <div class="signup">
+                <p class="medium-400-black">Don’t have an account yet ? <a
+                        href="https://neeraj-kumar-94.github.io/bff/sign-up/index.html" class="xl-gradient-text">Sign
+                        Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-line">
+        <div class="half-bottom-line"></div>
+    </div>
+
+    
+    <!-- Subscribe to our Email section start  -->
+    <div class="subscribe-email-sec main-container">
+        <div class="subs-email-inner-sec xl-width">
+            <div class="subscribe-email-heading">
+                <h5 class="all-headings">Subscribe to our Email</h5>
+            </div>
+            <div class="subscribe-email-details">
+                <p class="medium-400">Subscribe to our monthly newsletter to get expert tips and insights about
+                    nutrition advice and wellness. </p>
+            </div>
+            <div class="subs-email-subscribe-btn">
+                <form class="subscribe-email-form" action="">
+                    <div class="subs-email-inp">
+                        <label for="email"></label>
+                        <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email"
+                            required autocomplete="off">
+                    </div>
+                    <div class="subs-email-btn">
+                        <button class="subscribe-button Large-button ">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe to our Email section end  -->
+
+
+    <!-- Footer section -->
+    <div class="footer-section main-container">
+        <div class="footer-inner-sec xl-width">
+            <footer>
+                <div class="footer-det-three-sec">
+                    <div class="footer-logo-det-sec">
+                        <div class="f-logo-sm-lg">
+                            <p class="f-logo-lg XXLarge-800">BRUNSWICK FUR FOOD</p>
+                            <p class="f-logo-sm large-400-black">As food should be</p>
+                        </div>
+                        <div class="footer-icon-text-two-sec">
+                            <div class="footer-icon-text-first-sec">
+                                <div class="f-i-img"><img src="./images/footer-icon.png" alt="">
+                                </div>
+                                <p class="Small-600">Mon to Sun:</p>
+                                <p class="XSmall-400">10:00 AM to 6:00 PM</p>
+                            </div>
+                            <div class="footer-icon-second-sec">
+                                <div class="f-i-img"><img src="./images/footer-icon2.png" alt="">
+                                </div>
+                                <p class="Small-600">Call us:</p>
+                                <p class="XSmall-400">0433 985 402</p>
+                            </div>
+                        </div>
+                        <div class="footer-title-f-sec">
+                            <p class="Small-800-b">Join us & save $15 on Starter Pack!</p>
+                            <p class="footer-mobile-text-para small-400">We’ll help you find the food that is right for
+                                your dog even
+                                if it isn’t our own.</p>
+                        </div>
+                    </div>
+                    <div class="loging-and-signup-button">
+                        <div class="footer-loging-singup-inner-sec">
+                            <div class="footer-signup-btn"><a href="#" class="Large-button">Sign Up</a>
+                            </div>
+                            <div class="footer-loging-btn"><a href="#" class="Large-button">Log In</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-links-two-section">
+                        <div class="footer-useful-links-sec">
+                            <div class="f-main-link">
+                                <p class="footer-links-top-h XLarge-800">COMPANY</p>
+                            </div>
+                            <div class="f-link-item"><a class="f-main-link-item small-400" href="#">About Us</a><a
+                                    class="f-main-link-item small-400" href="#">Policies</a><a
+                                    class="f-main-link-item small-400" href="#">Contact Us</a><a
+                                    class="mobile-newsletter-btn f-main-link-item small-400" href="#">Newsletter</a><a
+                                    class="login-signup-mobile-link f-main-link-item small-400" href="#">Login</a><a
+                                    class="login-signup-mobile-link f-main-link-item small-400" href="#">Sign Up</a>
+                            </div>
+                        </div>
+                        <div class="footer-useful-links-sec">
+                            <div class="f-main-link">
+                                <p class="footer-links-top-h XLarge-800">USEFUL LINKS</p>
+                            </div>
+                            <div class="f-link-item"><a class="f-main-link-item small-400" href="#">Starter Pack</a><a
+                                    class="f-main-link-item small-400" href="#">Bowl Plans</a><a
+                                    class="f-main-link-item small-400" href="#">FAQ</a><a
+                                    class="f-main-link-item small-400" href="#">Blog</a><a
+                                    class="login-signup-mobile-link f-main-link-item small-400" href="#">Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copy-right-sec">
+                    <div class="f-copy-right-text">
+                        <p class="copy-right-txt small-400">2024 Brunswick Fur Food. All Rights Reserved.</p>
+                    </div>
+                    <div class="policy-etc-link">
+                        <ul>
+                            <li class="copy-right-txt small-400">Terms & Condition</li>
+                            <li class="copy-right-txt small-400">Privacy Policy</li>
+                            <li class="copy-right-txt small-400">Cookie Policy</li>
+                        </ul>
+                    </div>
+                    <div class="footer-facebook-insta-logo">
+                        <div class="footer-f-logo"><a href="https://www.facebook.com/BrunswickFurFood/"><img
+                                    src="./images/facebook.png" alt="Facebook logo">
+                            </a>
+                        </div>
+                        <div class="footer-ins-logo"><a href="https://www.instagram.com/brunswickfurfood/"><img
+                                    src="./images/insta.png" alt="Instagram logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- footer Image -->
+    <div class="footer-image-section">
+        <div class="footer-image"><img src="./images/footer-image.png" alt="">
+        </div>
+    </div>
+
+    <!-- link javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
