@@ -6151,7 +6151,6 @@ input[type="radio"]:checked::before {
   width: 1px;
   height: 102px;
   background-color: rgba(0, 0, 0, .1);
-
 }
 
 .choose-meal-buttons-and-title h2,
@@ -6184,7 +6183,6 @@ input[type="radio"]:checked::before {
 }
 
 /* Select quantity */
-
 .select-quantity{
   padding-top: 36px;
   display: flex;
@@ -6201,9 +6199,7 @@ input[type="radio"]:checked::before {
   width: 1px;
   height: 178px;
   background-color: rgba(0, 0, 0, .1);
-
 }
-
 
 .increment-and-decrement-button {
   display: flex;
@@ -6287,8 +6283,6 @@ input[type="radio"]:checked::before {
   max-width: 532px;
   width: 40%;
   padding: 16px;
-  /* padding-bottom: 24px;
-  border-bottom: .5px solid rgba(0, 0, 0, .1); */
 }
 
 .customize-product{
@@ -6328,8 +6322,7 @@ input[type="radio"]:checked::before {
   border: 3px solid var(--Sec_brown);
 }
 
-/* ADD TO CART BUTTON
-====================== */
+/* ADD TO CART BUTTON*/
 .customize-cart-and-shop-more-btn{
   text-align: center;
 }
@@ -6348,7 +6341,8 @@ input[type="radio"]:checked::before {
   width: 90%;
 }
 
-
+/* CUSTOMIZTION PAGE MEDIA QUERY
+================================== */
 
 
 
