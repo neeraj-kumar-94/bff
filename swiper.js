@@ -26,7 +26,7 @@ var swiper = new Swiper(".testimonial-slide-inner-sec", {
   },
 });
 
-//   product infromation page header slider
+
 // product image slide
 var swiper = new Swiper(".product-image-slide", {
   slidesPerView: 1,
