@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Team member cards
 // JavaScript part
-var swiper;
+var cardSlider;
 
-function initSwiper() {
+function initCardSlider() {
   if (window.innerWidth < 576) {
-    if (!swiper) {
-      swiper = new Swiper(".team-cards-slider", {
+    if (!cardSlider) {
+      cardSlider = new Swiper(".team-cards-slider", {
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
@@ -72,15 +72,15 @@ function initSwiper() {
       });
     }
   } else {
-    if (swiper) {
-      swiper.destroy(true, true);
-      swiper = undefined;
+    if (cardSlider) {
+      cardSlider.destroy(true, true);
+      cardSlider = undefined;
     }
   }
 }
 
-// Initialize Swiper on load
-initSwiper();
+// Load पर Card Slider को initialize करें
+initCardSlider();
 
-// Reinitialize Swiper on resize
-window.addEventListener('resize', initSwiper);
+// Resize पर Card Slider को reinitialize करें
+window.addEventListener('resize', initCardSlider);

@@ -1,7 +1,5 @@
 /* Import component files */
-@import url(../component/theme.css);
-@import url(../component/navbar.css);
-@import url(../component/footer.css);
+@import url(../style.css);
 
 
 * {
@@ -119,19 +117,19 @@
 }
 
 /* bottom line */
-.bottom-line {
+.about-us-bottom-line {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.bottom-line .half-bottom-line{
+.about-us-bottom-line .half-bottom-line{
   width: 668px;
   height: .5px;
   background-color:rgba(0, 0, 0, 0.2);
 }
 
-.bottom-line{
+.about-us-bottom-line{
   margin-top: 80px;
 }
 

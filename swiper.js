@@ -36,3 +36,33 @@ var swiper = new Swiper(".product-image-slide", {
     clickable: true,
   },
 });
+
+
+// ABOUT US PAGE
+var cardSlider;
+
+function initCardSlider() {
+  if (window.innerWidth < 576) {
+    if (!cardSlider) {
+      cardSlider = new Swiper(".team-cards-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (cardSlider) {
+      cardSlider.destroy(true, true);
+      cardSlider = undefined;
+    }
+  }
+}
+
+// Load पर Card Slider को initialize करें
+initCardSlider();
+
+// Resize पर Card Slider को reinitialize करें
+window.addEventListener('resize', initCardSlider);
