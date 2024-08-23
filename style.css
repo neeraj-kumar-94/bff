@@ -7607,27 +7607,22 @@ input[type="radio"]:checked::before {
     justify-content: space-between;
     column-gap: 80px;
    }
-
   .giveItaGo-pr-detail{
     display: flex;
     flex-direction: column;
     row-gap: 59px;
    }
-
    .giveItaGo-three-sec{
     display: flex;
     justify-content: space-between;
     text-align: center;
    }
-
    .giveItaGo-title-and-text h2{
     color: var(--TobaccoBrown);
    }
-
    .giveItaGo-pr-detail-text p{
     color: var(--brown);
    }
-
    .giveItaGo-coupon{
     height: 40px;
     max-width: 446px;
@@ -7640,45 +7635,40 @@ input[type="radio"]:checked::before {
     align-items: center;
     margin: 0 auto;
    }
-
    .giveItaGo-coupon p{
     font-weight: var(--regular);
    }
-
    /* second section */
   .giveItaGo-select-qun-det{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 100px;
-    margin: 150px 0 0 0;
+    column-gap: 100px; 
   }
-
   .choose-protein-bowl{
     margin-bottom: 70px;
   }
-
   .giveItaGo-qunantity-selector h2{
     margin-bottom: 28px;
-  }
-  
+    color: var(--brown);
+  }  
   .giveItaGo-qunantity-sel-inner
   .giveItaGo-inc-decre{
     max-width: 100%;
     width: 100%;
   }
-
   .giveItaGo-select-qun-form{
     max-width: 520px;
     width: 100%;
   }
-
   .giveItaGo-select-qun-form
   .quantity-and-pack{
     width: 100%;
     max-width: 100%;
   }
-
+  .all-over-meals-contain ul{
+    margin-top: 16px;
+  }
    .all-over-meals-contain ul li{
     font-size: var(--XSmall-400-fs);
     line-height: var(--XSmall-400-lh);
@@ -7687,7 +7677,6 @@ input[type="radio"]:checked::before {
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
    }
-
   /* Why does your dog need fresh food ? */
   .dog-need-fresh-food{
     text-align: center;
@@ -7700,6 +7689,7 @@ input[type="radio"]:checked::before {
   }
   .dog-need-ff-tag-line{
     margin-top: 60px;
+    color: var(--brown);
   }
   .dog-need-ff-icon-four-sec{
     display: flex;
@@ -7732,18 +7722,15 @@ input[type="radio"]:checked::before {
     text-align: center;
     margin: 0 auto;
   }
-
   .our-phi-heading-tagline h2{
     margin-bottom: 40px;
   }
-
   .our-phi-two-sec{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 60px;
   }
-
   .our-phi-first-sec p{
    color: var(--brown);
    margin-bottom: 20px;
@@ -7757,6 +7744,129 @@ input[type="radio"]:checked::before {
     margin-top: 40px;
     border: none;
     outline: none;
+  }
+
+
+  /* Responsive Code 
+  ===================*/
+  @media(max-width: 576px) {
+    .give-it-a-go-child{
+      max-width: 312px;
+      width: 100%;
+    }
+    .giveItaGo-two-sec{ 
+      justify-content: start;
+      flex-direction: column;
+      column-gap: auto;
+     }
+     .giveItaGo-hero-heading{ 
+      margin-bottom: 16px;
+     } 
+     .giveItaGo-hero-heading h1{
+       font-size: var(--xl-heading-fs);
+       line-height: var(--xl-heading-lh);
+     } 
+     .giveItaGo-pr-img{
+      max-width: 312px;
+      width: 100%;
+      margin-bottom: 20px;
+     }
+     .giveItaGo-pr-img img{
+      width: 100%;
+     }
+     .giveItaGo-title-and-text h2{  
+      font-size: var(--XLarge-400-fs);
+      line-height: var(--XLarge-400-lh);
+      letter-spacing: var(--XLarge-400-ls);
+     }
+     .giveItaGo-title-and-text p{ 
+      font-size: var(--XSmall-400-fs);
+      line-height: var(--XSmall-400-lh);
+     }
+     .giveItaGo-pr-detail{ 
+      row-gap: 18px;
+     }
+     .giveItaGo-pr-detail-text p{
+      font-size: var(--XSmall-400-fs);
+      line-height: var(--XSmall-400-lh);
+     }
+     .giveItaGo-pr-detail-text p span{
+      font-weight: var(--bold);
+     }
+     .giveItaGo-coupon{
+      max-width: 100%;
+     }
+     .giveItaGo-coupon p{
+      font-size: var(--XSmall-400-fs);
+      line-height: var(--XSmall-400-lh);
+     }
+     /* second-section */
+     .giveItaGo-select-quntity{
+      padding: 0;
+      background-color: #FDF8F7;
+     }
+     .giveItaGo-select-qun-det{ 
+      max-width: 312px;
+      width: 100%;
+      flex-direction: column;
+      column-gap: auto;
+      margin: 24px 0 0 0;
+      padding-top: 24px;
+    }
+    .choose-protein-bowl{
+      margin-bottom: 18px;
+    }
+    .giveItaGo-qunantity-selector h2{
+      margin-bottom: 18px; 
+      font-size: var(--Large-400-fs);
+     line-height: var(--Large-400-lh);
+     letter-spacing: var(--Large-400-ls);
+    }  
+    .all-over-meals-contain{
+      padding: 24px;
+    }
+    /* Why does your dog need fresh food ? */
+    .dog-need-fresh-food{
+      text-align: unset;
+    }
+    .dog-need-ff-child{
+      max-width: 312px;
+      width: 100%;
+    }
+    .dog-need-ff-image{
+       width: 100%;
+    }
+    .dog-need-ff-image img{
+      width: 100%;
+   }
+   .dog-need-ff-heading-tagline h2{
+    font-size: var(--xl-heading-fs);
+    line-height: var(--xl-heading-lh);
+   }
+   .dog-need-ff-icon-four-sec{ 
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+    margin-top: 40px;
+  }
+  .dog-need-ff-icon-four-sec
+  .dog-need-ff-icon-detail{ 
+    width: 50%;
+  }
+  .dog-need-ff-icon-detail h4{
+    font-size: var(--xl-heading-fs);
+    line-height: var(--xl-heading-lh);
+    margin: 0;
+    text-align: center;
+  }
+  .dog-need-ff-tag-line{
+    margin-top: 16px;
+  }
+  .dog-need-ff-icon-detail p{
+  font-size: var(--XSmall-400-fs);
+  line-height: var(--XSmall-400-lh);
+  text-align: left;
+  }
   }
 
 /* =======================
