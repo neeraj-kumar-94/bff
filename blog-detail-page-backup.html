@@ -6,27 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog detail</title>
     <!-- Link css file -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- Inline css -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
      <style>
+        /* BLOG DETAILS PAGE
+===================== */
 .post-details-and-short-post-cards {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: flex-start;
-  flex-direction: column;
 }
 
-.post {  
-  padding: 32px; 
-}
-
-.post-image {
-  width: 400px;  
-}
-
-.post-image img {
-  width: 100%;
-  height: 100%;
+.post {
+  max-width: 738px;
+  width: 60%;
+  padding: 32px;
+  border-right: .5px solid rgba(0, 0, 0, 0.1);
 }
 
 .post-title {
@@ -41,6 +35,8 @@
   margin: 40px 0 24px 0;
 }
 
+
+/* Blog heading, details and image*/
 .anchor_links {
   list-style-type: none;
 }
@@ -81,16 +77,20 @@
   padding-bottom: 0;
 }
 
+
+/* Back to to button */
 .back-top-button {
   padding-top: 30px;
   text-align: center;
 }
 
-.short-post-cards { 
-  display: flex;
-  column-gap: 20px;
+/* Second section  */
+.short-post-cards {
+  max-width: 523px;
+  width: 40%;
 }
- 
+
+
 .short-post {
   background-color: var(--Linen);
   display: flex;
@@ -121,14 +121,35 @@
   padding-bottom: 16px;
 }
 
+
+
+/* BLOG DETAILS PAGE MEDIA QUERY
+================================= */
 @media(max-width:1400px) {
 
-  .post { 
+  .post {
+    max-width: auto;
+    width: 60%;
     padding: 32px;
+    border-right: .5px solid rgba(0, 0, 0, 0.1);
   }
 
-  .short-post-cards { 
-    margin-left: 20px; 
+  /* Post image */
+  .post-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Second section [Short post section]*/
+  .short-post-cards {
+    max-width: auto;
+    margin-left: 20px;
+    width: 40%;
   }
 
   .short-post-inner-sec {
@@ -145,15 +166,16 @@
     align-items: center;
   }
 
-  .post { 
+  .post {
+    max-width: 738px;
+    width: 100%;
     padding: 0;
     border-right: none;
   }
+
   .short-post-cards {
     display: none;
   }
-
-
 }
 
 @media(max-width: 576px) {
@@ -227,6 +249,10 @@
 
 }
 
+
+
+
+
 /* CSS code for the new sections.
 ================================== */
 
@@ -266,7 +292,6 @@
   .newsletter-email-details p {
     margin-bottom: 10px;
     width: 80%;
-    word-wrap: break-word;
   }
 
   .newsletter-email-details > p:first-child {
@@ -326,14 +351,12 @@
   }
   @media(max-width:576px) {
     .newsletter-sec {
-      width: 100%;
       padding: 0;
       text-align: center;
       overflow: hidden;
     }
   
     .newsletter-inner-sec {
-     width: 100%;
       row-gap: 24px;
       padding-top: 32px;
       padding-bottom: 40px;
@@ -351,27 +374,21 @@
   
     .newsletter-email-inp .email-input {
       padding: 13px 10px;
-      width: 200px;
+      width: 220px;
     }
   
     .newseletter-email-btn .newsletter-sbm-btn {
       padding: 13.2px 13.2px;
+      /* margin-left: -12px; */
       font-size: var(--lg-icon-text-fs);
     } 
   }
 
-  @media(max-width: 350px) {
-    .newsletter-email-inp .email-input {
-      padding: 13px 10px;
-      width: 180px;
-    } 
-  }
-
- /* Header section
-================== */
+    /* Header section
+  ================== */
 .bff-pack {
   background-color: var(--NeroWhite);
-  padding: 40px 0;
+  padding: 0;
 }
 
 .bff-pack-inner-sec {
@@ -446,10 +463,6 @@
 }
 
 @media(max-width: 576px) {
-
-.bff-pack {
-  padding: 20px 0;
-}
   .bff-pack-inner-sec {
     padding: 24px;
   }
@@ -523,8 +536,6 @@
     width: 80px; 
   }
 }
-
-
 
 
      </style>
@@ -761,38 +772,6 @@
                                             annual blood works are recommended in senior dogs.</p>
                                     </div>
                                 </div>
-                                <!-- Newsletter section start  -->
-                                <div class="newsletter-sec main-container">
-                                    <div class="newsletter-inner-sec xl-width">
-                                        <div class="newsletter-image-sec">
-                                            <div class="newsletter-image">
-                                                <img src="./images/product-listing-page-header-img.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="newsletter-details-sec">
-                                            <div class="newsletter-heading">
-                                                <h5 class="xlarge-p-black-bold">Subscribe to our newsletter</h5>
-                                            </div>
-                                            <div class="newsletter-email-details">
-                                                <p class="medium-400">Get expert insights to help your pup live a healthier, happier life.</p>
-                                                    <p class="medium-400">Subscribe now and get 30% off your first order </p>
-                                            </div>
-                                            <div class="newsletter-email-subscribe-btn">
-                                                <form class="newsletter-email-form" action="">
-                                                    <div class="newsletter-email-inp">
-                                                        <label for="email"></label>
-                                                        <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email"
-                                                            required autocomplete="off">
-                                                    </div>
-                                                    <div class="newseletter-email-btn">
-                                                        <button class="newsletter-sbm-btn Large-button ">Subscribe</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Newsletter section end  -->
                                 <div class="section-title-and-paragraph" id="nutrition-in-senior-dogs">
                                     <h2 class="section-title XXLarge-600">Nutrition in
                                         Senior Dogs
@@ -817,25 +796,6 @@
                                             label on the pet food packaging.</p>
                                     </div>
                                 </div>
-                                <!-- Join pack section start-->
-                                <div class="bff-pack main-container">
-                                    <div class="bff-pack-inner-sec xl-width">
-                                    <div class="bff-pack-details">
-                                        <div class="bff-pack-heading">
-                                            <p class="bff-pack-detial xlarge-p">Need a sniff of approval?</p>
-                                        <h1 class=" h1-heading">Join the pack today with 30% off your first order.</span>
-                                        </h1>
-                                        <p class="bff-pack-detial xlarge-p">Try out 6 different proteins before committing to a flexible meal plan that meets your dog’s taste preferences and needs.</p>
-                                        </div> 
-                                        <div class="bff-get-st-btn">
-                                        <a class="Large-button" href="#">Get started</a>  
-                                        </div>
-                                    </div>
-                                    <div class="bff-pack-img"><img src="./images/pack-image.png" alt="Header image">
-                                    </div>
-                                    </div>
-                                </div>
-                                <!-- Join pack section end-->
                                 <div class="section-title-and-paragraph" id="supplements-for-senior-dogs">
                                     <h2 class="section-title XXLarge-600">Supplements for Senior Dogs</h2>
                                     <div class="section-paragraph">
@@ -939,8 +899,91 @@
         </div>
     </div>
 
+    <div class="bottom-line">
+        <div class="half-bottom-line"></div>
+    </div>
 
 
+    <!-- Subscribe to our Email section start  -->
+    <!-- <div class="subscribe-email-sec main-container">
+        <div class="subs-email-inner-sec xl-width">
+            <div class="subscribe-email-heading">
+                <h5 class="all-headings">Subscribe to our Email</h5>
+            </div>
+            <div class="subscribe-email-details">
+                <p class="medium-400">Subscribe to our monthly newsletter to get expert tips and insights about
+                    nutrition advice and wellness. </p>
+            </div>
+            <div class="subs-email-subscribe-btn">
+                <form class="subscribe-email-form" action="">
+                    <div class="subs-email-inp">
+                        <label for="email"></label>
+                        <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email"
+                            required autocomplete="off">
+                    </div>
+                    <div class="subs-email-btn">
+                        <button class="subscribe-button Large-button ">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <!-- Subscribe to our Email section end  -->
+
+<!-- New section html code start -->
+
+     <!-- Subscribe to our Email section start  -->
+    <div class="newsletter-sec main-container">
+        <div class="newsletter-inner-sec xl-width">
+            <div class="newsletter-image-sec">
+                <div class="newsletter-image">
+                    <img src="./images/product-listing-page-header-img.png" alt="">
+                </div>
+            </div>
+            <div class="newsletter-details-sec">
+                <div class="newsletter-heading">
+                    <h5 class="xlarge-p-black-bold">Subscribe to our newsletter</h5>
+                </div>
+                <div class="newsletter-email-details">
+                    <p class="medium-400">Get expert insights to help your pup live a healthier, happier life.</p>
+                        <p class="medium-400">Subscribe now and get 30% off your first order </p>
+                </div>
+                <div class="newsletter-email-subscribe-btn">
+                    <form class="newsletter-email-form" action="">
+                        <div class="newsletter-email-inp">
+                            <label for="email"></label>
+                            <input class="email-input small-400" placeholder="Email" type="email" name="email" id="email"
+                                required autocomplete="off">
+                        </div>
+                        <div class="newseletter-email-btn">
+                            <button class="newsletter-sbm-btn Large-button ">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe to our Email section end  -->
+
+
+     <!-- header section ?  section-->
+  <div class="bff-pack main-container">
+    <div class="bff-pack-inner-sec xl-width">
+      <div class="bff-pack-details">
+        <div class="bff-pack-heading">
+            <p class="bff-pack-detial xlarge-p">Need a sniff of approval?</p>
+          <h1 class=" h1-heading">Join the pack today with 30% off your first order.</span>
+          </h1>
+          <p class="bff-pack-detial xlarge-p">Try out 6 different proteins before committing to a flexible meal plan that meets your dog’s taste preferences and needs.</p>
+        </div> 
+        <div class="bff-get-st-btn">
+          <a class="Large-button" href="#">Get started</a>  
+        </div>
+      </div>
+      <div class="bff-pack-img"><img src="./images/pack-image.png" alt="Header image">
+      </div>
+    </div>
+  </div>
 
 <!-- New Section -->
 <div class="author-info-section main-container">
