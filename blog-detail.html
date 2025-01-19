@@ -150,7 +150,8 @@
     border-right: none;
   }
   .short-post-cards {
-    display: none;
+    margin: 40px;
+    flex-wrap: wrap;
   }
 
 
@@ -225,6 +226,22 @@
     height: 1px;
   }
 
+  /* Related Posts */
+
+  .short-post-read-more-btn a{
+    font-size: var(--XSmall-400-fs);
+    line-height: var(--XSmall-400-lh);
+  }
+  .short-post-cards {
+    margin: 40px 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    .short-post-detail {
+    font-size: var(--Large-400-fs);
+    line-height: var(--Large-400-lh);
+    letter-spacing: var(--Large-400-ls);
+    }
 }
 
 /* CSS code for the new sections.
@@ -511,6 +528,7 @@
   font-weight: var(--bold);
 }
 
+
 @media(max-width: 480px) {
   .author-info-det-first { 
     column-gap: 20px; 
@@ -606,7 +624,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Breadcrumb section -->
     <div class="breadcrumb-sec main-container">
