@@ -8326,7 +8326,11 @@ input[type="radio"]:checked::before {
       text-align: center;
       padding: 40px;
       
-    } 
+    }
+    
+    .newsletter-email-form { 
+      justify-content: center; 
+    }
     .newsletter-email-details {
       text-align: center;
     }
@@ -8347,6 +8351,7 @@ input[type="radio"]:checked::before {
       padding-top: 32px;
       padding-bottom: 40px;
     }
+
   
     .newsletter-email-details {
       margin-bottom: 0px;
@@ -8358,18 +8363,15 @@ input[type="radio"]:checked::before {
     }
   
     .newsletter-email-inp .email-input {
-      padding: 13.5px 10px;
+      padding: 13px 10px;
       width: 220px;
     }
   
     .newseletter-email-btn .newsletter-sbm-btn {
-      padding: 13px 13px;
-      margin-left: -9px;
-    }
-  
-    .newseletter-email-btn .newsletter-sbm-btn  {
+      padding: 13.2px 13.2px;
+      /* margin-left: -12px; */
       font-size: var(--lg-icon-text-fs);
-    }
+    } 
   }
 
     /* Header section
