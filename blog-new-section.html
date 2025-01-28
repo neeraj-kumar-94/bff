@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog detail</title>
+    <!-- Inline css -->
+    <style>
+
+
+.newsletter-sec,.bff-pack,.author-info-section{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+        /* Subscribe to our Email section start 
+        ========================================*/
+        .newsletter-sec {
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsletter-inner-sec {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            row-gap: 45px;
+            padding: 40px 0;
+        }
+
+        .newsletter-image {
+            position: relative;
+        }
+
+        .newsletter-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .newsletter-email-details {
+            margin-bottom: 16px;
+            text-align: start;
+        }
+
+        .newsletter-heading {
+            margin-bottom: 20px;
+        }
+
+        .newsletter-email-details p {
+            margin-bottom: 10px;
+            width: 80%;
+            word-wrap: break-word;
+        }
+
+        .newsletter-email-details>p:first-child {
+            font-size: 26px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+
+
+        .newsletter-email-form {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 0;
+        }
+
+        .newsletter-email-inp .email-input {
+            color: #666666;
+            padding: 15px 20px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #E1BFB0;
+            outline: none;
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        .newsletter-email-inp .email-input:focus {
+            border: 1px solid #E1BFB0;
+        }
+
+        .newseletter-email-btn .newsletter-sbm-btn {
+            border: none;
+            outline: none;
+            padding: 15px 51px;
+            margin-left: -4px;
+        }
+
+
+        @media(max-width: 1100px) {
+            .newsletter-inner-sec {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 40px;
+
+            }
+
+            .newsletter-email-form {
+                justify-content: center;
+            }
+
+            .newsletter-email-details {
+                text-align: center;
+            }
+
+            .newsletter-email-details p {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+
+        @media(max-width:576px) {
+            .newsletter-sec {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .newsletter-inner-sec {
+                width: 100%;
+                row-gap: 24px;
+                padding: 32px 24px 40px;
+            }
+
+
+            .newsletter-email-details {
+                margin-bottom: 0px;
+            }
+
+            .newsletter-email-details>p:first-child {
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            .newsletter-email-inp .email-input {
+                padding: 13px 10px;
+                width: 200px;
+            }
+
+            .newseletter-email-btn .newsletter-sbm-btn {
+                padding: 13.2px 13.2px;
+                font-size: 14px;
+            }
+        }
+
+        @media(max-width: 350px) {
+            .newsletter-email-inp .email-input {
+                padding: 13px 10px;
+                width: 180px;
+            }
+        }
+
+
+
+        /* Join pack section start */
+
+        .bff-pack {
+            background-color: #ffffff;
+            padding: 40px 0;
+        }
+
+        .bff-pack-inner-sec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            background-color: #FDF8F7;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .bff-pack-details {
+            width: 65%;
+        }
+
+
+        .bff-pack-heading h1 {
+            font-size: 48px;
+            line-height: 60px;
+            letter-spacing: 0.96px;
+            font-weight: 700;
+            color: #7D5C4E;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+
+        .paragraph-font {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.48px;
+            font-weight: 400;
+            color: #7D5C4E;
+        }
+
+        .bff-pack-heading p {
+            width: 75%;
+            margin-bottom: 40px;
+        }
+
+        .bff-pack-img {
+            width: 35%;
+            position: relative;
+        }
+
+        .bff-pack-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bff-get-st-btn {
+            width: 200px;
+        }
+
+        .bff-get-st-btn a {
+            padding: 16px 40px;
+        }
+
+        @media(max-width: 950px) {
+            .bff-pack-inner-sec {
+                flex-direction: column-reverse;
+            }
+
+
+            .bff-pack-heading h1 {
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0.48px;
+                font-weight: 700;
+                color: #7D5C4E;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+
+            .bff-pack-details {
+                width: 100%;
+            }
+
+            .bff-pack-img {
+                width: 80%;
+            }
+
+            .bff-pack-heading p {
+                width: 100%;
+            }
+
+            .bff-get-st-btn {
+                width: 50%;
+            }
+
+            .bff-get-st-btn a {
+                padding: 14px 25px;
+            }
+
+        }
+
+        @media(max-width: 576px) {
+
+            .bff-pack {
+                padding: 20px 0;
+            }
+
+            .bff-pack-inner-sec {
+                padding: 24px;
+            }
+
+            .bff-pack-heading p {
+                font-size: 18px;
+                line-height: 22.5px;
+                letter-spacing: .36px;
+                margin: 20px 0;
+            }
+
+
+            .bff-get-st-btn {
+                width: 70%;
+            }
+
+        }
+
+        /* Author section */
+
+        .author-info-inner-section {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            border-radius: 20px;
+            border: 1px solid #E1BFB0;
+            overflow: hidden;
+        }
+
+        .author-info-det-first {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-bottom: 1px solid #E1BFB0;
+            width: 100%;
+        }
+
+
+        .author-info-det-second {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            background-color: #FDF8F7;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .aut-info-pers-img {
+            width: 100px;
+            border-radius: 100%;
+        }
+
+        .blue-tick-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .auth-name {
+            font-weight: 700;
+        }
+
+        .author-info-text p:first-child {
+            color: #5D3E31;
+        }
+
+        .author-info-text p:last-child {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.48px;
+            word-wrap: break-word;
+        }
+
+
+        @media(max-width: 480px) {
+            .author-info-det-first {
+                column-gap: 16px;
+            }
+
+            .author-info-det-second {
+                column-gap: 16px;
+            }
+
+            .aut-info-pers-img {
+                width: 60px;
+            }
+
+            .author-info-det-first p {
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 0.48px; 
+                padding-right: 10px; 
+            }
+
+            .author-info-text p {
+                padding-right: 10px;
+            }
+
+            .author-info-text p:last-child {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.36px;
+                word-wrap: break-word;
+            }
+
+        }
+
+
+        /* Gradient button */
+        .Large-button {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(90deg, #5D3E31 0%, #704B3B 24%, #855946 50%, #7D5C4E 100%);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: .36px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .Large-button:hover {
+            background: #5D3E31;
+        }
+
+        /* add comman font class */
+        .text-bold-font {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0.48px;
+            font-weight: 400;
+            color: #7D5C4E;
+        }
+
+        .text-small-font {
+            font-size: 18px;
+            line-height: 22.5px;
+            letter-spacing: .36px;
+            font-weight: 400;
+            color: #7D5C4E;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Newsletter section start  -->
+    <div class="newsletter-sec">
+        <div class="newsletter-inner-sec">
+            <div class="newsletter-image-sec">
+                <div class="newsletter-image">
+                    <img src="./images/product-listing-page-header-img.png" alt="">
+                </div>
+            </div>
+            <div class="newsletter-details-sec">
+                <div class="newsletter-heading">
+                    <h5 class="text-small-font">Subscribe to our newsletter</h5>
+                </div>
+                <div class="newsletter-email-details">
+                    <p class="text-small-font">Get expert insights to help your pup live a healthier, happier life.</p>
+                    <p class="text-small-font">Subscribe now and get 30% off your first order </p>
+                </div>
+                <div class="newsletter-email-subscribe-btn">
+                    <form class="newsletter-email-form" action="">
+                        <div class="newsletter-email-inp">
+                            <label for="email"></label>
+                            <input class="email-input small-400" placeholder="Email" type="email" name="email"
+                                id="email" required autocomplete="off">
+                        </div>
+                        <div class="newseletter-email-btn">
+                            <button class="newsletter-sbm-btn Large-button ">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter section end  -->
+
+    <!-- Join pack section start-->
+    <div class="bff-pack">
+        <div class="bff-pack-inner-sec">
+            <div class="bff-pack-details">
+                <div class="bff-pack-heading">
+                    <p class="paragraph-font">Need a sniff of approval?</p>
+                    <h1>Join the pack today with 30% off your first order.</span>
+                    </h1>
+                    <p class="paragraph-font">Try out 6 different proteins before committing to a flexible
+                        meal plan that meets your dog’s taste preferences and needs.</p>
+                </div>
+                <div class="bff-get-st-btn">
+                    <a class="Large-button" href="#">Get started</a>
+                </div>
+            </div>
+            <div class="bff-pack-img"><img src="./images/pack-image.png" alt="Header image">
+            </div>
+        </div>
+    </div>
+    <!-- Join pack section end-->
+
+
+
+    <!-- New Section -->
+    <div class="author-info-section">
+        <div class="author-info-inner-section">
+            <div class="author-info-det-first">
+                <img class="blue-tick-icon" src="./images/blue-tick.png" alt="Blue tick icon">
+                <p class="text-bold-font">This article was reviewed by Lyka's veterinary and nutrition experts</p>
+            </div>
+            <div class="author-info-det-second">
+                <img class="aut-info-pers-img" src="./images/smart.jfif" alt="Author Louise Hawkins">
+                <div class="author-info-text">
+                    <p class="auth-name text-bold-font">Louise Hawkins</p>
+                    <p class="text-bold-font">Qualified Veterinary Nurse & Research and Development Associate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- New section html code End -->
+
+</body>
+
+</html>
